@@ -1,0 +1,259 @@
+{
+  "questions": [
+    {
+      "id": "p6_001",
+      "type": "part6",
+      "passageType": "email",
+      "title": "직원 환영 이메일",
+      "passage": "Dear Team,\n\nI am pleased to announce that Ms. Jennifer Park will be joining our marketing department as Senior Marketing Analyst ______(1) Monday, March 10.\n\nMs. Park brings over eight years of experience in digital marketing and data analytics. She previously worked at GlobalTech, where she was ______(2) for leading a team of 15 analysts.\n\nPlease make sure to introduce yourselves and help her ______(3) to our office environment. ______(4)\n\nBest regards,\nDavid Kim\nDirector of Marketing",
+      "blanks": [
+        {
+          "id": "p6_001_1",
+          "number": 1,
+          "choices": ["on", "at", "in", "by"],
+          "answer": 0,
+          "explanation": "특정 요일(Monday) 앞에는 전치사 'on'을 사용합니다.",
+          "category": "preposition",
+          "tip": "'on + 요일/날짜'는 토익의 단골 출제 포인트!"
+        },
+        {
+          "id": "p6_001_2",
+          "number": 2,
+          "choices": ["responsible", "responsibility", "responsibly", "responsive"],
+          "answer": 0,
+          "explanation": "'be responsible for'는 '~에 대해 책임이 있다'라는 고정 표현입니다. 형용사 'responsible'이 필요합니다.",
+          "category": "word form",
+          "tip": "be + ______ + for 패턴 → 형용사 자리!"
+        },
+        {
+          "id": "p6_001_3",
+          "number": 3,
+          "choices": ["adjust", "adjusting", "adjusted", "adjustment"],
+          "answer": 0,
+          "explanation": "'help + 목적어 + 동사원형'은 '~가 ~하는 것을 돕다'라는 의미입니다.",
+          "category": "verb form",
+          "tip": "help + 사람 + 동사원형(또는 to부정사). 'help her adjust'가 정답!"
+        },
+        {
+          "id": "p6_001_4",
+          "number": 4,
+          "choices": [
+            "A welcome lunch will be held in the conference room at noon on her first day.",
+            "Ms. Park graduated from Seoul National University with honors.",
+            "The marketing budget for this quarter has been finalized.",
+            "Please submit your timesheets by the end of the week."
+          ],
+          "answer": 0,
+          "explanation": "문맥상 새 직원 환영과 관련된 내용이 와야 합니다. 첫날 환영 오찬 안내가 가장 적절합니다.",
+          "category": "sentence insertion",
+          "tip": "Part 6 문장 삽입: 앞뒤 문맥의 흐름(환영 → 환영 행사)을 따라가세요!"
+        }
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "p6_002",
+      "type": "part6",
+      "passageType": "notice",
+      "title": "사무실 이전 공지",
+      "passage": "NOTICE TO ALL EMPLOYEES\n\nEffective April 1, Nextera Solutions will be ______(1) to a new office location at 250 Harbor Drive, Suite 400.\n\nAll employees are required to pack their personal belongings by March 28. Boxes and packing materials will be ______(2) by the facilities team starting March 20.\n\nDuring the transition period, remote work will be permitted from March 29 through April 2. ______(3) Please ensure that your laptops and necessary files are prepared ______(4) for working from home.\n\nFor questions, contact the Facilities Department at ext. 3200.",
+      "blanks": [
+        {
+          "id": "p6_002_1",
+          "number": 1,
+          "choices": ["relocating", "relocated", "relocation", "relocate"],
+          "answer": 0,
+          "explanation": "'will be relocating'은 미래진행형으로 예정된 이전 과정을 나타냅니다.",
+          "category": "verb form",
+          "tip": "will be + ~ing = 미래진행형. '이전하는 중일 것이다'라는 진행의 뉘앙스!"
+        },
+        {
+          "id": "p6_002_2",
+          "number": 2,
+          "choices": ["distributed", "distributing", "distribution", "distribute"],
+          "answer": 0,
+          "explanation": "'will be distributed'는 미래수동태입니다. 박스가 '배포되는' 것이므로 수동태가 적절합니다.",
+          "category": "voice",
+          "tip": "will be + p.p. = 미래수동태. 주어(Boxes)가 '배포당하는' 입장!"
+        },
+        {
+          "id": "p6_002_3",
+          "number": 3,
+          "choices": [
+            "Normal office operations will resume on April 3.",
+            "The company was founded in 2005.",
+            "Lunch will be provided in the cafeteria.",
+            "Annual performance reviews are due next month."
+          ],
+          "answer": 0,
+          "explanation": "재택근무 기간(3/29~4/2) 언급 후, 정상 업무 재개일(4/3)을 안내하는 것이 자연스럽습니다.",
+          "category": "sentence insertion",
+          "tip": "시간 순서를 따라가세요: 재택근무 기간 → 정상 복귀일!"
+        },
+        {
+          "id": "p6_002_4",
+          "number": 4,
+          "choices": ["in advance", "in addition", "in particular", "in contrast"],
+          "answer": 0,
+          "explanation": "'in advance'는 '미리, 사전에'라는 의미입니다. 재택근무 전에 미리 준비하라는 맥락입니다.",
+          "category": "vocabulary",
+          "tip": "in advance = 미리! '사전에 준비해두세요'라는 흐름."
+        }
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "p6_003",
+      "type": "part6",
+      "passageType": "article",
+      "title": "신제품 출시 기사",
+      "passage": "TechVision Inc. announced yesterday that it will launch its ______(1) smartphone model, the Vision X10, on June 15.\n\nThe new device features a significantly improved camera system and a battery that lasts up to 30% longer than ______(2) of previous models. According to CEO Sarah Chen, the company has invested over $200 million in research and development to ensure the product meets the ______(3) standards of today's consumers.\n\n______(4) Pre-orders will begin on May 20 through the company's official website and authorized retailers.",
+      "blanks": [
+        {
+          "id": "p6_003_1",
+          "number": 1,
+          "choices": ["latest", "lately", "late", "later"],
+          "answer": 0,
+          "explanation": "'latest'는 '최신의'라는 형용사입니다. 명사(smartphone model) 앞에서 수식합니다.",
+          "category": "word form",
+          "tip": "late의 변형: late(늦은) → later(나중의) → latest(최신의). 명사 앞 = 형용사!"
+        },
+        {
+          "id": "p6_003_2",
+          "number": 2,
+          "choices": ["that", "those", "this", "these"],
+          "answer": 0,
+          "explanation": "'that'은 앞에 나온 단수명사 'a battery'를 대신합니다. 'that of previous models' = 이전 모델의 배터리.",
+          "category": "pronoun",
+          "tip": "that/those = 앞의 명사 반복 대신! 단수면 that, 복수면 those."
+        },
+        {
+          "id": "p6_003_3",
+          "number": 3,
+          "choices": ["demanding", "demanded", "demand", "demands"],
+          "answer": 0,
+          "explanation": "'demanding'은 '까다로운, 요구가 많은'이라는 형용사로 'standards'를 수식합니다.",
+          "category": "word form",
+          "tip": "demanding standards = 까다로운 기준. ~ing 형용사는 '~한 특성을 가진'!"
+        },
+        {
+          "id": "p6_003_4",
+          "number": 4,
+          "choices": [
+            "Industry analysts predict the Vision X10 will be the top-selling device of the year.",
+            "TechVision was established in Silicon Valley in 2010.",
+            "The company's stock price has fluctuated over the past month.",
+            "Employee satisfaction surveys will be conducted next quarter."
+          ],
+          "answer": 0,
+          "explanation": "신제품의 시장 전망 → 사전 주문 안내로 이어지는 흐름이 자연스럽습니다.",
+          "category": "sentence insertion",
+          "tip": "제품 소개 → 전문가 전망 → 구매 방법 = 자연스러운 기사 흐름!"
+        }
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "p6_004",
+      "type": "part6",
+      "passageType": "memo",
+      "title": "연수 프로그램 안내",
+      "passage": "MEMORANDUM\n\nTo: All Department Managers\nFrom: Human Resources\nSubject: Mandatory Training Program\n\nAs part of our ongoing commitment to professional development, all managers are ______(1) to complete the new Leadership Excellence Program by September 30.\n\nThe program ______(2) of six online modules and two in-person workshops. Each module takes approximately 90 minutes to complete and can be accessed through the company's learning management system.\n\n______(3) Managers who fail to complete the program by the deadline may not be ______(4) for the annual performance bonus.\n\nPlease contact HR at training@nextera.com for assistance.",
+      "blanks": [
+        {
+          "id": "p6_004_1",
+          "number": 1,
+          "choices": ["required", "requiring", "requirement", "require"],
+          "answer": 0,
+          "explanation": "'are required to'는 '~해야 한다'는 수동태 표현입니다.",
+          "category": "verb form",
+          "tip": "be required to + 동사원형 = ~할 것이 요구되다 = ~해야 한다!"
+        },
+        {
+          "id": "p6_004_2",
+          "number": 2,
+          "choices": ["consists", "consisting", "consisted", "consist"],
+          "answer": 0,
+          "explanation": "'consist of'는 '~으로 구성되다'라는 의미입니다. 주어 'The program'이 3인칭 단수이므로 'consists'.",
+          "category": "subject-verb agreement",
+          "tip": "consist of = ~으로 구성되다. 주어가 단수(The program)이므로 consists!"
+        },
+        {
+          "id": "p6_004_3",
+          "number": 3,
+          "choices": [
+            "Schedules for the in-person workshops will be announced by August 1.",
+            "The company picnic is scheduled for next Saturday.",
+            "New employees should report to the front desk on their first day.",
+            "The quarterly budget report is due by the end of this month."
+          ],
+          "answer": 0,
+          "explanation": "프로그램 구성 설명 후, 대면 워크숍 일정 안내가 이어지는 것이 자연스럽습니다.",
+          "category": "sentence insertion",
+          "tip": "온라인 모듈 설명 → 대면 워크숍 일정 → 미이수 시 불이익 = 논리적 순서!"
+        },
+        {
+          "id": "p6_004_4",
+          "number": 4,
+          "choices": ["eligible", "eligibility", "eligibly", "eligible's"],
+          "answer": 0,
+          "explanation": "'be eligible for'는 '~의 자격이 있다'라는 고정 표현입니다. 형용사 'eligible'이 필요합니다.",
+          "category": "word form",
+          "tip": "be eligible for = ~의 자격이 있다. be 동사 뒤 = 형용사 자리!"
+        }
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "p6_005",
+      "type": "part6",
+      "passageType": "letter",
+      "title": "고객 사과 서한",
+      "passage": "Dear Mr. Thompson,\n\nWe sincerely apologize for the inconvenience caused by the delayed delivery of your order #45892. Due to an ______(1) high volume of orders during the holiday season, our warehouse experienced significant processing delays.\n\nYour package was shipped on January 8 and is ______(2) to arrive by January 12. You can track your shipment using the tracking number provided in the confirmation email.\n\nAs a token of our appreciation for your patience, we would like to offer you a 20% discount on your next purchase. ______(3)\n\nWe value your continued ______(4) and look forward to serving you again.\n\nSincerely,\nCustomer Service Team\nQuickShop Online",
+      "blanks": [
+        {
+          "id": "p6_005_1",
+          "number": 1,
+          "choices": ["unexpectedly", "unexpected", "unexpecting", "unexpect"],
+          "answer": 0,
+          "explanation": "'unexpectedly'는 부사로 형용사 'high'를 수식합니다. '예상치 못하게 높은 주문량'.",
+          "category": "word form",
+          "tip": "_____ + 형용사(high) → 부사 자리! unexpectedly = 예상치 못하게."
+        },
+        {
+          "id": "p6_005_2",
+          "number": 2,
+          "choices": ["expected", "expecting", "expectation", "expect"],
+          "answer": 0,
+          "explanation": "'is expected to'는 '~할 것으로 예상된다'라는 수동태 표현입니다.",
+          "category": "verb form",
+          "tip": "be expected to = ~할 것으로 예상되다. 토익 빈출 수동태 표현!"
+        },
+        {
+          "id": "p6_005_3",
+          "number": 3,
+          "choices": [
+            "The discount code THANKYOU20 has been applied to your account and is valid for 60 days.",
+            "Our warehouse is located in Chicago, Illinois.",
+            "We are currently hiring seasonal workers for our distribution center.",
+            "The product you ordered has received excellent reviews from other customers."
+          ],
+          "answer": 0,
+          "explanation": "20% 할인 제안 후, 구체적인 할인 코드와 사용 기간을 안내하는 것이 자연스럽습니다.",
+          "category": "sentence insertion",
+          "tip": "할인 제안 → 할인 코드 상세 안내 → 감사 인사 = 논리적 흐름!"
+        },
+        {
+          "id": "p6_005_4",
+          "number": 4,
+          "choices": ["patronage", "patrol", "patriot", "patron"],
+          "answer": 0,
+          "explanation": "'patronage'는 '후원, 애용'이라는 명사입니다. 'continued patronage' = 지속적인 애용/이용.",
+          "category": "vocabulary",
+          "tip": "patron(후원자) + age = patronage(후원, 애용). 비즈니스 서한 마무리 단골 표현!"
+        }
+      ],
+      "difficulty": 4
+    }
+  ]
+}

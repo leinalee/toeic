@@ -1,0 +1,254 @@
+{
+  "questions": [
+    {
+      "id": "g001",
+      "type": "grammar",
+      "sentence": "The report must be submitted ______ the end of the business day.",
+      "choices": ["by", "until", "within", "from"],
+      "answer": 0,
+      "explanation": "'by'는 '~까지(기한)'를 나타냅니다. 'until'은 '~까지 계속'이라는 의미로 지속적인 행위에 사용됩니다.",
+      "category": "preposition",
+      "difficulty": 3
+    },
+    {
+      "id": "g002",
+      "type": "grammar",
+      "sentence": "______ the heavy rain, the outdoor event proceeded as planned.",
+      "choices": ["Despite", "Although", "Because of", "While"],
+      "answer": 0,
+      "explanation": "'Despite'는 전치사로 뒤에 명사(구)가 옵니다. 'Although'와 'While'은 접속사로 절이 따라야 합니다.",
+      "category": "preposition",
+      "difficulty": 3
+    },
+    {
+      "id": "g003",
+      "type": "grammar",
+      "sentence": "The new policy will take effect ______ January 1st.",
+      "choices": ["on", "at", "in", "by"],
+      "answer": 0,
+      "explanation": "특정 날짜 앞에는 전치사 'on'을 사용합니다. 'at'은 시간, 'in'은 월/년도에 사용됩니다.",
+      "category": "preposition",
+      "difficulty": 2
+    },
+    {
+      "id": "g004",
+      "type": "grammar",
+      "sentence": "All documents must be submitted in accordance ______ company policy.",
+      "choices": ["with", "to", "for", "by"],
+      "answer": 0,
+      "explanation": "'in accordance with'는 '~에 따라'라는 의미의 고정 표현입니다.",
+      "category": "preposition",
+      "difficulty": 3
+    },
+    {
+      "id": "g005",
+      "type": "grammar",
+      "sentence": "The manager ______ the project since last April.",
+      "choices": ["has overseen", "oversaw", "oversees", "had overseen"],
+      "answer": 0,
+      "explanation": "'since + 과거 시점'은 현재완료(have/has + p.p.)와 함께 사용됩니다. 과거부터 현재까지 계속되는 행위를 나타냅니다.",
+      "category": "tense",
+      "difficulty": 3
+    },
+    {
+      "id": "g006",
+      "type": "grammar",
+      "sentence": "If the budget ______ approved, the project will begin next month.",
+      "choices": ["is", "was", "will be", "has been"],
+      "answer": 0,
+      "explanation": "조건절(if절)에서는 미래의 일이라도 현재시제를 사용합니다. 'will be'는 조건절에서 사용하지 않습니다.",
+      "category": "tense",
+      "difficulty": 3
+    },
+    {
+      "id": "g007",
+      "type": "grammar",
+      "sentence": "By the time the CEO arrives, the presentation ______ already ______.",
+      "choices": ["will have ... started", "has ... started", "will ... start", "had ... started"],
+      "answer": 0,
+      "explanation": "'By the time + 현재시제'는 미래완료(will have + p.p.)와 함께 사용되어 미래의 특정 시점까지 완료될 행위를 나타냅니다.",
+      "category": "tense",
+      "difficulty": 4
+    },
+    {
+      "id": "g008",
+      "type": "grammar",
+      "sentence": "The company requested that every employee ______ the training session.",
+      "choices": ["attend", "attends", "attended", "will attend"],
+      "answer": 0,
+      "explanation": "request, suggest, recommend 등의 동사 뒤 that절에서는 동사원형을 사용합니다 (가정법 현재/당위법).",
+      "category": "tense",
+      "difficulty": 4
+    },
+    {
+      "id": "g009",
+      "type": "grammar",
+      "sentence": "The architect ______ designed the building received an award.",
+      "choices": ["who", "whom", "whose", "which"],
+      "answer": 0,
+      "explanation": "'who'는 사람을 선행사로 하는 주격 관계대명사입니다. 관계절에서 주어 역할을 합니다.",
+      "category": "relative clause",
+      "difficulty": 2
+    },
+    {
+      "id": "g010",
+      "type": "grammar",
+      "sentence": "The client ______ we met yesterday approved the proposal.",
+      "choices": ["whom", "who", "whose", "which"],
+      "answer": 0,
+      "explanation": "'whom'은 사람을 선행사로 하는 목적격 관계대명사입니다. 'we met'에서 목적어 역할을 합니다.",
+      "category": "relative clause",
+      "difficulty": 3
+    },
+    {
+      "id": "g011",
+      "type": "grammar",
+      "sentence": "The company ______ headquarters are in Seoul expanded to Busan.",
+      "choices": ["whose", "which", "that", "whom"],
+      "answer": 0,
+      "explanation": "'whose'는 소유격 관계대명사로 '~의'라는 의미입니다. 'The company's headquarters'를 관계절로 연결합니다.",
+      "category": "relative clause",
+      "difficulty": 3
+    },
+    {
+      "id": "g012",
+      "type": "grammar",
+      "sentence": "______ the sales figures have improved, customer satisfaction remains low.",
+      "choices": ["Although", "Despite", "Because", "Therefore"],
+      "answer": 0,
+      "explanation": "'Although'는 양보의 접속사로 '~에도 불구하고'라는 의미이며, 뒤에 절(주어+동사)이 옵니다.",
+      "category": "conjunction",
+      "difficulty": 3
+    },
+    {
+      "id": "g013",
+      "type": "grammar",
+      "sentence": "The proposal will be approved ______ all committee members agree.",
+      "choices": ["provided that", "in case", "so that", "even if"],
+      "answer": 0,
+      "explanation": "'provided that'은 '~한다면, ~라는 조건하에'라는 의미의 조건 접속사입니다.",
+      "category": "conjunction",
+      "difficulty": 4
+    },
+    {
+      "id": "g014",
+      "type": "grammar",
+      "sentence": "The marketing team increased spending, ______ the finance team reduced costs.",
+      "choices": ["whereas", "therefore", "furthermore", "otherwise"],
+      "answer": 0,
+      "explanation": "'whereas'는 '반면에'라는 의미로 대조를 나타내는 접속사입니다.",
+      "category": "conjunction",
+      "difficulty": 3
+    },
+    {
+      "id": "g015",
+      "type": "grammar",
+      "sentence": "The new software significantly improved the company's ______.",
+      "choices": ["productivity", "productive", "productively", "produce"],
+      "answer": 0,
+      "explanation": "소유격(company's) 뒤에는 명사가 와야 합니다. 'productivity(생산성)'가 명사형입니다.",
+      "category": "word form",
+      "difficulty": 2
+    },
+    {
+      "id": "g016",
+      "type": "grammar",
+      "sentence": "The results were ______ impressive, exceeding all expectations.",
+      "choices": ["remarkably", "remarkable", "remark", "remarked"],
+      "answer": 0,
+      "explanation": "형용사(impressive)를 수식하는 것은 부사입니다. 'remarkably(놀랍게도)'가 부사형입니다.",
+      "category": "word form",
+      "difficulty": 3
+    },
+    {
+      "id": "g017",
+      "type": "grammar",
+      "sentence": "The ______ of the new product was delayed due to supply issues.",
+      "choices": ["launch", "launching", "launched", "launcher"],
+      "answer": 0,
+      "explanation": "관사 'The' 뒤에, 전치사 'of' 앞에는 명사가 필요합니다. 'launch'는 명사로 '출시'를 의미합니다.",
+      "category": "word form",
+      "difficulty": 3
+    },
+    {
+      "id": "g018",
+      "type": "grammar",
+      "sentence": "Neither the manager nor the employees ______ aware of the policy change.",
+      "choices": ["were", "was", "is", "has been"],
+      "answer": 0,
+      "explanation": "'Neither A nor B'에서 동사는 B(the employees, 복수)에 수를 일치시킵니다.",
+      "category": "subject-verb agreement",
+      "difficulty": 4
+    },
+    {
+      "id": "g019",
+      "type": "grammar",
+      "sentence": "Each of the candidates ______ required to submit a portfolio.",
+      "choices": ["is", "are", "were", "have been"],
+      "answer": 0,
+      "explanation": "'Each of + 복수명사'에서 주어는 'Each'(단수)이므로 단수 동사 'is'를 사용합니다.",
+      "category": "subject-verb agreement",
+      "difficulty": 3
+    },
+    {
+      "id": "g020",
+      "type": "grammar",
+      "sentence": "The number of applicants ______ increased dramatically this year.",
+      "choices": ["has", "have", "are", "is"],
+      "answer": 0,
+      "explanation": "'The number of'는 '~의 수'라는 의미로 단수 취급합니다. 반면 'A number of'는 '많은'이라는 의미로 복수 취급합니다.",
+      "category": "subject-verb agreement",
+      "difficulty": 4
+    },
+    {
+      "id": "g021",
+      "type": "grammar",
+      "sentence": "Ms. Kim is responsible ______ managing the overseas accounts.",
+      "choices": ["for", "to", "of", "with"],
+      "answer": 0,
+      "explanation": "'responsible for'는 '~에 대해 책임이 있는'이라는 의미의 고정 표현입니다.",
+      "category": "preposition",
+      "difficulty": 2
+    },
+    {
+      "id": "g022",
+      "type": "grammar",
+      "sentence": "The seminar was postponed ______ a scheduling conflict.",
+      "choices": ["due to", "although", "in order to", "so that"],
+      "answer": 0,
+      "explanation": "'due to'는 '~때문에'라는 의미의 전치사구로, 뒤에 명사(구)가 옵니다.",
+      "category": "conjunction",
+      "difficulty": 3
+    },
+    {
+      "id": "g023",
+      "type": "grammar",
+      "sentence": "The factory ______ last year has already reached full production capacity.",
+      "choices": ["built", "building", "was built", "which building"],
+      "answer": 0,
+      "explanation": "과거분사 'built'이 'The factory'를 수식하는 분사구문입니다. 공장이 '지어진' 것이므로 수동의 의미인 과거분사를 사용합니다.",
+      "category": "tense",
+      "difficulty": 4
+    },
+    {
+      "id": "g024",
+      "type": "grammar",
+      "sentence": "Employees are encouraged to submit suggestions ______ improving workplace safety.",
+      "choices": ["for", "to", "about", "on"],
+      "answer": 0,
+      "explanation": "'suggestions for ~ing'는 '~하기 위한 제안'이라는 의미의 자연스러운 표현입니다.",
+      "category": "preposition",
+      "difficulty": 3
+    },
+    {
+      "id": "g025",
+      "type": "grammar",
+      "sentence": "Had the shipment arrived on time, we ______ met the deadline.",
+      "choices": ["would have", "will have", "would", "had"],
+      "answer": 0,
+      "explanation": "'Had + S + p.p.'는 가정법 과거완료의 도치 구문입니다. 주절에는 'would have + p.p.'가 옵니다.",
+      "category": "tense",
+      "difficulty": 5
+    }
+  ]
+}

@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>TOEIC 900 학습</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --primary: #2563eb;
+  --primary-light: #dbeafe;
+  --correct: #16a34a;
+  --correct-bg: #dcfce7;
+  --wrong: #dc2626;
+  --wrong-bg: #fee2e2;
+  --bg: #f1f5f9;
+  --card: #ffffff;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --border: #e2e8f0;
+  --radius: 12px;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100dvh;
+  -webkit-tap-highlight-color: transparent;
+}
+.app { max-width: 768px; margin: 0 auto; padding: 16px; padding-bottom: 40px; }
+.screen { display: none; }
+.screen.active { display: block; }
+
+/* Header */
+.header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+.back-btn {
+  background: none; border: none; font-size: 24px; cursor: pointer;
+  color: var(--primary); padding: 8px; border-radius: 8px;
+}
+.back-btn:active { background: var(--primary-light); }
+.header h1 { font-size: 22px; font-weight: 700; }
+
+/* Home Cards */
+.home-title {
+  font-size: 28px; font-weight: 800; text-align: center;
+  margin: 24px 0 8px; color: var(--primary);
+}
+.home-subtitle { text-align: center; color: var(--text-light); margin-bottom: 24px; font-size: 15px; }
+.card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+.card {
+  background: var(--card); border-radius: var(--radius); padding: 24px 16px;
+  text-align: center; cursor: pointer; border: 2px solid var(--border);
+  transition: all 0.15s;
+}
+.card:active { transform: scale(0.97); border-color: var(--primary); }
+.card-icon { font-size: 36px; margin-bottom: 8px; }
+.card-label { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.card-count { font-size: 13px; color: var(--text-light); }
+.card-full { grid-column: 1 / -1; }
+.card.wrong-card { border-color: var(--wrong); }
+.card.wrong-card .card-icon { color: var(--wrong); }
+
+/* Today Stats */
+.today-stats {
+  background: var(--card); border-radius: var(--radius); padding: 16px;
+  display: flex; justify-content: space-around; text-align: center;
+  border: 2px solid var(--border);
+}
+.today-stat-value { font-size: 24px; font-weight: 800; color: var(--primary); }
+.today-stat-label { font-size: 12px; color: var(--text-light); margin-top: 4px; }
+
+/* Setup Screen */
+.setup-section { margin-bottom: 20px; }
+.setup-label { font-size: 15px; font-weight: 600; margin-bottom: 10px; color: var(--text-light); }
+.option-group { display: flex; gap: 8px; flex-wrap: wrap; }
+.option-btn {
+  padding: 10px 18px; border-radius: 20px; border: 2px solid var(--border);
+  background: var(--card); font-size: 15px; cursor: pointer; font-weight: 500;
+  transition: all 0.15s;
+}
+.option-btn.selected { background: var(--primary); color: white; border-color: var(--primary); }
+.option-btn:active { transform: scale(0.95); }
+.start-btn {
+  width: 100%; padding: 16px; background: var(--primary); color: white;
+  border: none; border-radius: var(--radius); font-size: 18px; font-weight: 700;
+  cursor: pointer; margin-top: 24px;
+}
+.start-btn:active { opacity: 0.8; }
+
+/* Quiz Screen */
+.progress-bar-container {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 24px;
+}
+.progress-text { font-size: 14px; font-weight: 600; color: var(--text-light); white-space: nowrap; }
+.progress-bar { flex: 1; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--primary); border-radius: 4px; transition: width 0.3s; }
+.quit-btn {
+  background: none; border: 1px solid var(--border); border-radius: 8px;
+  padding: 6px 12px; font-size: 13px; color: var(--text-light); cursor: pointer;
+}
+
+.question-card {
+  background: var(--card); border-radius: var(--radius); padding: 24px;
+  border: 2px solid var(--border); margin-bottom: 16px;
+}
+.question-label {
+  font-size: 12px; font-weight: 600; color: var(--primary);
+  text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;
+}
+.question-text { font-size: 19px; font-weight: 600; line-height: 1.6; }
+.question-text .blank { color: var(--primary); font-weight: 800; }
+
+/* Reading passage */
+.passage-box {
+  background: #f8fafc; border: 1px solid var(--border); border-radius: 8px;
+  padding: 16px; margin-bottom: 16px; max-height: 300px; overflow-y: auto;
+  -webkit-overflow-scrolling: touch; line-height: 1.7; font-size: 15px;
+  white-space: pre-wrap;
+}
+.passage-type-badge {
+  display: inline-block; background: var(--primary-light); color: var(--primary);
+  padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;
+  margin-bottom: 12px;
+}
+.sub-question-counter {
+  font-size: 13px; color: var(--text-light); margin-bottom: 8px;
+}
+
+.choices { display: flex; flex-direction: column; gap: 10px; }
+.choice-btn {
+  width: 100%; padding: 16px; background: var(--card); border: 2px solid var(--border);
+  border-radius: var(--radius); font-size: 16px; text-align: left; cursor: pointer;
+  transition: all 0.15s; display: flex; align-items: center; gap: 12px;
+  line-height: 1.4;
+}
+.choice-btn:active { border-color: var(--primary); }
+.choice-num {
+  width: 28px; height: 28px; border-radius: 50%; background: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 700; flex-shrink: 0;
+}
+.choice-btn.correct { border-color: var(--correct); background: var(--correct-bg); }
+.choice-btn.correct .choice-num { background: var(--correct); color: white; }
+.choice-btn.wrong { border-color: var(--wrong); background: var(--wrong-bg); }
+.choice-btn.wrong .choice-num { background: var(--wrong); color: white; }
+.choice-btn.disabled { pointer-events: none; opacity: 0.6; }
+.choice-btn.correct.disabled { opacity: 1; }
+
+.feedback {
+  margin-top: 16px; padding: 16px; border-radius: var(--radius);
+  font-size: 15px; line-height: 1.6; display: none;
+}
+.feedback.show { display: block; }
+.feedback.correct { background: var(--correct-bg); border-left: 4px solid var(--correct); }
+.feedback.wrong { background: var(--wrong-bg); border-left: 4px solid var(--wrong); }
+.feedback-title { font-weight: 700; margin-bottom: 6px; font-size: 16px; }
+.feedback-example { margin-top: 8px; font-style: italic; color: var(--text-light); }
+
+.next-btn {
+  width: 100%; padding: 16px; background: var(--primary); color: white;
+  border: none; border-radius: var(--radius); font-size: 17px; font-weight: 700;
+  cursor: pointer; margin-top: 16px; display: none;
+}
+.next-btn.show { display: block; }
+.next-btn:active { opacity: 0.8; }
+
+/* Result Screen */
+.result-score {
+  text-align: center; padding: 32px; background: var(--card);
+  border-radius: var(--radius); border: 2px solid var(--border); margin-bottom: 20px;
+}
+.result-percent { font-size: 56px; font-weight: 800; color: var(--primary); }
+.result-fraction { font-size: 18px; color: var(--text-light); margin-top: 4px; }
+.result-bar { height: 12px; background: var(--border); border-radius: 6px; margin-top: 16px; overflow: hidden; }
+.result-bar-fill { height: 100%; border-radius: 6px; transition: width 0.5s; }
+.result-bar-fill.good { background: var(--correct); }
+.result-bar-fill.ok { background: #f59e0b; }
+.result-bar-fill.bad { background: var(--wrong); }
+
+.wrong-list { margin-bottom: 20px; }
+.wrong-list-title { font-size: 16px; font-weight: 700; margin-bottom: 12px; }
+.wrong-item {
+  background: var(--card); border-radius: 8px; padding: 14px 16px;
+  border: 1px solid var(--border); margin-bottom: 8px;
+  font-size: 15px; line-height: 1.5;
+}
+.wrong-item-q { font-weight: 600; }
+.wrong-item-a { color: var(--correct); font-size: 14px; margin-top: 4px; }
+
+.result-actions { display: flex; gap: 10px; }
+.result-actions button {
+  flex: 1; padding: 14px; border-radius: var(--radius); font-size: 16px;
+  font-weight: 600; cursor: pointer; border: none;
+}
+.retry-btn { background: var(--wrong); color: white; }
+.home-btn { background: var(--primary); color: white; }
+.retry-btn:active, .home-btn:active { opacity: 0.8; }
+
+/* Wrong Answer Note Screen */
+.wrong-note-empty {
+  text-align: center; padding: 48px 24px; color: var(--text-light);
+}
+.wrong-note-empty-icon { font-size: 48px; margin-bottom: 16px; }
+.wrong-note-item {
+  background: var(--card); border-radius: var(--radius); padding: 16px;
+  border: 1px solid var(--border); margin-bottom: 10px;
+}
+.wrong-note-word { font-size: 17px; font-weight: 700; }
+.wrong-note-meaning { font-size: 15px; color: var(--text-light); margin-top: 4px; }
+.wrong-note-meta {
+  display: flex; gap: 16px; margin-top: 8px; font-size: 12px; color: var(--text-light);
+}
+.wrong-note-meta span { display: flex; align-items: center; gap: 4px; }
+.wrong-note-actions { margin-top: 16px; }
+.wrong-quiz-btn {
+  width: 100%; padding: 14px; background: var(--wrong); color: white;
+  border: none; border-radius: var(--radius); font-size: 16px; font-weight: 700;
+  cursor: pointer;
+}
+.wrong-quiz-btn:active { opacity: 0.8; }
+.wrong-filter-group { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+
+/* Stats Screen */
+.stat-card {
+  background: var(--card); border-radius: var(--radius); padding: 20px;
+  border: 2px solid var(--border); margin-bottom: 16px;
+}
+.stat-card-title { font-size: 14px; font-weight: 600; color: var(--text-light); margin-bottom: 12px; }
+.stat-big { font-size: 42px; font-weight: 800; color: var(--primary); }
+.stat-sub { font-size: 14px; color: var(--text-light); }
+.stat-bar-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.stat-bar-label { width: 50px; font-size: 14px; font-weight: 600; }
+.stat-bar-track { flex: 1; height: 24px; background: var(--bg); border-radius: 12px; overflow: hidden; }
+.stat-bar-value {
+  height: 100%; border-radius: 12px; display: flex; align-items: center;
+  padding-left: 8px; font-size: 12px; font-weight: 700; color: white;
+  transition: width 0.5s; min-width: fit-content;
+}
+.stat-bar-value.vocab { background: #3b82f6; }
+.stat-bar-value.grammar { background: #8b5cf6; }
+.stat-bar-value.reading { background: #06b6d4; }
+.weekly-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; text-align: center; }
+.weekly-day { font-size: 12px; color: var(--text-light); font-weight: 600; }
+.weekly-count {
+  font-size: 16px; font-weight: 700; padding: 8px 0;
+  background: var(--bg); border-radius: 8px;
+}
+.weekly-count.active { background: var(--primary-light); color: var(--primary); }
+.streak-display { display: flex; align-items: center; gap: 8px; margin-top: 12px; }
+.streak-num { font-size: 28px; font-weight: 800; color: #f59e0b; }
+.streak-label { font-size: 14px; color: var(--text-light); }
+
+.reset-section { margin-top: 24px; text-align: center; }
+.reset-btn {
+  padding: 10px 24px; background: none; border: 1px solid var(--wrong);
+  color: var(--wrong); border-radius: 8px; font-size: 14px; cursor: pointer;
+}
+
+/* TTS Sound Button */
+.sound-btn {
+  background: none; border: 2px solid var(--primary); border-radius: 50%;
+  width: 44px; height: 44px; font-size: 20px; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  margin-left: 10px; vertical-align: middle; color: var(--primary);
+  transition: all 0.15s; flex-shrink: 0;
+}
+.sound-btn:active { background: var(--primary); color: white; }
+.sound-btn.playing { background: var(--primary); color: white; }
+.question-word-row {
+  display: flex; align-items: center; gap: 8px;
+}
+
+/* Calendar */
+.calendar-card {
+  background: var(--card); border-radius: var(--radius); padding: 16px;
+  border: 2px solid var(--border); margin-bottom: 16px;
+}
+.calendar-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 12px;
+}
+.calendar-title { font-size: 16px; font-weight: 700; }
+.calendar-nav {
+  background: none; border: 1px solid var(--border); border-radius: 8px;
+  padding: 4px 10px; font-size: 14px; cursor: pointer; color: var(--text);
+}
+.calendar-nav:active { background: var(--bg); }
+.calendar-grid {
+  display: grid; grid-template-columns: repeat(7, 1fr);
+  gap: 4px; text-align: center;
+}
+.calendar-dow { font-size: 11px; color: var(--text-light); font-weight: 600; padding: 4px 0; }
+.calendar-day {
+  font-size: 13px; padding: 6px 0; border-radius: 8px; position: relative;
+}
+.calendar-day.empty { visibility: hidden; }
+.calendar-day.studied { background: var(--primary-light); color: var(--primary); font-weight: 700; }
+.calendar-day.today { border: 2px solid var(--primary); font-weight: 700; }
+.calendar-day .cal-dot {
+  display: block; width: 4px; height: 4px; border-radius: 50%;
+  background: var(--primary); margin: 2px auto 0;
+}
+.calendar-day.no-study .cal-dot { display: none; }
+
+/* Example in quiz */
+.quiz-example-box {
+  background: #f8fafc; border-left: 3px solid var(--primary);
+  padding: 12px 16px; margin-top: 12px; border-radius: 0 8px 8px 0;
+  font-size: 14px; line-height: 1.6;
+}
+.quiz-example-en { font-weight: 600; color: var(--text); }
+.quiz-example-ko { color: var(--text-light); margin-top: 4px; }
+
+/* Tip box */
+.quiz-tip-box {
+  background: #fef9c3; border-left: 3px solid #f59e0b;
+  padding: 12px 16px; margin-top: 12px; border-radius: 0 8px 8px 0;
+  font-size: 14px; line-height: 1.6; color: #92400e;
+}
+.quiz-tip-box .tip-icon { font-size: 16px; }
+.quiz-tip-box strong { color: #b45309; }
+
+/* Collocation box */
+.collocation-box {
+  background: #eff6ff; border-left: 3px solid #3b82f6;
+  padding: 12px 16px; margin-top: 12px; border-radius: 0 8px 8px 0;
+  font-size: 14px; line-height: 1.8;
+}
+.collocation-title {
+  font-weight: 700; color: #1d4ed8; margin-bottom: 6px; font-size: 13px;
+}
+.collocation-item { display: flex; gap: 8px; align-items: baseline; }
+.collocation-item .col-word {
+  font-weight: 700; color: var(--text); min-width: 120px;
+}
+.collocation-item .col-meaning { color: var(--text-light); }
+.collocation-item.current { background: #dbeafe; border-radius: 4px; padding: 2px 6px; margin: 0 -6px; }
+
+/* TOEIC Practice Question */
+.toeic-practice {
+  background: var(--card); border: 2px solid var(--primary); border-radius: var(--radius);
+  padding: 16px; margin-top: 16px;
+}
+.toeic-practice-title {
+  font-size: 13px; font-weight: 700; color: var(--primary);
+  text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;
+}
+.toeic-practice-sentence {
+  font-size: 15px; line-height: 1.7; margin-bottom: 12px; color: var(--text);
+}
+.toeic-practice-sentence .blank { color: var(--primary); font-weight: 800; }
+.toeic-practice .tp-choices { display: flex; flex-direction: column; gap: 6px; }
+.toeic-practice .tp-choice {
+  width: 100%; padding: 10px 14px; background: var(--bg); border: 2px solid var(--border);
+  border-radius: 8px; font-size: 14px; text-align: left; cursor: pointer;
+  display: flex; align-items: center; gap: 10px; transition: all 0.15s;
+}
+.toeic-practice .tp-choice:active { border-color: var(--primary); }
+.toeic-practice .tp-choice .tp-num {
+  width: 24px; height: 24px; border-radius: 50%; background: var(--card);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700; flex-shrink: 0; border: 1px solid var(--border);
+}
+.toeic-practice .tp-choice.tp-correct { border-color: var(--correct); background: var(--correct-bg); }
+.toeic-practice .tp-choice.tp-correct .tp-num { background: var(--correct); color: white; border-color: var(--correct); }
+.toeic-practice .tp-choice.tp-wrong { border-color: var(--wrong); background: var(--wrong-bg); }
+.toeic-practice .tp-choice.tp-wrong .tp-num { background: var(--wrong); color: white; border-color: var(--wrong); }
+.toeic-practice .tp-choice.tp-disabled { pointer-events: none; opacity: 0.6; }
+.toeic-practice .tp-choice.tp-correct.tp-disabled { opacity: 1; }
+.toeic-practice .tp-explanation {
+  margin-top: 10px; padding: 10px; background: #f0f9ff; border-radius: 8px;
+  font-size: 13px; color: var(--text); line-height: 1.5; display: none;
+}
+.toeic-practice .tp-explanation.show { display: block; }
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- Home Screen -->
+  <div class="screen active" id="screen-home">
+    <div class="home-title">TOEIC 900</div>
+    <div class="home-subtitle">목표 달성을 위한 매일 학습</div>
+    <div class="card-grid">
+      <div class="card" onclick="showSetup('vocabulary')">
+        <div class="card-icon">📖</div>
+        <div class="card-label">어휘</div>
+        <div class="card-count" id="vocab-count">-</div>
+      </div>
+      <div class="card" onclick="showSetup('grammar')">
+        <div class="card-icon">📝</div>
+        <div class="card-label">Part 5</div>
+        <div class="card-count" id="grammar-count">단문 빈칸 채우기</div>
+      </div>
+      <div class="card" onclick="showSetup('part6')">
+        <div class="card-icon">📋</div>
+        <div class="card-label">Part 6</div>
+        <div class="card-count" id="part6-count">장문 빈칸 채우기</div>
+      </div>
+      <div class="card" onclick="showSetup('reading')">
+        <div class="card-icon">📄</div>
+        <div class="card-label">Part 7</div>
+        <div class="card-count" id="reading-count">독해</div>
+      </div>
+      <div class="card wrong-card" onclick="showWrongNotes()">
+        <div class="card-icon">&#10060;</div>
+        <div class="card-label">오답 노트</div>
+        <div class="card-count" id="wrong-count">0문제</div>
+      </div>
+      <div class="card card-full" onclick="showStats()">
+        <div class="card-icon">📊</div>
+        <div class="card-label">학습 통계</div>
+        <div class="card-count">나의 성적 확인하기</div>
+      </div>
+    </div>
+    <div class="today-stats">
+      <div>
+        <div class="today-stat-value" id="today-count">0</div>
+        <div class="today-stat-label">오늘 푼 문제</div>
+      </div>
+      <div>
+        <div class="today-stat-value" id="today-rate">-</div>
+        <div class="today-stat-label">오늘 정답률</div>
+      </div>
+      <div>
+        <div class="today-stat-value" id="streak-count">0</div>
+        <div class="today-stat-label">연속 학습일</div>
+      </div>
+    </div>
+    <!-- Attendance Calendar -->
+    <div class="calendar-card" style="margin-top:16px;">
+      <div class="calendar-header">
+        <button class="calendar-nav" onclick="changeCalendarMonth(-1)">&larr;</button>
+        <div class="calendar-title" id="calendar-month-title">2026년 6월</div>
+        <button class="calendar-nav" onclick="changeCalendarMonth(1)">&rarr;</button>
+      </div>
+      <div class="calendar-grid" id="calendar-grid"></div>
+    </div>
+  </div>
+
+  <!-- Setup Screen -->
+  <div class="screen" id="screen-setup">
+    <div class="header">
+      <button class="back-btn" onclick="goHome()">&larr;</button>
+      <h1 id="setup-title">퀴즈 설정</h1>
+    </div>
+    <div id="setup-content"></div>
+    <button class="start-btn" onclick="startQuiz()">퀴즈 시작</button>
+  </div>
+
+  <!-- Quiz Screen -->
+  <div class="screen" id="screen-quiz">
+    <div class="progress-bar-container">
+      <span class="progress-text" id="quiz-progress">1 / 10</span>
+      <div class="progress-bar"><div class="progress-fill" id="quiz-progress-bar"></div></div>
+      <button class="quit-btn" onclick="confirmQuit()">그만하기</button>
+    </div>
+    <div id="quiz-content"></div>
+    <div class="feedback" id="quiz-feedback">
+      <div class="feedback-title" id="feedback-title"></div>
+      <div id="feedback-text"></div>
+      <div class="feedback-example" id="feedback-example"></div>
+    </div>
+    <button class="next-btn" id="next-btn" onclick="nextQuestion()">다음 문제 &rarr;</button>
+  </div>
+
+  <!-- Result Screen -->
+  <div class="screen" id="screen-result">
+    <div class="header">
+      <h1>퀴즈 결과</h1>
+    </div>
+    <div id="result-content"></div>
+  </div>
+
+  <!-- Wrong Notes Screen -->
+  <div class="screen" id="screen-wrong">
+    <div class="header">
+      <button class="back-btn" onclick="goHome()">&larr;</button>
+      <h1>오답 노트</h1>
+    </div>
+    <div id="wrong-content"></div>
+  </div>
+
+  <!-- Stats Screen -->
+  <div class="screen" id="screen-stats">
+    <div class="header">
+      <button class="back-btn" onclick="goHome()">&larr;</button>
+      <h1>학습 통계</h1>
+    </div>
+    <div id="stats-content"></div>
+  </div>
+</div>
+
+<script>
+// ==================== APP STATE ====================
+let questionBank = { vocabulary: [], grammar: [], reading: [], part6: [] };
+let allQuestionsMap = {};
+let userData = {
+  wrongAnswers: {},
+  stats: {
+    totalAnswered: 0,
+    totalCorrect: 0,
+    byType: {
+      vocabulary: { answered: 0, correct: 0 },
+      grammar: { answered: 0, correct: 0 },
+      reading: { answered: 0, correct: 0 }
+    },
+    history: []
+  },
+  settings: { correctStreakToRemove: 3 }
+};
+
+let quizState = {
+  type: '',
+  questions: [],
+  currentIndex: 0,
+  score: 0,
+  wrongThisQuiz: [],
+  answered: false,
+  options: {},
+  // For reading: track sub-question index
+  currentSubIndex: 0,
+  isReading: false
+};
+
+let setupState = { type: '', count: 10, direction: 'en2ko', difficulty: 'all' };
+let calendarMonth = new Date().getMonth();
+let calendarYear = new Date().getFullYear();
+
+// ==================== INIT ====================
+async function initApp() {
+  loadUserData();
+  await loadQuestionBank();
+  updateHomeCounts();
+  updateTodayStats();
+  renderCalendar();
+}
+
+async function loadQuestionBank() {
+  try {
+    const [vocabRes, grammarRes, readingRes, part6Res] = await Promise.all([
+      fetch('data/vocabulary.json'),
+      fetch('data/grammar.json'),
+      fetch('data/reading.json'),
+      fetch('data/part6.json')
+    ]);
+    const vocabData = await vocabRes.json();
+    const grammarData = await grammarRes.json();
+    const readingData = await readingRes.json();
+    const part6Data = await part6Res.json();
+
+    questionBank.vocabulary = vocabData.questions;
+    questionBank.grammar = grammarData.questions;
+    questionBank.reading = readingData.questions;
+    questionBank.part6 = part6Data.questions;
+
+    // Build lookup map
+    questionBank.vocabulary.forEach(q => allQuestionsMap[q.id] = q);
+    questionBank.grammar.forEach(q => allQuestionsMap[q.id] = q);
+    questionBank.reading.forEach(q => {
+      allQuestionsMap[q.id] = q;
+      q.subQuestions.forEach(sq => allQuestionsMap[sq.id] = { ...sq, parentId: q.id, type: 'reading' });
+    });
+    questionBank.part6.forEach(q => {
+      allQuestionsMap[q.id] = q;
+      q.blanks.forEach(b => allQuestionsMap[b.id] = { ...b, parentId: q.id, type: 'part6' });
+    });
+  } catch (e) {
+    console.error('Failed to load question bank:', e);
+  }
+}
+
+function loadUserData() {
+  const saved = localStorage.getItem('toeicStudyData');
+  if (saved) {
+    try {
+      const parsed = JSON.parse(saved);
+      userData = { ...userData, ...parsed };
+      if (!userData.stats.byType.reading) userData.stats.byType.reading = { answered: 0, correct: 0 };
+      if (!userData.stats.byType.part6) userData.stats.byType.part6 = { answered: 0, correct: 0 };
+    } catch (e) { console.error('Failed to load user data:', e); }
+  }
+}
+
+function saveUserData() {
+  localStorage.setItem('toeicStudyData', JSON.stringify(userData));
+}
+
+// ==================== NAVIGATION ====================
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('screen-' + id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+function goHome() {
+  updateHomeCounts();
+  updateTodayStats();
+  renderCalendar();
+  showScreen('home');
+}
+
+function confirmQuit() {
+  if (confirm('퀴즈를 종료하시겠습니까? 진행 상황이 저장됩니다.')) {
+    endQuiz();
+  }
+}
+
+// ==================== HOME ====================
+function updateHomeCounts() {
+  document.getElementById('vocab-count').textContent = questionBank.vocabulary.length + '단어';
+  document.getElementById('grammar-count').textContent = questionBank.grammar.length + '문제';
+  const part6Total = questionBank.part6.reduce((sum, p) => sum + p.blanks.length, 0);
+  document.getElementById('part6-count').textContent = questionBank.part6.length + '지문 / ' + part6Total + '문제';
+  const readingTotal = questionBank.reading.reduce((sum, r) => sum + r.subQuestions.length, 0);
+  document.getElementById('reading-count').textContent = questionBank.reading.length + '지문 / ' + readingTotal + '문제';
+  const wrongCount = Object.keys(userData.wrongAnswers).length;
+  document.getElementById('wrong-count').textContent = wrongCount + '문제';
+}
+
+function updateTodayStats() {
+  const today = formatDate(new Date());
+  const todayEntry = userData.stats.history.find(h => h.date === today);
+  if (todayEntry) {
+    document.getElementById('today-count').textContent = todayEntry.answered;
+    const rate = todayEntry.answered > 0 ? Math.round(todayEntry.correct / todayEntry.answered * 100) : 0;
+    document.getElementById('today-rate').textContent = rate + '%';
+  } else {
+    document.getElementById('today-count').textContent = '0';
+    document.getElementById('today-rate').textContent = '-';
+  }
+  document.getElementById('streak-count').textContent = calculateStreak();
+}
+
+// ==================== SETUP ====================
+function showSetup(type) {
+  setupState.type = type;
+  setupState.count = 10;
+  setupState.direction = 'en2ko';
+  setupState.difficulty = 'all';
+
+  const titles = { vocabulary: '어휘 퀴즈 설정', grammar: 'Part 5 단문 빈칸 채우기', part6: 'Part 6 장문 빈칸 채우기', reading: 'Part 7 독해' };
+  document.getElementById('setup-title').textContent = titles[type];
+
+  let html = '';
+
+  if (type === 'vocabulary') {
+    html += `
+      <div class="setup-section">
+        <div class="setup-label" style="font-size:14px; color:var(--text-light);">그만하기 버튼을 누를 때까지 계속 출제됩니다</div>
+      </div>
+      <div class="setup-section">
+        <div class="setup-label">출제 방향</div>
+        <div class="option-group">
+          <button class="option-btn selected" onclick="setOption(this,'direction','en2ko')">영 &rarr; 한</button>
+          <button class="option-btn" onclick="setOption(this,'direction','ko2en')">한 &rarr; 영</button>
+          <button class="option-btn" onclick="setOption(this,'direction','mixed')">혼합</button>
+        </div>
+      </div>
+    `;
+    setupState.count = -1; // continuous mode
+  } else if (type === 'grammar') {
+    const total = questionBank.grammar.length;
+    html += `
+      <div class="setup-section">
+        <div class="setup-label">문제 수</div>
+        <div class="option-group">
+          <button class="option-btn selected" onclick="setOption(this,'count',10)">10문제</button>
+          <button class="option-btn" onclick="setOption(this,'count',${Math.min(20, total)})">20문제</button>
+          <button class="option-btn" onclick="setOption(this,'count',${total})">전체 (${total})</button>
+        </div>
+      </div>
+    `;
+  } else if (type === 'part6') {
+    const total = questionBank.part6.length;
+    html += `
+      <div class="setup-section">
+        <div class="setup-label">지문 수</div>
+        <div class="option-group">
+          <button class="option-btn selected" onclick="setOption(this,'count',1)">1지문</button>
+          <button class="option-btn" onclick="setOption(this,'count',3)">3지문</button>
+          <button class="option-btn" onclick="setOption(this,'count',${total})">전체 (${total})</button>
+        </div>
+      </div>
+    `;
+    setupState.count = 1;
+  } else if (type === 'reading') {
+    const total = questionBank.reading.length;
+    html += `
+      <div class="setup-section">
+        <div class="setup-label">지문 수</div>
+        <div class="option-group">
+          <button class="option-btn selected" onclick="setOption(this,'count',1)">1지문</button>
+          <button class="option-btn" onclick="setOption(this,'count',3)">3지문</button>
+          <button class="option-btn" onclick="setOption(this,'count',${total})">전체 (${total})</button>
+        </div>
+      </div>
+    `;
+    setupState.count = 1;
+  }
+
+  // Difficulty (common)
+  html += `
+    <div class="setup-section">
+      <div class="setup-label">난이도</div>
+      <div class="option-group">
+        <button class="option-btn selected" onclick="setOption(this,'difficulty','all')">전체</button>
+        <button class="option-btn" onclick="setOption(this,'difficulty','easy')">기초 (1-2)</button>
+        <button class="option-btn" onclick="setOption(this,'difficulty','medium')">중급 (3)</button>
+        <button class="option-btn" onclick="setOption(this,'difficulty','hard')">고급 (4-5)</button>
+      </div>
+    </div>
+  `;
+
+  document.getElementById('setup-content').innerHTML = html;
+  showScreen('setup');
+}
+
+function setOption(btn, key, value) {
+  setupState[key] = value;
+  const group = btn.parentElement;
+  group.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+}
+
+// ==================== QUIZ ENGINE ====================
+function startQuiz() {
+  const { type, count, direction, difficulty } = setupState;
+  let pool = [];
+
+  if (type === 'part6') {
+    pool = [...questionBank.part6];
+    if (difficulty !== 'all') pool = filterByDifficulty(pool, difficulty);
+    pool = shuffleArray(pool);
+    pool = pool.slice(0, Math.min(count, pool.length));
+
+    quizState.type = 'part6';
+    quizState.questions = pool;
+    quizState.currentIndex = 0;
+    quizState.currentSubIndex = 0;
+    quizState.score = 0;
+    quizState.wrongThisQuiz = [];
+    quizState.answered = false;
+    quizState.isReading = false;
+    quizState.isPart6 = true;
+    quizState.totalSubQuestions = pool.reduce((s, p) => s + p.blanks.length, 0);
+    quizState.answeredCount = 0;
+
+    showScreen('quiz');
+    renderPart6Question();
+    return;
+  }
+
+  if (type === 'reading') {
+    pool = [...questionBank.reading];
+    if (difficulty !== 'all') pool = filterByDifficulty(pool, difficulty);
+    pool = shuffleArray(pool);
+    pool = pool.slice(0, Math.min(count, pool.length));
+
+    quizState.type = type;
+    quizState.questions = pool;
+    quizState.currentIndex = 0;
+    quizState.currentSubIndex = 0;
+    quizState.score = 0;
+    quizState.wrongThisQuiz = [];
+    quizState.answered = false;
+    quizState.isReading = true;
+    quizState.isPart6 = false;
+    quizState.totalSubQuestions = pool.reduce((s, p) => s + p.subQuestions.length, 0);
+    quizState.answeredCount = 0;
+
+    showScreen('quiz');
+    renderReadingQuestion();
+    return;
+  }
+
+  if (type === 'vocabulary') {
+    pool = questionBank.vocabulary.map(q => buildVocabQuestion(q, direction));
+  } else {
+    pool = questionBank.grammar.map(q => ({ ...q }));
+  }
+
+  if (difficulty !== 'all') pool = filterByDifficulty(pool, difficulty);
+  pool = shuffleArray(pool);
+
+  const isContinuous = (type === 'vocabulary' && count === -1);
+  if (!isContinuous) {
+    pool = pool.slice(0, Math.min(count, pool.length));
+  }
+
+  quizState.type = type;
+  quizState.questions = pool;
+  quizState.currentIndex = 0;
+  quizState.score = 0;
+  quizState.wrongThisQuiz = [];
+  quizState.answered = false;
+  quizState.isReading = false;
+  quizState.isPart6 = false;
+  quizState.continuous = isContinuous;
+  quizState.totalAnswered = 0;
+
+  showScreen('quiz');
+  renderQuestion();
+}
+
+function startWrongQuiz(filterType) {
+  const wrongIds = Object.keys(userData.wrongAnswers);
+  if (wrongIds.length === 0) return;
+
+  let questions = [];
+  wrongIds.forEach(id => {
+    const q = allQuestionsMap[id];
+    if (!q) return;
+    if (filterType && q.type !== filterType) return;
+
+    if (q.type === 'vocabulary') {
+      questions.push(buildVocabQuestion(q, 'mixed'));
+    } else if (q.type === 'grammar') {
+      questions.push({ ...q });
+    } else if (q.type === 'reading' && q.parentId) {
+      // Sub-question from reading
+      const parent = allQuestionsMap[q.parentId];
+      if (parent) {
+        // Check if parent already added
+        if (!questions.find(qq => qq.id === parent.id && qq.type === 'reading-sub')) {
+          questions.push({
+            id: q.id,
+            type: 'grammar', // Treat as standalone multiple choice
+            sentence: q.question,
+            choices: q.choices,
+            answer: q.answer,
+            explanation: q.explanation,
+            difficulty: 3,
+            originalType: 'reading'
+          });
+        }
+      }
+    }
+  });
+
+  if (questions.length === 0) return;
+  questions = shuffleArray(questions);
+
+  quizState.type = 'wrong-review';
+  quizState.questions = questions;
+  quizState.currentIndex = 0;
+  quizState.score = 0;
+  quizState.wrongThisQuiz = [];
+  quizState.answered = false;
+  quizState.isReading = false;
+
+  showScreen('quiz');
+  renderQuestion();
+}
+
+function buildVocabQuestion(item, direction) {
+  let dir = direction;
+  if (dir === 'mixed') dir = Math.random() < 0.5 ? 'en2ko' : 'ko2en';
+
+  if (dir === 'en2ko') {
+    const choices = shuffleArray([item.korean, ...item.distractors_ko]);
+    return {
+      id: item.id,
+      type: 'vocabulary',
+      questionText: item.english,
+      questionLabel: '다음 영어 단어의 뜻은?',
+      choices: choices,
+      answer: choices.indexOf(item.korean),
+      explanation: `${item.english} = ${item.korean} (${item.partOfSpeech})`,
+      example: item.example,
+      exampleKorean: item.exampleKorean,
+      difficulty: item.difficulty,
+      tip: item.tip
+    };
+  } else {
+    const choices = shuffleArray([item.english, ...item.distractors_en]);
+    return {
+      id: item.id,
+      type: 'vocabulary',
+      questionText: item.korean,
+      questionLabel: '다음 한국어에 해당하는 영어 단어는?',
+      choices: choices,
+      answer: choices.indexOf(item.english),
+      explanation: `${item.korean} = ${item.english} (${item.partOfSpeech})`,
+      example: item.example,
+      exampleKorean: item.exampleKorean,
+      difficulty: item.difficulty,
+      tip: item.tip
+    };
+  }
+}
+
+function filterByDifficulty(pool, level) {
+  if (level === 'easy') return pool.filter(q => q.difficulty <= 2);
+  if (level === 'medium') return pool.filter(q => q.difficulty === 3);
+  if (level === 'hard') return pool.filter(q => q.difficulty >= 4);
+  return pool;
+}
+
+function renderQuestion() {
+  const total = quizState.questions.length;
+  const idx = quizState.currentIndex;
+  const q = quizState.questions[idx];
+  quizState.answered = false;
+
+  if (quizState.continuous) {
+    document.getElementById('quiz-progress').textContent = `${quizState.totalAnswered + 1}문제째`;
+    document.getElementById('quiz-progress-bar').style.width = '100%';
+  } else {
+    document.getElementById('quiz-progress').textContent = `${idx + 1} / ${total}`;
+    document.getElementById('quiz-progress-bar').style.width = `${((idx + 1) / total) * 100}%`;
+  }
+
+  let html = '<div class="question-card">';
+  if (q.type === 'vocabulary') {
+    html += `<div class="question-label">${q.questionLabel}</div>`;
+    html += `<div class="question-word-row">
+      <div class="question-text">${q.questionText}</div>
+      <button class="sound-btn" onclick="speakWord('${q.questionText.replace(/'/g, "\\'")}', this)" title="발음 듣기">&#128264;</button>
+    </div>`;
+  } else {
+    html += `<div class="question-label">빈칸에 알맞은 것을 고르세요</div>`;
+    const sentence = q.sentence.replace('______', '<span class="blank">______</span>');
+    html += `<div class="question-text">${sentence}</div>`;
+  }
+  html += '</div>';
+
+  html += '<div class="choices">';
+  const nums = ['①', '②', '③', '④'];
+  q.choices.forEach((choice, i) => {
+    html += `<button class="choice-btn" onclick="selectAnswer(${i})">
+      <span class="choice-num">${nums[i]}</span>
+      <span>${choice}</span>
+    </button>`;
+  });
+  html += '</div>';
+
+  document.getElementById('quiz-content').innerHTML = html;
+  document.getElementById('quiz-feedback').className = 'feedback';
+  document.getElementById('quiz-feedback').classList.remove('show');
+  document.getElementById('next-btn').classList.remove('show');
+}
+
+// ==================== PART 6 ENGINE ====================
+function renderPart6Question() {
+  const passage = quizState.questions[quizState.currentIndex];
+  const blank = passage.blanks[quizState.currentSubIndex];
+  quizState.answered = false;
+
+  const totalBlanks = quizState.totalSubQuestions;
+  const currentNum = quizState.answeredCount + 1;
+
+  document.getElementById('quiz-progress').textContent = `${currentNum} / ${totalBlanks}`;
+  document.getElementById('quiz-progress-bar').style.width = `${(currentNum / totalBlanks) * 100}%`;
+
+  const passageTypes = { email: '이메일', memo: '사내 메모', notice: '공지', article: '기사', letter: '서한' };
+
+  // Highlight current blank in passage
+  let displayPassage = passage.passage;
+  passage.blanks.forEach((b, i) => {
+    const marker = `______(${b.number})`;
+    if (i === quizState.currentSubIndex) {
+      displayPassage = displayPassage.replace(marker, `<span class="blank" style="font-size:16px;padding:2px 6px;border-radius:4px;background:var(--primary-light);">(${b.number}) ______</span>`);
+    } else {
+      displayPassage = displayPassage.replace(marker, `<span style="color:var(--text-light);">(${b.number}) ______</span>`);
+    }
+  });
+
+  let html = '';
+  html += `<span class="passage-type-badge">Part 6 - ${passageTypes[passage.passageType] || passage.passageType}</span>`;
+  html += `<div class="passage-box">${displayPassage}</div>`;
+  html += `<div class="sub-question-counter">문제 ${quizState.currentSubIndex + 1} / ${passage.blanks.length} &nbsp; (${blank.category})</div>`;
+  html += `<div class="question-card">`;
+  html += `<div class="question-label">빈칸 (${blank.number})에 알맞은 것을 고르세요</div>`;
+  html += `</div>`;
+
+  html += '<div class="choices">';
+  const nums = ['(A)', '(B)', '(C)', '(D)'];
+  blank.choices.forEach((choice, i) => {
+    const isLong = choice.length > 50;
+    html += `<button class="choice-btn" onclick="selectPart6Answer(${i})" style="${isLong ? 'font-size:14px;' : ''}">
+      <span class="choice-num" style="font-size:12px;">${nums[i]}</span>
+      <span>${choice}</span>
+    </button>`;
+  });
+  html += '</div>';
+
+  document.getElementById('quiz-content').innerHTML = html;
+  document.getElementById('quiz-feedback').className = 'feedback';
+  document.getElementById('quiz-feedback').classList.remove('show');
+  document.getElementById('next-btn').classList.remove('show');
+}
+
+function selectPart6Answer(choiceIndex) {
+  if (quizState.answered) return;
+  quizState.answered = true;
+
+  const passage = quizState.questions[quizState.currentIndex];
+  const blank = passage.blanks[quizState.currentSubIndex];
+  const isCorrect = choiceIndex === blank.answer;
+
+  const btns = document.querySelectorAll('.choice-btn');
+  btns.forEach((btn, i) => {
+    btn.classList.add('disabled');
+    if (i === blank.answer) btn.classList.add('correct');
+    if (i === choiceIndex && !isCorrect) btn.classList.add('wrong');
+  });
+
+  const fb = document.getElementById('quiz-feedback');
+  fb.className = 'feedback show ' + (isCorrect ? 'correct' : 'wrong');
+  document.getElementById('feedback-title').textContent = isCorrect ? '정답입니다!' : '오답입니다';
+  document.getElementById('feedback-text').textContent = blank.explanation;
+
+  let extraHtml = '';
+  if (!isCorrect && blank.tip) {
+    extraHtml += `<div class="quiz-tip-box"><span class="tip-icon">💡</span> <strong>암기 TIP</strong>: ${blank.tip}</div>`;
+  }
+  if (extraHtml) {
+    document.getElementById('feedback-example').innerHTML = extraHtml;
+    document.getElementById('feedback-example').style.display = 'block';
+  } else {
+    document.getElementById('feedback-example').style.display = 'none';
+  }
+
+  if (isCorrect) {
+    quizState.score++;
+    handleCorrectAnswer(blank.id);
+  } else {
+    quizState.wrongThisQuiz.push({ ...blank, passageType: passage.passageType, question: `(${blank.number}) ${blank.choices[blank.answer]}` });
+    addWrongAnswer(blank.id);
+  }
+
+  updateStats('part6', isCorrect);
+  quizState.answeredCount++;
+
+  const hasMoreBlanks = quizState.currentSubIndex < passage.blanks.length - 1;
+  const hasMorePassage = quizState.currentIndex < quizState.questions.length - 1;
+
+  if (hasMoreBlanks || hasMorePassage) {
+    document.getElementById('next-btn').textContent = hasMoreBlanks ? '다음 문제 →' : '다음 지문 →';
+  } else {
+    document.getElementById('next-btn').textContent = '결과 보기';
+  }
+  document.getElementById('next-btn').classList.add('show');
+}
+
+function renderReadingQuestion() {
+  const passage = quizState.questions[quizState.currentIndex];
+  const subQ = passage.subQuestions[quizState.currentSubIndex];
+  quizState.answered = false;
+
+  const totalSub = quizState.totalSubQuestions;
+  const currentNum = quizState.answeredCount + 1;
+
+  document.getElementById('quiz-progress').textContent = `${currentNum} / ${totalSub}`;
+  document.getElementById('quiz-progress-bar').style.width = `${(currentNum / totalSub) * 100}%`;
+
+  const passageTypes = { email: '이메일', memo: '사내 메모', advertisement: '광고', article: '기사', notice: '공지' };
+
+  let html = '';
+  html += `<span class="passage-type-badge">${passageTypes[passage.passageType] || passage.passageType}</span>`;
+  html += `<div class="passage-box">${passage.passage}</div>`;
+  html += `<div class="sub-question-counter">질문 ${quizState.currentSubIndex + 1} / ${passage.subQuestions.length}</div>`;
+  html += `<div class="question-card">`;
+  html += `<div class="question-text">${subQ.question}</div>`;
+  html += `</div>`;
+
+  html += '<div class="choices">';
+  const nums = ['①', '②', '③', '④'];
+  subQ.choices.forEach((choice, i) => {
+    html += `<button class="choice-btn" onclick="selectReadingAnswer(${i})">
+      <span class="choice-num">${nums[i]}</span>
+      <span>${choice}</span>
+    </button>`;
+  });
+  html += '</div>';
+
+  document.getElementById('quiz-content').innerHTML = html;
+  document.getElementById('quiz-feedback').className = 'feedback';
+  document.getElementById('quiz-feedback').classList.remove('show');
+  document.getElementById('next-btn').classList.remove('show');
+}
+
+function selectAnswer(choiceIndex) {
+  if (quizState.answered) return;
+  quizState.answered = true;
+
+  const q = quizState.questions[quizState.currentIndex];
+  const isCorrect = choiceIndex === q.answer;
+
+  // Update UI
+  const btns = document.querySelectorAll('.choice-btn');
+  btns.forEach((btn, i) => {
+    btn.classList.add('disabled');
+    if (i === q.answer) btn.classList.add('correct');
+    if (i === choiceIndex && !isCorrect) btn.classList.add('wrong');
+  });
+
+  // Feedback
+  const fb = document.getElementById('quiz-feedback');
+  fb.className = 'feedback show ' + (isCorrect ? 'correct' : 'wrong');
+  document.getElementById('feedback-title').textContent = isCorrect ? '정답입니다!' : '오답입니다';
+  document.getElementById('feedback-text').textContent = q.explanation;
+
+  // Tip + Example + Collocations
+  let extraHtml = '';
+  if (!isCorrect) {
+    const originalWord = allQuestionsMap[q.id];
+    const tip = (originalWord && originalWord.tip) || q.tip;
+    if (tip) {
+      extraHtml += `<div class="quiz-tip-box"><span class="tip-icon">💡</span> <strong>암기 TIP</strong>: ${tip}</div>`;
+    }
+  }
+  if (q.example) {
+    extraHtml += `
+      <div class="quiz-example-box">
+        <div class="quiz-example-en">${q.example}
+          <button class="sound-btn" onclick="speakWord('${q.example.replace(/'/g, "\\'")}', this)" style="width:32px;height:32px;font-size:15px;margin-left:6px;">&#128264;</button>
+        </div>
+        <div class="quiz-example-ko">${q.exampleKorean || ''}</div>
+      </div>`;
+  }
+  // Collocations - always show for vocabulary
+  if (q.type === 'vocabulary') {
+    extraHtml += buildCollocationHtml(q.id);
+    extraHtml += buildToeicPracticeHtml(q.id);
+  }
+  if (extraHtml) {
+    document.getElementById('feedback-example').innerHTML = extraHtml;
+    document.getElementById('feedback-example').style.display = 'block';
+  } else {
+    document.getElementById('feedback-example').style.display = 'none';
+  }
+
+  // Auto-play pronunciation for vocabulary
+  if (q.type === 'vocabulary') {
+    const originalWord = allQuestionsMap[q.id];
+    if (originalWord) speakWord(originalWord.english);
+  }
+
+  // Score & wrong tracking
+  if (isCorrect) {
+    quizState.score++;
+    handleCorrectAnswer(q.id);
+  } else {
+    if (!q._isRetry) quizState.wrongThisQuiz.push(q);
+    addWrongAnswer(q.id);
+    // Re-insert wrong question 5 questions later for immediate retry
+    const originalItem = allQuestionsMap[q.id];
+    if (originalItem && (originalItem.type === 'vocabulary' || originalItem.type === 'grammar')) {
+      let retryQ;
+      if (originalItem.type === 'vocabulary') {
+        retryQ = buildVocabQuestion(originalItem, setupState.direction || 'mixed');
+      } else {
+        retryQ = { ...originalItem };
+      }
+      retryQ._isRetry = true;
+      const insertAt = Math.min(quizState.currentIndex + 6, quizState.questions.length);
+      quizState.questions.splice(insertAt, 0, retryQ);
+    }
+  }
+
+  // Stats (don't double-count retries)
+  if (!q._isRetry) {
+    updateStats(quizState.type === 'wrong-review' ? (q.originalType || q.type) : q.type, isCorrect);
+  }
+
+  if (!q._isRetry) quizState.totalAnswered++;
+
+  if (quizState.continuous) {
+    document.getElementById('next-btn').textContent = '다음 문제 →';
+  } else {
+    const isLast = quizState.currentIndex >= quizState.questions.length - 1;
+    document.getElementById('next-btn').textContent = isLast ? '결과 보기' : '다음 문제 →';
+  }
+  document.getElementById('next-btn').classList.add('show');
+}
+
+function selectReadingAnswer(choiceIndex) {
+  if (quizState.answered) return;
+  quizState.answered = true;
+
+  const passage = quizState.questions[quizState.currentIndex];
+  const subQ = passage.subQuestions[quizState.currentSubIndex];
+  const isCorrect = choiceIndex === subQ.answer;
+
+  const btns = document.querySelectorAll('.choice-btn');
+  btns.forEach((btn, i) => {
+    btn.classList.add('disabled');
+    if (i === subQ.answer) btn.classList.add('correct');
+    if (i === choiceIndex && !isCorrect) btn.classList.add('wrong');
+  });
+
+  const fb = document.getElementById('quiz-feedback');
+  fb.className = 'feedback show ' + (isCorrect ? 'correct' : 'wrong');
+  document.getElementById('feedback-title').textContent = isCorrect ? '정답입니다!' : '오답입니다';
+  document.getElementById('feedback-text').textContent = subQ.explanation;
+  document.getElementById('feedback-example').style.display = 'none';
+
+  if (isCorrect) {
+    quizState.score++;
+    handleCorrectAnswer(subQ.id);
+  } else {
+    quizState.wrongThisQuiz.push({ ...subQ, passageType: passage.passageType });
+    addWrongAnswer(subQ.id);
+  }
+
+  updateStats('reading', isCorrect);
+  quizState.answeredCount++;
+
+  const hasMoreSub = quizState.currentSubIndex < passage.subQuestions.length - 1;
+  const hasMorePassage = quizState.currentIndex < quizState.questions.length - 1;
+
+  if (hasMoreSub || hasMorePassage) {
+    document.getElementById('next-btn').textContent = hasMoreSub ? '다음 질문 →' : '다음 지문 →';
+  } else {
+    document.getElementById('next-btn').textContent = '결과 보기';
+  }
+  document.getElementById('next-btn').classList.add('show');
+}
+
+function nextQuestion() {
+  if (quizState.isPart6) {
+    const passage = quizState.questions[quizState.currentIndex];
+    if (quizState.currentSubIndex < passage.blanks.length - 1) {
+      quizState.currentSubIndex++;
+      renderPart6Question();
+    } else if (quizState.currentIndex < quizState.questions.length - 1) {
+      quizState.currentIndex++;
+      quizState.currentSubIndex = 0;
+      renderPart6Question();
+    } else {
+      endQuiz();
+    }
+  } else if (quizState.isReading) {
+    const passage = quizState.questions[quizState.currentIndex];
+    if (quizState.currentSubIndex < passage.subQuestions.length - 1) {
+      quizState.currentSubIndex++;
+      renderReadingQuestion();
+    } else if (quizState.currentIndex < quizState.questions.length - 1) {
+      quizState.currentIndex++;
+      quizState.currentSubIndex = 0;
+      renderReadingQuestion();
+    } else {
+      endQuiz();
+    }
+  } else {
+    if (quizState.currentIndex < quizState.questions.length - 1) {
+      quizState.currentIndex++;
+      renderQuestion();
+    } else if (quizState.continuous) {
+      // Reshuffle and continue from the beginning
+      const dir = setupState.direction || 'en2ko';
+      let pool = questionBank.vocabulary.map(q => buildVocabQuestion(q, dir));
+      if (setupState.difficulty !== 'all') pool = filterByDifficulty(pool, setupState.difficulty);
+      quizState.questions = shuffleArray(pool);
+      quizState.currentIndex = 0;
+      renderQuestion();
+    } else {
+      endQuiz();
+    }
+  }
+}
+
+function endQuiz() {
+  const isMultiPart = quizState.isReading || quizState.isPart6;
+  const total = isMultiPart ? quizState.totalSubQuestions : (quizState.continuous ? quizState.totalAnswered : quizState.questions.length);
+  const answered = isMultiPart ? quizState.answeredCount : (quizState.continuous ? quizState.totalAnswered : quizState.currentIndex + (quizState.answered ? 1 : 0));
+  const score = quizState.score;
+  const percent = answered > 0 ? Math.round(score / answered * 100) : 0;
+
+  let barClass = 'good';
+  if (percent < 80) barClass = 'ok';
+  if (percent < 60) barClass = 'bad';
+
+  let html = `
+    <div class="result-score">
+      <div class="result-percent">${percent}%</div>
+      <div class="result-fraction">${score} / ${answered} 문제 정답</div>
+      <div class="result-bar">
+        <div class="result-bar-fill ${barClass}" style="width: ${percent}%"></div>
+      </div>
+    </div>
+  `;
+
+  if (quizState.wrongThisQuiz.length > 0) {
+    html += '<div class="wrong-list"><div class="wrong-list-title">틀린 문제 목록</div>';
+    quizState.wrongThisQuiz.forEach(q => {
+      if (q.type === 'vocabulary') {
+        html += `<div class="wrong-item">
+          <div class="wrong-item-q">${q.questionText}</div>
+          <div class="wrong-item-a">${q.choices[q.answer]}</div>
+        </div>`;
+      } else if (q.question) {
+        html += `<div class="wrong-item">
+          <div class="wrong-item-q">${q.question}</div>
+          <div class="wrong-item-a">${q.choices[q.answer]}</div>
+        </div>`;
+      } else {
+        const sentence = q.sentence || '';
+        html += `<div class="wrong-item">
+          <div class="wrong-item-q">${sentence.replace('______', '[___]')}</div>
+          <div class="wrong-item-a">${q.choices[q.answer]}</div>
+        </div>`;
+      }
+    });
+    html += '</div>';
+  }
+
+  html += `<div class="result-actions">`;
+  if (quizState.wrongThisQuiz.length > 0) {
+    html += `<button class="retry-btn" onclick="retryWrong()">오답 다시 풀기</button>`;
+  }
+  html += `<button class="home-btn" onclick="goHome()">홈으로</button>`;
+  html += `</div>`;
+
+  document.getElementById('result-content').innerHTML = html;
+  showScreen('result');
+  saveUserData();
+}
+
+function retryWrong() {
+  const wrongQs = quizState.wrongThisQuiz.map(q => {
+    if (q.type === 'vocabulary') return q;
+    return { ...q };
+  });
+  wrongQs = shuffleArray(wrongQs);
+
+  quizState.questions = wrongQs;
+  quizState.currentIndex = 0;
+  quizState.score = 0;
+  quizState.wrongThisQuiz = [];
+  quizState.answered = false;
+  quizState.isReading = false;
+
+  showScreen('quiz');
+  renderQuestion();
+}
+
+// ==================== WRONG ANSWER MANAGEMENT ====================
+function addWrongAnswer(questionId) {
+  if (!userData.wrongAnswers[questionId]) {
+    userData.wrongAnswers[questionId] = { count: 0, correctStreak: 0, lastWrong: '', lastSeen: '' };
+  }
+  userData.wrongAnswers[questionId].count++;
+  userData.wrongAnswers[questionId].correctStreak = 0;
+  userData.wrongAnswers[questionId].lastWrong = formatDate(new Date());
+  userData.wrongAnswers[questionId].lastSeen = formatDate(new Date());
+  saveUserData();
+}
+
+function handleCorrectAnswer(questionId) {
+  if (userData.wrongAnswers[questionId]) {
+    userData.wrongAnswers[questionId].correctStreak++;
+    userData.wrongAnswers[questionId].lastSeen = formatDate(new Date());
+    if (userData.wrongAnswers[questionId].correctStreak >= userData.settings.correctStreakToRemove) {
+      delete userData.wrongAnswers[questionId];
+    }
+    saveUserData();
+  }
+}
+
+function showWrongNotes() {
+  const wrongIds = Object.keys(userData.wrongAnswers);
+
+  if (wrongIds.length === 0) {
+    document.getElementById('wrong-content').innerHTML = `
+      <div class="wrong-note-empty">
+        <div class="wrong-note-empty-icon">&#127881;</div>
+        <div style="font-size:18px;font-weight:700;margin-bottom:8px;">오답이 없습니다!</div>
+        <div>퀴즈를 풀면 틀린 문제가 자동으로 기록됩니다.</div>
+      </div>
+    `;
+    showScreen('wrong');
+    return;
+  }
+
+  let html = '';
+
+  // Filter buttons
+  html += `<div class="wrong-filter-group">
+    <button class="option-btn selected" onclick="filterWrongNotes(this,'all')">전체 (${wrongIds.length})</button>
+    <button class="option-btn" onclick="filterWrongNotes(this,'vocabulary')">어휘</button>
+    <button class="option-btn" onclick="filterWrongNotes(this,'grammar')">문법</button>
+    <button class="option-btn" onclick="filterWrongNotes(this,'reading')">독해</button>
+  </div>`;
+
+  html += '<div id="wrong-notes-list">';
+  html += buildWrongNotesList('all');
+  html += '</div>';
+
+  html += `<div class="wrong-note-actions">
+    <button class="wrong-quiz-btn" onclick="startWrongQuiz()">오답 퀴즈 시작 (${wrongIds.length}문제)</button>
+  </div>`;
+
+  document.getElementById('wrong-content').innerHTML = html;
+  showScreen('wrong');
+}
+
+function buildWrongNotesList(filterType) {
+  let html = '';
+  const wrongIds = Object.keys(userData.wrongAnswers);
+
+  wrongIds.forEach(id => {
+    const q = allQuestionsMap[id];
+    if (!q) return;
+    if (filterType !== 'all' && q.type !== filterType) return;
+
+    const wrongData = userData.wrongAnswers[id];
+    let title = '', meaning = '';
+
+    if (q.type === 'vocabulary') {
+      title = q.english;
+      meaning = q.korean;
+    } else if (q.type === 'grammar') {
+      title = q.sentence ? q.sentence.replace('______', '[___]') : '';
+      meaning = q.choices ? q.choices[q.answer] : '';
+    } else if (q.parentId) {
+      title = q.question || '';
+      meaning = q.choices ? q.choices[q.answer] : '';
+    }
+
+    const typeLabels = { vocabulary: '어휘', grammar: '문법', reading: '독해' };
+
+    html += `<div class="wrong-note-item">
+      <div class="wrong-note-word">${title}</div>
+      <div class="wrong-note-meaning">${meaning}</div>
+      <div class="wrong-note-meta">
+        <span>${typeLabels[q.type] || q.type}</span>
+        <span>틀린 횟수: ${wrongData.count}</span>
+        <span>연속 정답: ${wrongData.correctStreak}/${userData.settings.correctStreakToRemove}</span>
+      </div>
+    </div>`;
+  });
+
+  return html || '<div class="wrong-note-empty"><div>해당 유형의 오답이 없습니다.</div></div>';
+}
+
+function filterWrongNotes(btn, type) {
+  btn.parentElement.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  document.getElementById('wrong-notes-list').innerHTML = buildWrongNotesList(type);
+}
+
+// ==================== STATS ====================
+function updateStats(type, isCorrect) {
+  userData.stats.totalAnswered++;
+  if (isCorrect) userData.stats.totalCorrect++;
+
+  const validType = (type === 'wrong-review') ? 'vocabulary' : type;
+  if (userData.stats.byType[validType]) {
+    userData.stats.byType[validType].answered++;
+    if (isCorrect) userData.stats.byType[validType].correct++;
+  }
+
+  const today = formatDate(new Date());
+  let todayEntry = userData.stats.history.find(h => h.date === today);
+  if (!todayEntry) {
+    todayEntry = { date: today, answered: 0, correct: 0 };
+    userData.stats.history.push(todayEntry);
+  }
+  todayEntry.answered++;
+  if (isCorrect) todayEntry.correct++;
+
+  // Keep only last 90 days of history
+  if (userData.stats.history.length > 90) {
+    userData.stats.history = userData.stats.history.slice(-90);
+  }
+
+  saveUserData();
+}
+
+function calculateStreak() {
+  const history = userData.stats.history;
+  if (history.length === 0) return 0;
+
+  let streak = 0;
+  const today = new Date();
+
+  for (let i = 0; i <= 365; i++) {
+    const d = new Date(today);
+    d.setDate(d.getDate() - i);
+    const dateStr = formatDate(d);
+    if (history.find(h => h.date === dateStr)) {
+      streak++;
+    } else {
+      if (i === 0) continue; // Today might not have started yet
+      break;
+    }
+  }
+  return streak;
+}
+
+function showStats() {
+  const { totalAnswered, totalCorrect, byType, history } = userData.stats;
+  const totalRate = totalAnswered > 0 ? Math.round(totalCorrect / totalAnswered * 100) : 0;
+
+  const getRate = (t) => {
+    const d = byType[t];
+    return d && d.answered > 0 ? Math.round(d.correct / d.answered * 100) : 0;
+  };
+
+  let html = '';
+
+  // Overall
+  html += `<div class="stat-card">
+    <div class="stat-card-title">전체 정답률</div>
+    <div class="stat-big">${totalRate}%</div>
+    <div class="stat-sub">${totalCorrect} / ${totalAnswered} 문제</div>
+  </div>`;
+
+  // By type
+  html += `<div class="stat-card">
+    <div class="stat-card-title">유형별 정답률</div>
+    <div class="stat-bar-row">
+      <div class="stat-bar-label">어휘</div>
+      <div class="stat-bar-track">
+        <div class="stat-bar-value vocab" style="width: ${Math.max(getRate('vocabulary'), 5)}%">${getRate('vocabulary')}%</div>
+      </div>
+    </div>
+    <div class="stat-bar-row">
+      <div class="stat-bar-label">문법</div>
+      <div class="stat-bar-track">
+        <div class="stat-bar-value grammar" style="width: ${Math.max(getRate('grammar'), 5)}%">${getRate('grammar')}%</div>
+      </div>
+    </div>
+    <div class="stat-bar-row">
+      <div class="stat-bar-label">Part 6</div>
+      <div class="stat-bar-track">
+        <div class="stat-bar-value grammar" style="width: ${Math.max(getRate('part6'), 5)}%">${getRate('part6')}%</div>
+      </div>
+    </div>
+    <div class="stat-bar-row">
+      <div class="stat-bar-label">독해</div>
+      <div class="stat-bar-track">
+        <div class="stat-bar-value reading" style="width: ${Math.max(getRate('reading'), 5)}%">${getRate('reading')}%</div>
+      </div>
+    </div>
+  </div>`;
+
+  // Weekly
+  const days = ['일', '월', '화', '수', '목', '금', '토'];
+  html += `<div class="stat-card">
+    <div class="stat-card-title">최근 7일 학습량</div>
+    <div class="weekly-grid">`;
+
+  for (let i = 6; i >= 0; i--) {
+    const d = new Date();
+    d.setDate(d.getDate() - i);
+    const dateStr = formatDate(d);
+    const entry = history.find(h => h.date === dateStr);
+    const count = entry ? entry.answered : 0;
+    const dayName = days[d.getDay()];
+    const activeClass = count > 0 ? 'active' : '';
+    html += `<div>
+      <div class="weekly-day">${dayName}</div>
+      <div class="weekly-count ${activeClass}">${count}</div>
+    </div>`;
+  }
+  html += `</div>`;
+
+  // Streak
+  const streak = calculateStreak();
+  html += `<div class="streak-display">
+    <div class="streak-num">${streak}</div>
+    <div class="streak-label">일 연속 학습</div>
+  </div>`;
+  html += `</div>`;
+
+  // Reset button
+  html += `<div class="reset-section">
+    <button class="reset-btn" onclick="resetAllData()">전체 데이터 초기화</button>
+  </div>`;
+
+  document.getElementById('stats-content').innerHTML = html;
+  showScreen('stats');
+}
+
+function resetAllData() {
+  if (confirm('모든 학습 데이터를 초기화하시겠습니까?\n이 작업은 되돌릴 수 없습니다.')) {
+    localStorage.removeItem('toeicStudyData');
+    userData = {
+      wrongAnswers: {},
+      stats: {
+        totalAnswered: 0, totalCorrect: 0,
+        byType: {
+          vocabulary: { answered: 0, correct: 0 },
+          grammar: { answered: 0, correct: 0 },
+          part6: { answered: 0, correct: 0 },
+          reading: { answered: 0, correct: 0 }
+        },
+        history: []
+      },
+      settings: { correctStreakToRemove: 3 }
+    };
+    goHome();
+  }
+}
+
+// ==================== UTILITIES ====================
+function shuffleArray(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function formatDate(date) {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, '0');
+  const d = String(date.getDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+}
+
+// ==================== COLLOCATIONS (연어) ====================
+function findCollocations(wordId) {
+  const word = allQuestionsMap[wordId];
+  if (!word || word.type !== 'vocabulary') return [];
+
+  const english = word.english.toLowerCase();
+  // Extract base word: first word of the phrase (take on → take, look into → look)
+  const baseWord = english.split(/\s+/)[0];
+
+  // Also check if this is a single word with common prefix/root
+  const allVocab = questionBank.vocabulary;
+  const related = [];
+
+  allVocab.forEach(q => {
+    if (q.id === wordId) return;
+    const qEn = q.english.toLowerCase();
+    const qBase = qEn.split(/\s+/)[0];
+
+    // Match: same base word for phrasal verbs (take on, take over, take out)
+    if (qBase === baseWord && (qEn.includes(' ') || english.includes(' '))) {
+      related.push(q);
+    }
+  });
+
+  // Sort alphabetically
+  related.sort((a, b) => a.english.localeCompare(b.english));
+  return related;
+}
+
+function buildCollocationHtml(wordId) {
+  const collocations = findCollocations(wordId);
+  if (collocations.length === 0) return '';
+
+  const currentWord = allQuestionsMap[wordId];
+  const baseWord = currentWord.english.split(/\s+/)[0];
+
+  let html = `<div class="collocation-box">`;
+  html += `<div class="collocation-title">📚 ${baseWord} 관련 표현 비교</div>`;
+
+  // Include current word first
+  html += `<div class="collocation-item current">
+    <span class="col-word">${currentWord.english}</span>
+    <span class="col-meaning">${currentWord.korean}</span>
+  </div>`;
+
+  collocations.forEach(q => {
+    html += `<div class="collocation-item">
+      <span class="col-word">${q.english}</span>
+      <span class="col-meaning">${q.korean}</span>
+    </div>`;
+  });
+
+  html += `</div>`;
+  return html;
+}
+
+// ==================== TOEIC PRACTICE QUESTION ====================
+function buildToeicPracticeHtml(wordId) {
+  const word = allQuestionsMap[wordId];
+  if (!word || !word.toeicQuestion) return '';
+
+  const tq = word.toeicQuestion;
+  const sentence = tq.sentence.replace('______', '<span class="blank">______</span>');
+  const labels = ['(A)', '(B)', '(C)', '(D)'];
+
+  let html = `<div class="toeic-practice" id="toeic-practice-${wordId}">`;
+  html += `<div class="toeic-practice-title">Part 5 실전 연습</div>`;
+  html += `<div class="toeic-practice-sentence">${sentence}</div>`;
+  html += `<div class="tp-choices">`;
+  tq.choices.forEach((choice, i) => {
+    html += `<button class="tp-choice" onclick="selectToeicPractice('${wordId}', ${i})">
+      <span class="tp-num">${labels[i]}</span>
+      <span>${choice}</span>
+    </button>`;
+  });
+  html += `</div>`;
+  html += `<div class="tp-explanation" id="tp-explanation-${wordId}">${tq.explanation}</div>`;
+  html += `</div>`;
+  return html;
+}
+
+function selectToeicPractice(wordId, choiceIndex) {
+  const word = allQuestionsMap[wordId];
+  if (!word || !word.toeicQuestion) return;
+
+  const tq = word.toeicQuestion;
+  const container = document.getElementById('toeic-practice-' + wordId);
+  if (!container) return;
+
+  const btns = container.querySelectorAll('.tp-choice');
+  const isCorrect = choiceIndex === tq.answer;
+
+  btns.forEach((btn, i) => {
+    btn.classList.add('tp-disabled');
+    if (i === tq.answer) btn.classList.add('tp-correct');
+    if (i === choiceIndex && !isCorrect) btn.classList.add('tp-wrong');
+  });
+
+  const explanation = document.getElementById('tp-explanation-' + wordId);
+  if (explanation) explanation.classList.add('show');
+}
+
+// ==================== TTS (Text-to-Speech) ====================
+function speakWord(text, btn) {
+  if (!window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = 'en-US';
+  utterance.rate = 0.85;
+  utterance.pitch = 1;
+
+  // Try to find a good English voice
+  const voices = window.speechSynthesis.getVoices();
+  const enVoice = voices.find(v => v.lang === 'en-US' && v.name.includes('Samantha'))
+    || voices.find(v => v.lang === 'en-US')
+    || voices.find(v => v.lang.startsWith('en'));
+  if (enVoice) utterance.voice = enVoice;
+
+  if (btn) {
+    btn.classList.add('playing');
+    utterance.onend = () => btn.classList.remove('playing');
+    utterance.onerror = () => btn.classList.remove('playing');
+  }
+
+  window.speechSynthesis.speak(utterance);
+}
+
+// Preload voices (needed for some browsers)
+if (window.speechSynthesis) {
+  window.speechSynthesis.getVoices();
+  window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+}
+
+// ==================== ATTENDANCE CALENDAR ====================
+function renderCalendar() {
+  const year = calendarYear;
+  const month = calendarMonth;
+  const monthNames = ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'];
+  document.getElementById('calendar-month-title').textContent = `${year}년 ${monthNames[month]}`;
+
+  const firstDay = new Date(year, month, 1).getDay(); // 0=Sun
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  const today = new Date();
+  const todayStr = formatDate(today);
+  const history = userData.stats.history;
+
+  const dows = ['일', '월', '화', '수', '목', '금', '토'];
+  let html = dows.map(d => `<div class="calendar-dow">${d}</div>`).join('');
+
+  // Empty cells before first day
+  for (let i = 0; i < firstDay; i++) {
+    html += '<div class="calendar-day empty"></div>';
+  }
+
+  for (let d = 1; d <= daysInMonth; d++) {
+    const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+    const studied = history.find(h => h.date === dateStr);
+    const isToday = dateStr === todayStr;
+
+    let cls = 'calendar-day';
+    if (studied) cls += ' studied';
+    if (isToday) cls += ' today';
+    if (!studied) cls += ' no-study';
+
+    html += `<div class="${cls}">${d}${studied ? '<span class="cal-dot"></span>' : ''}</div>`;
+  }
+
+  document.getElementById('calendar-grid').innerHTML = html;
+}
+
+function changeCalendarMonth(delta) {
+  calendarMonth += delta;
+  if (calendarMonth > 11) { calendarMonth = 0; calendarYear++; }
+  if (calendarMonth < 0) { calendarMonth = 11; calendarYear--; }
+  renderCalendar();
+}
+
+// ==================== START ====================
+initApp();
+</script>
+</body>
+</html>

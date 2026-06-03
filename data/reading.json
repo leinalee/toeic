@@ -1,0 +1,265 @@
+{
+  "questions": [
+    {
+      "id": "r001",
+      "type": "reading",
+      "passage": "Dear Mr. Harrison,\n\nI am pleased to inform you that your application for the Senior Marketing Manager position at GlobalTech Inc. has been approved. After careful review of your qualifications and interview performance, the hiring committee has unanimously decided to offer you the position.\n\nYour starting salary will be $85,000 per year, with a comprehensive benefits package including health insurance, dental coverage, and a retirement savings plan. You will also be eligible for an annual performance bonus of up to 15% of your base salary.\n\nPlease confirm your acceptance by responding to this email no later than March 15. Your expected start date would be April 1. Prior to your first day, please complete the enclosed onboarding documents and return them to our Human Resources department.\n\nWe look forward to welcoming you to the GlobalTech team.\n\nSincerely,\nSarah Mitchell\nDirector of Human Resources\nGlobalTech Inc.",
+      "passageType": "email",
+      "subQuestions": [
+        {
+          "id": "r001_1",
+          "question": "What is the primary purpose of this email?",
+          "choices": [
+            "To offer a job position",
+            "To request an interview",
+            "To reject an application",
+            "To announce a promotion"
+          ],
+          "answer": 0,
+          "explanation": "이메일에서 'your application has been approved'와 'offer you the position'이라고 명시하고 있으므로 채용 제안이 목적입니다."
+        },
+        {
+          "id": "r001_2",
+          "question": "What is Mr. Harrison required to do before March 15?",
+          "choices": [
+            "Confirm his acceptance of the offer",
+            "Complete onboarding documents",
+            "Start working at GlobalTech",
+            "Meet with the hiring committee"
+          ],
+          "answer": 0,
+          "explanation": "'confirm your acceptance by responding to this email no later than March 15'라고 되어 있으므로 3월 15일까지 수락 여부를 확인해야 합니다."
+        },
+        {
+          "id": "r001_3",
+          "question": "What is NOT mentioned as part of the benefits package?",
+          "choices": [
+            "Stock options",
+            "Health insurance",
+            "Dental coverage",
+            "Retirement savings plan"
+          ],
+          "answer": 0,
+          "explanation": "건강보험, 치과 보장, 퇴직 저축 플랜은 언급되었지만, 스톡옵션(stock options)은 언급되지 않았습니다."
+        },
+        {
+          "id": "r001_4",
+          "question": "What is the maximum total compensation Mr. Harrison could receive in his first year?",
+          "choices": [
+            "$97,750",
+            "$85,000",
+            "$100,000",
+            "$90,000"
+          ],
+          "answer": 0,
+          "explanation": "기본급 $85,000 + 최대 성과 보너스 15%($12,750) = $97,750입니다."
+        }
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "r002",
+      "type": "reading",
+      "passage": "MEMORANDUM\n\nTo: All Employees\nFrom: Office of the CEO\nDate: October 5\nSubject: Updated Remote Work Policy\n\nEffective November 1, Nextera Solutions will implement a revised remote work policy. After reviewing employee feedback and productivity data from the past two years, we have decided to adopt a hybrid work model.\n\nKey changes include:\n\n• All full-time employees may work remotely up to three days per week.\n• Employees must be present in the office on Tuesdays and Thursdays for team collaboration days.\n• Remote work arrangements must be approved by the employee's direct supervisor.\n• Employees are required to maintain regular working hours (9 AM – 5 PM) regardless of work location.\n• A monthly home office stipend of $100 will be provided to eligible employees to cover internet and equipment costs.\n\nPlease note that certain positions, particularly those involving client-facing responsibilities or specialized equipment, may have different requirements. Department managers will communicate any position-specific guidelines by October 20.\n\nFor questions or concerns regarding the new policy, please contact the HR department at hr@nextera.com.",
+      "passageType": "memo",
+      "subQuestions": [
+        {
+          "id": "r002_1",
+          "question": "When will the new remote work policy go into effect?",
+          "choices": [
+            "November 1",
+            "October 5",
+            "October 20",
+            "January 1"
+          ],
+          "answer": 0,
+          "explanation": "'Effective November 1'이라고 명시되어 있습니다. 10월 5일은 메모 작성일, 10월 20일은 부서별 가이드라인 전달 기한입니다."
+        },
+        {
+          "id": "r002_2",
+          "question": "How many days per week are employees required to work in the office?",
+          "choices": [
+            "Two days",
+            "Three days",
+            "Five days",
+            "One day"
+          ],
+          "answer": 0,
+          "explanation": "화요일과 목요일이 팀 협업일로 지정되어 있으므로 주 2일 사무실 근무가 필수입니다."
+        },
+        {
+          "id": "r002_3",
+          "question": "What is the purpose of the $100 monthly stipend?",
+          "choices": [
+            "To cover internet and equipment costs for remote work",
+            "To compensate for transportation expenses",
+            "To pay for professional development courses",
+            "To subsidize lunch during office days"
+          ],
+          "answer": 0,
+          "explanation": "'to cover internet and equipment costs'라고 명시되어 있습니다."
+        },
+        {
+          "id": "r002_4",
+          "question": "Which employees might NOT follow the standard remote work schedule?",
+          "choices": [
+            "Those with client-facing responsibilities",
+            "Part-time employees",
+            "New hires in their first year",
+            "Employees in the IT department"
+          ],
+          "answer": 0,
+          "explanation": "'positions involving client-facing responsibilities or specialized equipment'이 다른 요건을 가질 수 있다고 언급되어 있습니다."
+        }
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "r003",
+      "type": "reading",
+      "passage": "ProTask 5.0 — The Ultimate Project Management Solution\n\nStreamline your workflow. Boost your team's productivity. Deliver projects on time.\n\nProTask 5.0 is the latest version of our award-winning project management software, trusted by over 10,000 companies worldwide. Whether you're managing a small team or coordinating enterprise-level projects, ProTask 5.0 has the tools you need.\n\nNew Features:\n★ AI-Powered Scheduling: Automatically optimize task assignments based on team availability and skill sets.\n★ Real-Time Collaboration: Edit documents, share files, and communicate with team members — all within the platform.\n★ Advanced Analytics Dashboard: Track project progress with customizable charts and automated reports.\n★ Mobile App: Manage projects on the go with our redesigned iOS and Android app.\n\nPricing Plans:\nBasic — $9/user/month: Up to 10 projects, 5GB storage\nProfessional — $19/user/month: Unlimited projects, 50GB storage, priority support\nEnterprise — $39/user/month: Everything in Professional + dedicated account manager, API access, custom integrations\n\nSpecial Offer: Sign up before December 31 and receive 20% off your first year on any plan.\n\nVisit www.protask.com/demo to start your free 14-day trial today.\nNo credit card required.",
+      "passageType": "advertisement",
+      "subQuestions": [
+        {
+          "id": "r003_1",
+          "question": "What is a NEW feature in ProTask 5.0?",
+          "choices": [
+            "AI-powered task scheduling",
+            "Email integration",
+            "Video conferencing",
+            "Customer relationship management"
+          ],
+          "answer": 0,
+          "explanation": "'AI-Powered Scheduling'이 새로운 기능으로 명시되어 있습니다."
+        },
+        {
+          "id": "r003_2",
+          "question": "Which plan includes API access?",
+          "choices": [
+            "Enterprise",
+            "Professional",
+            "Basic",
+            "All plans"
+          ],
+          "answer": 0,
+          "explanation": "Enterprise 플랜에 'API access, custom integrations'이 포함되어 있다고 명시되어 있습니다."
+        },
+        {
+          "id": "r003_3",
+          "question": "How long is the free trial period?",
+          "choices": [
+            "14 days",
+            "7 days",
+            "30 days",
+            "60 days"
+          ],
+          "answer": 0,
+          "explanation": "'free 14-day trial'이라고 명시되어 있습니다."
+        }
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "r004",
+      "type": "reading",
+      "passage": "Global Smartphone Market Sees Unexpected Shift in Q3\n\nBy Jennifer Park, Technology Correspondent\n\nThe global smartphone market experienced a surprising reversal in the third quarter, with mid-range devices outselling premium models for the first time in five years, according to a report released by market research firm TechAnalytics.\n\nTotal smartphone shipments reached 315 million units in Q3, representing a 4% increase from the same period last year. However, the composition of sales shifted dramatically. Mid-range smartphones (priced between $200 and $500) accounted for 52% of total revenue, up from 38% in the previous year. Meanwhile, premium devices (over $500) saw their market share decline from 45% to 35%.\n\n\"Consumers are becoming more price-conscious while also recognizing that mid-range phones now offer features that were exclusive to flagship models just two years ago,\" said David Chen, lead analyst at TechAnalytics.\n\nThe trend was most pronounced in Asia-Pacific markets, where mid-range sales grew by 28%. European markets showed a more moderate shift, with mid-range sales increasing by 12%. North American consumers, however, continued to favor premium brands, though the gap narrowed considerably.\n\nIndustry experts predict this trend will continue into the next fiscal year, prompting several major manufacturers to invest more heavily in their mid-range product lines.",
+      "passageType": "article",
+      "subQuestions": [
+        {
+          "id": "r004_1",
+          "question": "What was the most significant finding in the Q3 report?",
+          "choices": [
+            "Mid-range devices outsold premium models in revenue",
+            "Total smartphone sales declined sharply",
+            "Premium phones became more affordable",
+            "A new smartphone manufacturer entered the market"
+          ],
+          "answer": 0,
+          "explanation": "'mid-range devices outselling premium models for the first time in five years'가 핵심 발견입니다."
+        },
+        {
+          "id": "r004_2",
+          "question": "According to the article, what percentage of total revenue did premium devices account for in Q3?",
+          "choices": [
+            "35%",
+            "45%",
+            "52%",
+            "38%"
+          ],
+          "answer": 0,
+          "explanation": "프리미엄 기기의 시장 점유율이 45%에서 35%로 하락했다고 되어 있습니다."
+        },
+        {
+          "id": "r004_3",
+          "question": "In which region was the shift toward mid-range phones LEAST noticeable?",
+          "choices": [
+            "North America",
+            "Asia-Pacific",
+            "Europe",
+            "South America"
+          ],
+          "answer": 0,
+          "explanation": "북미 소비자들은 '프리미엄 브랜드를 계속 선호했다(continued to favor premium brands)'고 되어 있어 변화가 가장 적었습니다."
+        },
+        {
+          "id": "r004_4",
+          "question": "What does David Chen suggest is driving the trend?",
+          "choices": [
+            "Mid-range phones now offer features previously found only in flagship models",
+            "Premium phones have become less reliable",
+            "Consumers are switching to tablets instead",
+            "New government regulations favor mid-range pricing"
+          ],
+          "answer": 0,
+          "explanation": "David Chen은 '중저가폰이 이제 2년 전 플래그십 모델에만 있던 기능을 제공한다'고 분석했습니다."
+        }
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "r005",
+      "type": "reading",
+      "passage": "NOTICE\n\nAnnual Building Maintenance Schedule — Riverside Office Complex\n\nPlease be advised that the following maintenance work will be conducted during the month of August:\n\nAugust 5-7 (Mon-Wed): Elevator maintenance and inspection\n• Only elevators in Building A will be affected. Building B elevators will operate normally.\n• Employees in Building A are advised to use the stairwell or Building B elevators during this period.\n\nAugust 12-16 (Mon-Fri): HVAC system upgrade\n• Air conditioning will be temporarily unavailable on floors 3-5 of Building B.\n• Portable cooling units will be provided for affected areas.\n• Employees on affected floors may request temporary relocation to available conference rooms on other floors.\n\nAugust 19-20 (Mon-Tue): Parking lot resurfacing\n• The east parking lot will be closed. Employees who normally park there should use the west parking lot or the temporary overflow parking at 250 River Road.\n• A free shuttle service will run between the overflow parking lot and the office complex every 15 minutes from 7:00 AM to 7:00 PM.\n\nAugust 26-30 (Mon-Fri): Fire alarm system testing\n• Periodic alarm sounds should be expected throughout the week.\n• No evacuation is necessary unless specifically announced by building security.\n\nFor questions, contact Building Management at ext. 4500.",
+      "passageType": "notice",
+      "subQuestions": [
+        {
+          "id": "r005_1",
+          "question": "How long will the HVAC system upgrade take?",
+          "choices": [
+            "Five days",
+            "Three days",
+            "Two days",
+            "One week"
+          ],
+          "answer": 0,
+          "explanation": "8월 12일(월)부터 16일(금)까지 5일간 진행됩니다."
+        },
+        {
+          "id": "r005_2",
+          "question": "What alternative is provided for employees affected by the parking lot closure?",
+          "choices": [
+            "A free shuttle service to overflow parking",
+            "Reserved spaces in Building A garage",
+            "Discounted public transit passes",
+            "Permission to work from home"
+          ],
+          "answer": 0,
+          "explanation": "250 River Road의 임시 주차장과 15분 간격 무료 셔틀 서비스가 제공된다고 명시되어 있습니다."
+        },
+        {
+          "id": "r005_3",
+          "question": "During the fire alarm testing, what should employees do when they hear an alarm?",
+          "choices": [
+            "Continue working unless building security announces an evacuation",
+            "Evacuate the building immediately",
+            "Report to their supervisor",
+            "Call building management at ext. 4500"
+          ],
+          "answer": 0,
+          "explanation": "'No evacuation is necessary unless specifically announced by building security'라고 명시되어 있습니다."
+        }
+      ],
+      "difficulty": 3
+    }
+  ]
+}

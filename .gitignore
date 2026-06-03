@@ -1,0 +1,4 @@
+.server.pid
+__pycache__/
+*.pyc
+.claude/
