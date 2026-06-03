@@ -5069,6 +5069,696 @@
       "category": "conjunction",
       "difficulty": 3,
       "type": "grammar"
+    },
+    {
+      "id": "s3_28_1",
+      "sentence": "I ______ a party for a colleague who is retiring next month.",
+      "choices": [
+        "to plan",
+        "plans",
+        "am planning",
+        "am planned"
+      ],
+      "answer": 2,
+      "explanation": "주어(I) + 동사자리. 뒤에 목적어(a party)가 있으므로 능동태. am planning = 계획 중이다",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "s3_28_2",
+      "sentence": "I'm planning a party for a colleague ______ is retiring next month.",
+      "choices": [
+        "who",
+        "which",
+        "whose",
+        "what"
+      ],
+      "answer": 0,
+      "explanation": "사람명사(colleague) + ______ + V → 주격 관계대명사 who",
+      "category": "relative clause",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "s3_29_1",
+      "sentence": "It'll take my delivery team ______ an hour to put it together.",
+      "choices": [
+        "to",
+        "about",
+        "in",
+        "with"
+      ],
+      "answer": 1,
+      "explanation": "about + 시간 = 대략 ~정도 (= nearly/almost/around/roughly/approximately)",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "s3_29_2",
+      "sentence": "It'll take ______ delivery team about an hour to put it together.",
+      "choices": [
+        "me",
+        "my",
+        "mine",
+        "myself"
+      ],
+      "answer": 1,
+      "explanation": "소유격 + 명사(delivery team). my delivery team = 나의 배달팀",
+      "category": "pronoun",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "s3_30_1",
+      "sentence": "We ______ the survey to find out how satisfied our customers were.",
+      "choices": [
+        "designed",
+        "were designed",
+        "to design",
+        "designs"
+      ],
+      "answer": 0,
+      "explanation": "주어(We) + 동사 + 목적어(survey). 능동태 과거 designed",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "s3_30_2",
+      "sentence": "We designed the survey ______ out how satisfied our customers were.",
+      "choices": [
+        "finds",
+        "found",
+        "to find",
+        "are finding"
+      ],
+      "answer": 2,
+      "explanation": "문장 중간 toV = toV하기 위해서. to find out = 알아내기 위해",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "s3_30_3",
+      "sentence": "We designed the survey to find out how ______ our customers were with the service.",
+      "choices": [
+        "satisfy",
+        "satisfies",
+        "satisfying",
+        "satisfied"
+      ],
+      "answer": 3,
+      "explanation": "how + 형용사 + S + beV. 감정형용사: satisfied(감정을 느낌) / satisfying(감정을 유발)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "s3_30_4",
+      "sentence": "We designed the survey to find out how satisfied our customers were with the service ______ received from us.",
+      "choices": [
+        "theirs",
+        "they",
+        "them",
+        "themselves"
+      ],
+      "answer": 1,
+      "explanation": "주어 자리 (인칭대명사 주격 vs 소유대명사). they received = 그들이 받은",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_07",
+      "sentence": "Ms. Kim's ______ include providing personalized services.",
+      "choices": [
+        "responsible",
+        "responsibly",
+        "responsibility",
+        "responsibilities"
+      ],
+      "answer": 3,
+      "explanation": "소유격(Kim's) + ______ → 주어(명사). 복수동사 include → responsibilities(복수)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_08",
+      "sentence": "Ms. Testa is meeting with the builder today to review the ______ for the new buildings.",
+      "choices": [
+        "specify",
+        "specific",
+        "specified",
+        "specifications"
+      ],
+      "answer": 3,
+      "explanation": "관사(the) + ______ + 전치사(for) → 명사. specifications = 사양, 명세서",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_09",
+      "sentence": "The company has won several awards for its marketing ______.",
+      "choices": [
+        "strategize",
+        "strategic",
+        "strategically",
+        "strategies"
+      ],
+      "answer": 3,
+      "explanation": "소유격(its) + 명사(marketing) + ______ → 복합명사. strategies = 전략들",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_10",
+      "sentence": "Because of transportation ______ due to worsening weather, some participants may arrive late.",
+      "choices": [
+        "are delayed",
+        "to delay",
+        "delays",
+        "had delayed"
+      ],
+      "answer": 2,
+      "explanation": "전치사(of) + 명사(transportation) + ______ → 복합명사. delays = 지연들",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_11",
+      "sentence": "The ______ working at Pallax Group are knowledgeable.",
+      "choices": [
+        "consultants",
+        "consulting",
+        "consults",
+        "consultation"
+      ],
+      "answer": 0,
+      "explanation": "관사(The) + ______ + Ving(후치수식) → 사람명사. consultants = 컨설턴트들",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_12",
+      "sentence": "We have business deals with several tea ______ in Daejeon.",
+      "choices": [
+        "manufacture",
+        "manufacturing",
+        "manufactured",
+        "manufacturers"
+      ],
+      "answer": 3,
+      "explanation": "명사(tea) + ______ → 복합명사. 사람/회사 = manufacturers(제조업체들)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_13",
+      "sentence": "The company plans to increase its nationwide ______ beginning next year.",
+      "choices": [
+        "advertises",
+        "to advertise",
+        "advertising",
+        "advertised"
+      ],
+      "answer": 2,
+      "explanation": "소유격(its) + 형용사(nationwide) + ______ → 명사. advertising = 광고(활동)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_14",
+      "sentence": "______ to the exercise room is included with your stay at the Pallax Hotel.",
+      "choices": [
+        "Access",
+        "Accessed",
+        "Accessing",
+        "Accessible"
+      ],
+      "answer": 0,
+      "explanation": "______ + 전치사(to) → 주어(명사). Access to = ~에 대한 접근",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_15",
+      "sentence": "Copley Corporation is a ______ guide to areas.",
+      "choices": [
+        "comprehensively",
+        "comprehend",
+        "comprehension",
+        "comprehensive"
+      ],
+      "answer": 3,
+      "explanation": "관사(a) + ______ + 명사(guide) → 형용사. comprehensive = 종합적인",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_16",
+      "sentence": "Copley Furniture is renowned for its ______ customer service.",
+      "choices": [
+        "excellent",
+        "excelled",
+        "excellently",
+        "excellence"
+      ],
+      "answer": 0,
+      "explanation": "소유격(its) + ______ + 명사(customer service) → 형용사. excellent = 훌륭한",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_17",
+      "sentence": "The test group found the illustrations in the appliance users' guide to be highly ______.",
+      "choices": [
+        "inform",
+        "information",
+        "informatively",
+        "informative"
+      ],
+      "answer": 3,
+      "explanation": "to be + 부사(highly) + ______ → 형용사. informative = 유익한",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_18",
+      "sentence": "Submit the deposit within the ______ time frame to avoid losing the reservation.",
+      "choices": [
+        "allot",
+        "allotted",
+        "allotting",
+        "allotments"
+      ],
+      "answer": 1,
+      "explanation": "관사(the) + ______ + 명사(time frame) → p.p형용사. allotted = 배정된",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_19",
+      "sentence": "At the panel discussion, Ms. Yang made a ______ argument for responsible business practices.",
+      "choices": [
+        "convince",
+        "convincing",
+        "convinced",
+        "convincingly"
+      ],
+      "answer": 1,
+      "explanation": "관사(a) + ______ + 명사(argument) → Ving형용사. convincing = 설득력 있는",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_20",
+      "sentence": "The entire building has been ______.",
+      "choices": [
+        "vacated",
+        "vacates",
+        "to vacate",
+        "vacating"
+      ],
+      "answer": 0,
+      "explanation": "has been + ______ → 현재완료 수동태(has been p.p). vacated = 비워진",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_21",
+      "sentence": "A receipt will be sent to the e-mail address ______.",
+      "choices": [
+        "provide",
+        "providing",
+        "to provide",
+        "provided"
+      ],
+      "answer": 3,
+      "explanation": "명사(address) + ______ → p.p 후치수식(수동). provided = 제공된",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_22",
+      "sentence": "Any letter ______ sensitive information should be sent using a courier service.",
+      "choices": [
+        "contains",
+        "contained",
+        "containing",
+        "will contain"
+      ],
+      "answer": 2,
+      "explanation": "명사(letter) + ______ + 목적어 → Ving 후치수식(능동). containing = 포함하는",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_23",
+      "sentence": "Dennis Beck has directed several of the most ______ adventure films of the last decade.",
+      "choices": [
+        "thrilling",
+        "thrilled",
+        "thrill",
+        "thriller"
+      ],
+      "answer": 0,
+      "explanation": "the most + ______ + 명사(films) → 형용사(최상급). thrilling = 스릴 있는(감정유발)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_24",
+      "sentence": "If you are not ______ with your Creek toothbrush, you may return it for a full refund.",
+      "choices": [
+        "satisfaction",
+        "satisfying",
+        "satisfied",
+        "satisfy"
+      ],
+      "answer": 2,
+      "explanation": "be + ______ + with → p.p형용사(감정). satisfied with = ~에 만족한",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_25",
+      "sentence": "Commercial relocation may at first appear ______.",
+      "choices": [
+        "complication",
+        "complicated",
+        "complicates",
+        "complicate"
+      ],
+      "answer": 1,
+      "explanation": "appear + ______ → 형용사 보어. complicated = 복잡한",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_26",
+      "sentence": "Mr. Park is making our resources ______ to employees.",
+      "choices": [
+        "accesses",
+        "accessibility",
+        "more accessibly",
+        "more accessible"
+      ],
+      "answer": 3,
+      "explanation": "make + O + 형용사. more accessible = 더 접근하기 쉬운",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_27",
+      "sentence": "The number of subscribers to Kiesel Daily is ______ now than ever before.",
+      "choices": [
+        "high",
+        "higher",
+        "highest",
+        "most highly"
+      ],
+      "answer": 1,
+      "explanation": "______ + than → 비교급. higher than = ~보다 더 높은",
+      "category": "comparison",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_28",
+      "sentence": "Construction of the new library is ______ on the city's ability to pass a new budget.",
+      "choices": [
+        "depend",
+        "depends",
+        "dependable",
+        "dependent"
+      ],
+      "answer": 3,
+      "explanation": "is + ______ + on → be + 형용사 + 전치사. dependent on = ~에 달려있는",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_29",
+      "sentence": "The company's transition from paper paychecks to electronic paychecks was ______ smooth.",
+      "choices": [
+        "impressive",
+        "impression",
+        "impressively",
+        "impress"
+      ],
+      "answer": 2,
+      "explanation": "was + ______ + 형용사(smooth) → 부사. impressively = 인상적으로",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_30",
+      "sentence": "The strategies ensure that it will remain ______ stable.",
+      "choices": [
+        "finance",
+        "financed",
+        "financial",
+        "financially"
+      ],
+      "answer": 3,
+      "explanation": "remain + ______ + 형용사(stable) → 부사. financially = 재정적으로",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_31",
+      "sentence": "Visit Merit Tour's Web site to shop ______ priced tickets for events.",
+      "choices": [
+        "compare",
+        "comparing",
+        "comparison",
+        "comparably"
+      ],
+      "answer": 3,
+      "explanation": "______ + p.p형용사(priced) → 부사. comparably = 비교적",
+      "category": "word form",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_32",
+      "sentence": "If you are not ______ satisfied with craftsmanship of the bowl.",
+      "choices": [
+        "completely",
+        "complete",
+        "completion",
+        "completes"
+      ],
+      "answer": 0,
+      "explanation": "be + ______ + 형용사(satisfied) → 부사. completely = 완전히",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_33",
+      "sentence": "The shoppers are ______ becoming accustomed to the new layout.",
+      "choices": [
+        "slow",
+        "slowly",
+        "slowing",
+        "slowed"
+      ],
+      "answer": 1,
+      "explanation": "are + ______ + Ving(becoming) → 부사. slowly = 천천히",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_34",
+      "sentence": "Mr. Ko ______ seeks out partners who can deliver services the residents need.",
+      "choices": [
+        "intend",
+        "intention",
+        "intentional",
+        "intentionally"
+      ],
+      "answer": 3,
+      "explanation": "주어 + ______ + 동사(seeks) → 부사. intentionally = 의도적으로",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_35",
+      "sentence": "After the card arrives in the mail, you should ______ dispose of the outdated one.",
+      "choices": [
+        "secure",
+        "securely",
+        "secures",
+        "secured"
+      ],
+      "answer": 1,
+      "explanation": "should + ______ + V(dispose) → 부사. securely = 안전하게",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_36",
+      "sentence": "Please allow seven business days for packages that are shipped ______.",
+      "choices": [
+        "domestical",
+        "domestic",
+        "domestically",
+        "domestication"
+      ],
+      "answer": 2,
+      "explanation": "완전한 문장(be+p.p) + ______ → 부사. domestically = 국내로",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_37",
+      "sentence": "Good news will help stock prices rise ______.",
+      "choices": [
+        "dramatically",
+        "dramatic",
+        "dramas",
+        "drama"
+      ],
+      "answer": 0,
+      "explanation": "완전한 문장(S+자동사) + ______ → 부사. dramatically = 극적으로",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_38",
+      "sentence": "The owner decided to fill the position ______.",
+      "choices": [
+        "externally",
+        "external",
+        "externalize",
+        "externalization"
+      ],
+      "answer": 0,
+      "explanation": "완전한 문장 + ______ → 부사. externally = 외부적으로",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_39",
+      "sentence": "Pallax Dairy's upgraded milk-bottling system has ______ increased productivity.",
+      "choices": [
+        "consistency",
+        "consistencies",
+        "consistent",
+        "consistently"
+      ],
+      "answer": 3,
+      "explanation": "has + ______ + p.p(increased) → 부사. consistently = 꾸준히",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_40",
+      "sentence": "Saenger Associates is competing ______ with Copley Ltd. for the construction project.",
+      "choices": [
+        "direct",
+        "directly",
+        "direction",
+        "directing"
+      ],
+      "answer": 1,
+      "explanation": "is competing + ______ + 전치사구 → 부사. directly = 직접적으로",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_41",
+      "sentence": "The new supervisor asks every employee to be at the seminar ______ at 2:00 P.M.",
+      "choices": [
+        "exact",
+        "exactly",
+        "exacted",
+        "exacting"
+      ],
+      "answer": 1,
+      "explanation": "완전한 문장 + ______ + 시간 → 부사. exactly = 정확히",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_42",
+      "sentence": "Relocating for work is ______ a difficult decision, but it can be rewarding.",
+      "choices": [
+        "understandably",
+        "understanding",
+        "understood",
+        "understand"
+      ],
+      "answer": 0,
+      "explanation": "is + ______ + 명사구 → 부사. understandably = 당연하게도",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_43",
+      "sentence": "The managers must have their equipment ______ inspected once a month.",
+      "choices": [
+        "profess",
+        "profession",
+        "professional",
+        "professionally"
+      ],
+      "answer": 3,
+      "explanation": "have + O + ______ + p.p(inspected) → 부사. professionally = 전문적으로",
+      "category": "word form",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "p56x_44",
+      "sentence": "International Consultants launched its new Web site sooner than ______ expected.",
+      "choices": [
+        "originality",
+        "original",
+        "originally",
+        "originals"
+      ],
+      "answer": 2,
+      "explanation": "than + ______ + p.p(expected) → 부사. originally = 원래",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
     }
   ]
 }
