@@ -4,7 +4,12 @@
       "id": "g001",
       "type": "grammar",
       "sentence": "The report must be submitted ______ the end of the business day.",
-      "choices": ["by", "until", "within", "from"],
+      "choices": [
+        "by",
+        "until",
+        "within",
+        "from"
+      ],
       "answer": 0,
       "explanation": "'by'는 '~까지(기한)'를 나타냅니다. 'until'은 '~까지 계속'이라는 의미로 지속적인 행위에 사용됩니다.",
       "category": "preposition",
@@ -14,7 +19,12 @@
       "id": "g002",
       "type": "grammar",
       "sentence": "______ the heavy rain, the outdoor event proceeded as planned.",
-      "choices": ["Despite", "Although", "Because of", "While"],
+      "choices": [
+        "Despite",
+        "Although",
+        "Because of",
+        "While"
+      ],
       "answer": 0,
       "explanation": "'Despite'는 전치사로 뒤에 명사(구)가 옵니다. 'Although'와 'While'은 접속사로 절이 따라야 합니다.",
       "category": "preposition",
@@ -24,7 +34,12 @@
       "id": "g003",
       "type": "grammar",
       "sentence": "The new policy will take effect ______ January 1st.",
-      "choices": ["on", "at", "in", "by"],
+      "choices": [
+        "on",
+        "at",
+        "in",
+        "by"
+      ],
       "answer": 0,
       "explanation": "특정 날짜 앞에는 전치사 'on'을 사용합니다. 'at'은 시간, 'in'은 월/년도에 사용됩니다.",
       "category": "preposition",
@@ -34,7 +49,12 @@
       "id": "g004",
       "type": "grammar",
       "sentence": "All documents must be submitted in accordance ______ company policy.",
-      "choices": ["with", "to", "for", "by"],
+      "choices": [
+        "with",
+        "to",
+        "for",
+        "by"
+      ],
       "answer": 0,
       "explanation": "'in accordance with'는 '~에 따라'라는 의미의 고정 표현입니다.",
       "category": "preposition",
@@ -44,7 +64,12 @@
       "id": "g005",
       "type": "grammar",
       "sentence": "The manager ______ the project since last April.",
-      "choices": ["has overseen", "oversaw", "oversees", "had overseen"],
+      "choices": [
+        "has overseen",
+        "oversaw",
+        "oversees",
+        "had overseen"
+      ],
       "answer": 0,
       "explanation": "'since + 과거 시점'은 현재완료(have/has + p.p.)와 함께 사용됩니다. 과거부터 현재까지 계속되는 행위를 나타냅니다.",
       "category": "tense",
@@ -54,7 +79,12 @@
       "id": "g006",
       "type": "grammar",
       "sentence": "If the budget ______ approved, the project will begin next month.",
-      "choices": ["is", "was", "will be", "has been"],
+      "choices": [
+        "is",
+        "was",
+        "will be",
+        "has been"
+      ],
       "answer": 0,
       "explanation": "조건절(if절)에서는 미래의 일이라도 현재시제를 사용합니다. 'will be'는 조건절에서 사용하지 않습니다.",
       "category": "tense",
@@ -64,7 +94,12 @@
       "id": "g007",
       "type": "grammar",
       "sentence": "By the time the CEO arrives, the presentation ______ already ______.",
-      "choices": ["will have ... started", "has ... started", "will ... start", "had ... started"],
+      "choices": [
+        "will have ... started",
+        "has ... started",
+        "will ... start",
+        "had ... started"
+      ],
       "answer": 0,
       "explanation": "'By the time + 현재시제'는 미래완료(will have + p.p.)와 함께 사용되어 미래의 특정 시점까지 완료될 행위를 나타냅니다.",
       "category": "tense",
@@ -74,7 +109,12 @@
       "id": "g008",
       "type": "grammar",
       "sentence": "The company requested that every employee ______ the training session.",
-      "choices": ["attend", "attends", "attended", "will attend"],
+      "choices": [
+        "attend",
+        "attends",
+        "attended",
+        "will attend"
+      ],
       "answer": 0,
       "explanation": "request, suggest, recommend 등의 동사 뒤 that절에서는 동사원형을 사용합니다 (가정법 현재/당위법).",
       "category": "tense",
@@ -84,7 +124,12 @@
       "id": "g009",
       "type": "grammar",
       "sentence": "The architect ______ designed the building received an award.",
-      "choices": ["who", "whom", "whose", "which"],
+      "choices": [
+        "who",
+        "whom",
+        "whose",
+        "which"
+      ],
       "answer": 0,
       "explanation": "'who'는 사람을 선행사로 하는 주격 관계대명사입니다. 관계절에서 주어 역할을 합니다.",
       "category": "relative clause",
@@ -94,7 +139,12 @@
       "id": "g010",
       "type": "grammar",
       "sentence": "The client ______ we met yesterday approved the proposal.",
-      "choices": ["whom", "who", "whose", "which"],
+      "choices": [
+        "whom",
+        "who",
+        "whose",
+        "which"
+      ],
       "answer": 0,
       "explanation": "'whom'은 사람을 선행사로 하는 목적격 관계대명사입니다. 'we met'에서 목적어 역할을 합니다.",
       "category": "relative clause",
@@ -104,7 +154,12 @@
       "id": "g011",
       "type": "grammar",
       "sentence": "The company ______ headquarters are in Seoul expanded to Busan.",
-      "choices": ["whose", "which", "that", "whom"],
+      "choices": [
+        "whose",
+        "which",
+        "that",
+        "whom"
+      ],
       "answer": 0,
       "explanation": "'whose'는 소유격 관계대명사로 '~의'라는 의미입니다. 'The company's headquarters'를 관계절로 연결합니다.",
       "category": "relative clause",
@@ -114,7 +169,12 @@
       "id": "g012",
       "type": "grammar",
       "sentence": "______ the sales figures have improved, customer satisfaction remains low.",
-      "choices": ["Although", "Despite", "Because", "Therefore"],
+      "choices": [
+        "Although",
+        "Despite",
+        "Because",
+        "Therefore"
+      ],
       "answer": 0,
       "explanation": "'Although'는 양보의 접속사로 '~에도 불구하고'라는 의미이며, 뒤에 절(주어+동사)이 옵니다.",
       "category": "conjunction",
@@ -124,7 +184,12 @@
       "id": "g013",
       "type": "grammar",
       "sentence": "The proposal will be approved ______ all committee members agree.",
-      "choices": ["provided that", "in case", "so that", "even if"],
+      "choices": [
+        "provided that",
+        "in case",
+        "so that",
+        "even if"
+      ],
       "answer": 0,
       "explanation": "'provided that'은 '~한다면, ~라는 조건하에'라는 의미의 조건 접속사입니다.",
       "category": "conjunction",
@@ -134,7 +199,12 @@
       "id": "g014",
       "type": "grammar",
       "sentence": "The marketing team increased spending, ______ the finance team reduced costs.",
-      "choices": ["whereas", "therefore", "furthermore", "otherwise"],
+      "choices": [
+        "whereas",
+        "therefore",
+        "furthermore",
+        "otherwise"
+      ],
       "answer": 0,
       "explanation": "'whereas'는 '반면에'라는 의미로 대조를 나타내는 접속사입니다.",
       "category": "conjunction",
@@ -144,7 +214,12 @@
       "id": "g015",
       "type": "grammar",
       "sentence": "The new software significantly improved the company's ______.",
-      "choices": ["productivity", "productive", "productively", "produce"],
+      "choices": [
+        "productivity",
+        "productive",
+        "productively",
+        "produce"
+      ],
       "answer": 0,
       "explanation": "소유격(company's) 뒤에는 명사가 와야 합니다. 'productivity(생산성)'가 명사형입니다.",
       "category": "word form",
@@ -154,7 +229,12 @@
       "id": "g016",
       "type": "grammar",
       "sentence": "The results were ______ impressive, exceeding all expectations.",
-      "choices": ["remarkably", "remarkable", "remark", "remarked"],
+      "choices": [
+        "remarkably",
+        "remarkable",
+        "remark",
+        "remarked"
+      ],
       "answer": 0,
       "explanation": "형용사(impressive)를 수식하는 것은 부사입니다. 'remarkably(놀랍게도)'가 부사형입니다.",
       "category": "word form",
@@ -164,7 +244,12 @@
       "id": "g017",
       "type": "grammar",
       "sentence": "The ______ of the new product was delayed due to supply issues.",
-      "choices": ["launch", "launching", "launched", "launcher"],
+      "choices": [
+        "launch",
+        "launching",
+        "launched",
+        "launcher"
+      ],
       "answer": 0,
       "explanation": "관사 'The' 뒤에, 전치사 'of' 앞에는 명사가 필요합니다. 'launch'는 명사로 '출시'를 의미합니다.",
       "category": "word form",
@@ -174,7 +259,12 @@
       "id": "g018",
       "type": "grammar",
       "sentence": "Neither the manager nor the employees ______ aware of the policy change.",
-      "choices": ["were", "was", "is", "has been"],
+      "choices": [
+        "were",
+        "was",
+        "is",
+        "has been"
+      ],
       "answer": 0,
       "explanation": "'Neither A nor B'에서 동사는 B(the employees, 복수)에 수를 일치시킵니다.",
       "category": "subject-verb agreement",
@@ -184,7 +274,12 @@
       "id": "g019",
       "type": "grammar",
       "sentence": "Each of the candidates ______ required to submit a portfolio.",
-      "choices": ["is", "are", "were", "have been"],
+      "choices": [
+        "is",
+        "are",
+        "were",
+        "have been"
+      ],
       "answer": 0,
       "explanation": "'Each of + 복수명사'에서 주어는 'Each'(단수)이므로 단수 동사 'is'를 사용합니다.",
       "category": "subject-verb agreement",
@@ -194,7 +289,12 @@
       "id": "g020",
       "type": "grammar",
       "sentence": "The number of applicants ______ increased dramatically this year.",
-      "choices": ["has", "have", "are", "is"],
+      "choices": [
+        "has",
+        "have",
+        "are",
+        "is"
+      ],
       "answer": 0,
       "explanation": "'The number of'는 '~의 수'라는 의미로 단수 취급합니다. 반면 'A number of'는 '많은'이라는 의미로 복수 취급합니다.",
       "category": "subject-verb agreement",
@@ -204,7 +304,12 @@
       "id": "g021",
       "type": "grammar",
       "sentence": "Ms. Kim is responsible ______ managing the overseas accounts.",
-      "choices": ["for", "to", "of", "with"],
+      "choices": [
+        "for",
+        "to",
+        "of",
+        "with"
+      ],
       "answer": 0,
       "explanation": "'responsible for'는 '~에 대해 책임이 있는'이라는 의미의 고정 표현입니다.",
       "category": "preposition",
@@ -214,7 +319,12 @@
       "id": "g022",
       "type": "grammar",
       "sentence": "The seminar was postponed ______ a scheduling conflict.",
-      "choices": ["due to", "although", "in order to", "so that"],
+      "choices": [
+        "due to",
+        "although",
+        "in order to",
+        "so that"
+      ],
       "answer": 0,
       "explanation": "'due to'는 '~때문에'라는 의미의 전치사구로, 뒤에 명사(구)가 옵니다.",
       "category": "conjunction",
@@ -224,7 +334,12 @@
       "id": "g023",
       "type": "grammar",
       "sentence": "The factory ______ last year has already reached full production capacity.",
-      "choices": ["built", "building", "was built", "which building"],
+      "choices": [
+        "built",
+        "building",
+        "was built",
+        "which building"
+      ],
       "answer": 0,
       "explanation": "과거분사 'built'이 'The factory'를 수식하는 분사구문입니다. 공장이 '지어진' 것이므로 수동의 의미인 과거분사를 사용합니다.",
       "category": "tense",
@@ -234,7 +349,12 @@
       "id": "g024",
       "type": "grammar",
       "sentence": "Employees are encouraged to submit suggestions ______ improving workplace safety.",
-      "choices": ["for", "to", "about", "on"],
+      "choices": [
+        "for",
+        "to",
+        "about",
+        "on"
+      ],
       "answer": 0,
       "explanation": "'suggestions for ~ing'는 '~하기 위한 제안'이라는 의미의 자연스러운 표현입니다.",
       "category": "preposition",
@@ -244,11 +364,1966 @@
       "id": "g025",
       "type": "grammar",
       "sentence": "Had the shipment arrived on time, we ______ met the deadline.",
-      "choices": ["would have", "will have", "would", "had"],
+      "choices": [
+        "would have",
+        "will have",
+        "would",
+        "had"
+      ],
       "answer": 0,
       "explanation": "'Had + S + p.p.'는 가정법 과거완료의 도치 구문입니다. 주절에는 'would have + p.p.'가 옵니다.",
       "category": "tense",
       "difficulty": 5
+    },
+    {
+      "id": "g026",
+      "sentence": "The ______ of the new branch office is expected to take three months.",
+      "choices": [
+        "construction",
+        "constructive",
+        "construct",
+        "constructively"
+      ],
+      "answer": 0,
+      "explanation": "관사 The와 전치사 of 사이에는 명사가 필요. construction = 건설",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g027",
+      "sentence": "All employees must attend the ______ training session on Friday.",
+      "choices": [
+        "mandatory",
+        "mandatorily",
+        "mandate",
+        "mandated"
+      ],
+      "answer": 0,
+      "explanation": "명사 training session을 수식하는 형용사 자리. mandatory = 의무적인",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g028",
+      "sentence": "The CEO spoke ______ about the company's future plans.",
+      "choices": [
+        "enthusiastically",
+        "enthusiastic",
+        "enthusiasm",
+        "enthusiast"
+      ],
+      "answer": 0,
+      "explanation": "동사 spoke를 수식하는 부사 자리. enthusiastically = 열정적으로",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g029",
+      "sentence": "Customer ______ has improved significantly since the new policy was implemented.",
+      "choices": [
+        "satisfaction",
+        "satisfactory",
+        "satisfy",
+        "satisfied"
+      ],
+      "answer": 0,
+      "explanation": "주어 자리에는 명사. Customer satisfaction = 고객 만족",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g030",
+      "sentence": "The committee made a ______ decision to postpone the project.",
+      "choices": [
+        "unanimous",
+        "unanimously",
+        "unanimity",
+        "unanimousness"
+      ],
+      "answer": 0,
+      "explanation": "명사 decision을 수식하는 형용사. unanimous = 만장일치의",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g031",
+      "sentence": "The ______ designed website attracted more visitors than expected.",
+      "choices": [
+        "professionally",
+        "professional",
+        "profession",
+        "professionalism"
+      ],
+      "answer": 0,
+      "explanation": "과거분사 designed를 수식하는 부사. professionally designed = 전문적으로 설계된",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g032",
+      "sentence": "We need to find a ______ solution to the ongoing supply chain issues.",
+      "choices": [
+        "viable",
+        "viably",
+        "viability",
+        "viableness"
+      ],
+      "answer": 0,
+      "explanation": "명사 solution을 수식하는 형용사. viable = 실행 가능한",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g033",
+      "sentence": "The manager's ______ to detail ensured that the project was completed without errors.",
+      "choices": [
+        "attention",
+        "attentive",
+        "attentively",
+        "attend"
+      ],
+      "answer": 0,
+      "explanation": "소유격 뒤 + 전치사 to 앞 = 명사 자리. attention to detail = 세부사항에 대한 주의",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g034",
+      "sentence": "Prices are subject to change without ______ notice.",
+      "choices": [
+        "prior",
+        "priorly",
+        "priority",
+        "prioritize"
+      ],
+      "answer": 0,
+      "explanation": "명사 notice를 수식하는 형용사. prior notice = 사전 통지",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g035",
+      "sentence": "The annual report provides a ______ overview of the company's financial performance.",
+      "choices": [
+        "comprehensive",
+        "comprehensively",
+        "comprehension",
+        "comprehend"
+      ],
+      "answer": 0,
+      "explanation": "명사 overview를 수식하는 형용사. comprehensive = 포괄적인",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g036",
+      "sentence": "The renovation project was completed ______ ahead of schedule.",
+      "choices": [
+        "considerably",
+        "considerable",
+        "considerate",
+        "consideration"
+      ],
+      "answer": 0,
+      "explanation": "부사 ahead를 수식하는 부사. considerably = 상당히",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g037",
+      "sentence": "The board expressed ______ for the work done by the marketing team.",
+      "choices": [
+        "appreciation",
+        "appreciative",
+        "appreciatively",
+        "appreciate"
+      ],
+      "answer": 0,
+      "explanation": "동사 expressed의 목적어 = 명사. appreciation = 감사",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g038",
+      "sentence": "The company's ______ to innovation has led to several breakthrough products.",
+      "choices": [
+        "commitment",
+        "committed",
+        "commit",
+        "committing"
+      ],
+      "answer": 0,
+      "explanation": "소유격 뒤 + 전치사 to 앞 = 명사. commitment = 헌신",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g039",
+      "sentence": "Please handle the fragile equipment ______. ",
+      "choices": [
+        "carefully",
+        "careful",
+        "carefulness",
+        "care"
+      ],
+      "answer": 0,
+      "explanation": "동사 handle을 수식하는 부사. carefully = 조심히",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g040",
+      "sentence": "The new regulation is ______ effective as of next Monday.",
+      "choices": [
+        "immediately",
+        "immediate",
+        "immediacy",
+        "immediateness"
+      ],
+      "answer": 0,
+      "explanation": "형용사 effective를 수식하는 부사. immediately = 즉시",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g041",
+      "sentence": "Mr. Park received ______ for his outstanding contribution to the project.",
+      "choices": [
+        "recognition",
+        "recognize",
+        "recognizable",
+        "recognizably"
+      ],
+      "answer": 0,
+      "explanation": "동사 received의 목적어 = 명사. recognition = 인정",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g042",
+      "sentence": "The new policy aims to ______ workplace safety standards.",
+      "choices": [
+        "strengthen",
+        "strong",
+        "strength",
+        "strongly"
+      ],
+      "answer": 0,
+      "explanation": "to 부정사 뒤는 동사원형. strengthen = 강화하다",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g043",
+      "sentence": "______ feedback from customers helped improve the product design.",
+      "choices": [
+        "Constructive",
+        "Constructively",
+        "Construction",
+        "Construct"
+      ],
+      "answer": 0,
+      "explanation": "명사 feedback을 수식하는 형용사. Constructive = 건설적인",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g044",
+      "sentence": "The finance department conducted a ______ review of all expenditures.",
+      "choices": [
+        "thorough",
+        "thoroughly",
+        "thoroughness",
+        "thorougly"
+      ],
+      "answer": 0,
+      "explanation": "명사 review를 수식하는 형용사. thorough = 철저한",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g045",
+      "sentence": "All applicants will be evaluated ______ based on their qualifications.",
+      "choices": [
+        "solely",
+        "sole",
+        "soleness",
+        "soled"
+      ],
+      "answer": 0,
+      "explanation": "동사 evaluated를 수식하는 부사. solely = 오로지, 단독으로",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g046",
+      "sentence": "The seminar will be held ______ the Grand Ballroom at the Hilton Hotel.",
+      "choices": [
+        "in",
+        "on",
+        "at",
+        "to"
+      ],
+      "answer": 0,
+      "explanation": "넓은 공간(방, 홀) 안에서는 in을 사용. in the Grand Ballroom = 대연회장에서",
+      "category": "preposition",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g047",
+      "sentence": "The product recall was initiated in response ______ customer complaints.",
+      "choices": [
+        "to",
+        "for",
+        "of",
+        "with"
+      ],
+      "answer": 0,
+      "explanation": "in response to = ~에 대응하여 (고정 표현)",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g048",
+      "sentence": "The merger is subject ______ approval by the regulatory authorities.",
+      "choices": [
+        "to",
+        "for",
+        "of",
+        "with"
+      ],
+      "answer": 0,
+      "explanation": "be subject to = ~의 대상이다 (고정 표현)",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g049",
+      "sentence": "The supervisor congratulated the team ______ their excellent performance.",
+      "choices": [
+        "on",
+        "for",
+        "to",
+        "with"
+      ],
+      "answer": 0,
+      "explanation": "congratulate A on B = B에 대해 A를 축하하다",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g050",
+      "sentence": "All inquiries should be directed ______ the customer service department.",
+      "choices": [
+        "to",
+        "for",
+        "at",
+        "on"
+      ],
+      "answer": 0,
+      "explanation": "direct A to B = A를 B로 보내다/안내하다",
+      "category": "preposition",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g051",
+      "sentence": "The warranty does not apply ______ products purchased from unauthorized retailers.",
+      "choices": [
+        "to",
+        "for",
+        "with",
+        "on"
+      ],
+      "answer": 0,
+      "explanation": "apply to = ~에 적용되다",
+      "category": "preposition",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g052",
+      "sentence": "Employees are eligible ______ a 15% discount on all company products.",
+      "choices": [
+        "for",
+        "to",
+        "of",
+        "with"
+      ],
+      "answer": 0,
+      "explanation": "be eligible for = ~에 대한 자격이 있다",
+      "category": "preposition",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g053",
+      "sentence": "The charity event raised funds ______ behalf of the local children's hospital.",
+      "choices": [
+        "on",
+        "in",
+        "by",
+        "for"
+      ],
+      "answer": 0,
+      "explanation": "on behalf of = ~을 대신하여, ~을 위하여",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g054",
+      "sentence": "Attendance at the safety briefing is mandatory ______ exception.",
+      "choices": [
+        "without",
+        "beyond",
+        "besides",
+        "outside"
+      ],
+      "answer": 0,
+      "explanation": "without exception = 예외 없이",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g055",
+      "sentence": "The results were ______ line with what the analysts had predicted.",
+      "choices": [
+        "in",
+        "on",
+        "at",
+        "by"
+      ],
+      "answer": 0,
+      "explanation": "in line with = ~에 부합하여, ~에 따라",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g056",
+      "sentence": "Prior ______ the meeting, please review the attached documents.",
+      "choices": [
+        "to",
+        "of",
+        "for",
+        "at"
+      ],
+      "answer": 0,
+      "explanation": "prior to = ~전에 (= before)",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g057",
+      "sentence": "The budget was cut ______ 20 percent compared to last year.",
+      "choices": [
+        "by",
+        "to",
+        "for",
+        "at"
+      ],
+      "answer": 0,
+      "explanation": "by + 수치 = ~만큼 (증감의 폭)",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g058",
+      "sentence": "Please refrain ______ using your mobile phone during the presentation.",
+      "choices": [
+        "from",
+        "to",
+        "of",
+        "for"
+      ],
+      "answer": 0,
+      "explanation": "refrain from = ~을 삼가다",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g059",
+      "sentence": "The conference will take place ______ March 15 and 17.",
+      "choices": [
+        "between",
+        "among",
+        "from",
+        "during"
+      ],
+      "answer": 0,
+      "explanation": "between A and B = A와 B 사이에 (두 시점)",
+      "category": "preposition",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g060",
+      "sentence": "______ further notice, the parking lot on the east side will be closed.",
+      "choices": [
+        "Until",
+        "By",
+        "Since",
+        "From"
+      ],
+      "answer": 0,
+      "explanation": "until further notice = 추후 통지가 있을 때까지",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g061",
+      "sentence": "The new policy was implemented ______ accordance with industry regulations.",
+      "choices": [
+        "in",
+        "on",
+        "at",
+        "by"
+      ],
+      "answer": 0,
+      "explanation": "in accordance with = ~에 따라",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g062",
+      "sentence": "Employees must comply ______ all safety procedures at all times.",
+      "choices": [
+        "with",
+        "to",
+        "for",
+        "by"
+      ],
+      "answer": 0,
+      "explanation": "comply with = ~을 준수하다",
+      "category": "preposition",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g063",
+      "sentence": "The company has invested heavily ______ renewable energy technology.",
+      "choices": [
+        "in",
+        "to",
+        "for",
+        "on"
+      ],
+      "answer": 0,
+      "explanation": "invest in = ~에 투자하다",
+      "category": "preposition",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g064",
+      "sentence": "The award ceremony was held in honor ______ the retiring CEO.",
+      "choices": [
+        "of",
+        "for",
+        "to",
+        "about"
+      ],
+      "answer": 0,
+      "explanation": "in honor of = ~을 기리어, ~을 기념하여",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g065",
+      "sentence": "Applicants should submit their résumés no later ______ December 31.",
+      "choices": [
+        "than",
+        "then",
+        "that",
+        "to"
+      ],
+      "answer": 0,
+      "explanation": "no later than = 늦어도 ~까지",
+      "category": "preposition",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g066",
+      "sentence": "______ the economy shows signs of recovery, consumer spending remains low.",
+      "choices": [
+        "Even though",
+        "In spite of",
+        "Because",
+        "Due to"
+      ],
+      "answer": 0,
+      "explanation": "Even though는 접속사로 뒤에 절(S+V)이 옴. In spite of는 전치사로 명사가 와야 함",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g067",
+      "sentence": "The shipment was delayed; ______, the client agreed to extend the deadline.",
+      "choices": [
+        "nevertheless",
+        "because",
+        "although",
+        "despite"
+      ],
+      "answer": 0,
+      "explanation": "세미콜론 뒤에는 접속부사. nevertheless = 그럼에도 불구하고",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g068",
+      "sentence": "______ there are enough participants, the workshop will be held as planned.",
+      "choices": [
+        "Provided that",
+        "Despite",
+        "In case of",
+        "Regardless of"
+      ],
+      "answer": 0,
+      "explanation": "Provided that = ~라는 조건 하에 (접속사, 뒤에 절)",
+      "category": "conjunction",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "g069",
+      "sentence": "The company expanded its product line ______ attract a wider customer base.",
+      "choices": [
+        "in order to",
+        "so that",
+        "because of",
+        "due to"
+      ],
+      "answer": 0,
+      "explanation": "in order to + 동사원형 = ~하기 위해. so that 뒤에는 절이 와야 함",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g070",
+      "sentence": "Sales increased dramatically; ______, profits did not improve.",
+      "choices": [
+        "however",
+        "therefore",
+        "furthermore",
+        "consequently"
+      ],
+      "answer": 0,
+      "explanation": "however = 그러나 (대조). therefore/consequently = 따라서 (인과)",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g071",
+      "sentence": "______ Mr. Lee is new to the company, he has already made significant contributions.",
+      "choices": [
+        "Although",
+        "Despite",
+        "Because of",
+        "In addition to"
+      ],
+      "answer": 0,
+      "explanation": "Although는 접속사 + 절. Despite는 전치사 + 명사",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g072",
+      "sentence": "The building was evacuated ______ the fire alarm went off.",
+      "choices": [
+        "as soon as",
+        "during",
+        "while",
+        "throughout"
+      ],
+      "answer": 0,
+      "explanation": "as soon as = ~하자마자 (접속사 + 절)",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g073",
+      "sentence": "The project was successful ______ the limited budget.",
+      "choices": [
+        "despite",
+        "although",
+        "even though",
+        "whereas"
+      ],
+      "answer": 0,
+      "explanation": "despite는 전치사 + 명사(구). although/even though는 접속사 + 절",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g074",
+      "sentence": "Please confirm your attendance ______ we can finalize the seating arrangement.",
+      "choices": [
+        "so that",
+        "in order to",
+        "due to",
+        "because of"
+      ],
+      "answer": 0,
+      "explanation": "so that + S + can/will = ~할 수 있도록",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g075",
+      "sentence": "The company hired additional staff; ______, it outsourced some tasks.",
+      "choices": [
+        "in addition",
+        "however",
+        "therefore",
+        "nevertheless"
+      ],
+      "answer": 0,
+      "explanation": "in addition = 게다가, 또한 (추가)",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g076",
+      "sentence": "______ submitting the report, please double-check all figures.",
+      "choices": [
+        "Before",
+        "Prior",
+        "Until",
+        "During"
+      ],
+      "answer": 0,
+      "explanation": "Before + Ving = ~하기 전에. Prior는 prior to + 명사 형태",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g077",
+      "sentence": "The discount applies to online orders ______ in-store purchases.",
+      "choices": [
+        "as well as",
+        "in addition",
+        "furthermore",
+        "moreover"
+      ],
+      "answer": 0,
+      "explanation": "as well as = ~뿐만 아니라 (전치사적 접속사)",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g078",
+      "sentence": "The CEO will visit the factory ______ inspecting the new production line.",
+      "choices": [
+        "for the purpose of",
+        "so that",
+        "because",
+        "in order that"
+      ],
+      "answer": 0,
+      "explanation": "for the purpose of + Ving = ~하기 위해",
+      "category": "conjunction",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "g079",
+      "sentence": "______ the rain stops, the outdoor event will be canceled.",
+      "choices": [
+        "Unless",
+        "If",
+        "Although",
+        "Despite"
+      ],
+      "answer": 0,
+      "explanation": "Unless = ~하지 않는 한 (= if not)",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g080",
+      "sentence": "Ms. Park was promoted ______ her exceptional leadership skills.",
+      "choices": [
+        "owing to",
+        "although",
+        "whereas",
+        "unless"
+      ],
+      "answer": 0,
+      "explanation": "owing to = ~때문에 (전치사 + 명사구). = because of, due to",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g081",
+      "sentence": "The building ______ renovated by the time the new tenants move in.",
+      "choices": [
+        "will have been",
+        "has been",
+        "was",
+        "is being"
+      ],
+      "answer": 0,
+      "explanation": "by the time + 현재시제 → 주절은 미래완료. 건물이 '개조되는' 것이므로 수동태",
+      "category": "tense",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "g082",
+      "sentence": "Applications ______ after the deadline will not be considered.",
+      "choices": [
+        "received",
+        "receiving",
+        "receive",
+        "to receive"
+      ],
+      "answer": 0,
+      "explanation": "과거분사 received가 Applications를 수식. 지원서가 '받아진' 것이므로 수동 의미의 과거분사",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g083",
+      "sentence": "The budget for next year ______ not yet been finalized.",
+      "choices": [
+        "has",
+        "had",
+        "is",
+        "was"
+      ],
+      "answer": 0,
+      "explanation": "not yet(아직 ~않다) → 현재완료 has + been finalized",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g084",
+      "sentence": "The new regulations ______ into effect last month.",
+      "choices": [
+        "went",
+        "have gone",
+        "go",
+        "will go"
+      ],
+      "answer": 0,
+      "explanation": "last month(과거 시점) → 과거시제 went",
+      "category": "tense",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g085",
+      "sentence": "Once the contract ______, both parties will begin implementation.",
+      "choices": [
+        "is signed",
+        "will be signed",
+        "has signed",
+        "signing"
+      ],
+      "answer": 0,
+      "explanation": "Once(일단 ~하면) 뒤에는 현재시제. 계약이 '서명되는' 것이므로 수동태",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g086",
+      "sentence": "The company ______ three new branches since the beginning of the year.",
+      "choices": [
+        "has opened",
+        "opened",
+        "opens",
+        "is opening"
+      ],
+      "answer": 0,
+      "explanation": "since + 과거시점 → 현재완료 has opened",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g087",
+      "sentence": "All employees ______ to complete the training by the end of the month.",
+      "choices": [
+        "are required",
+        "require",
+        "requiring",
+        "have required"
+      ],
+      "answer": 0,
+      "explanation": "직원들이 '요구받는' 것이므로 수동태 are required",
+      "category": "tense",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g088",
+      "sentence": "The package ______ delivered to the wrong address yesterday.",
+      "choices": [
+        "was",
+        "is",
+        "has been",
+        "will be"
+      ],
+      "answer": 0,
+      "explanation": "yesterday(과거) → 과거 수동태 was delivered",
+      "category": "tense",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g089",
+      "sentence": "By next quarter, the company ______ its expansion into three new markets.",
+      "choices": [
+        "will have completed",
+        "has completed",
+        "completed",
+        "completes"
+      ],
+      "answer": 0,
+      "explanation": "By next quarter(미래 시점까지) → 미래완료 will have completed",
+      "category": "tense",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "g090",
+      "sentence": "The research team ______ on the project for over two years now.",
+      "choices": [
+        "has been working",
+        "worked",
+        "works",
+        "is working"
+      ],
+      "answer": 0,
+      "explanation": "for over two years + now → 현재완료진행 has been working",
+      "category": "tense",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "g091",
+      "sentence": "The proposal ______ reviewed by the committee before it was approved.",
+      "choices": [
+        "had been",
+        "has been",
+        "was being",
+        "is"
+      ],
+      "answer": 0,
+      "explanation": "승인되기 '전에' 검토됨 → 과거완료 수동태 had been reviewed",
+      "category": "tense",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "g092",
+      "sentence": "The factory ______ currently ______ upgraded to meet new safety standards.",
+      "choices": [
+        "is ... being",
+        "has ... been",
+        "was ... being",
+        "will ... be"
+      ],
+      "answer": 0,
+      "explanation": "currently(현재) → 현재진행 수동태 is being upgraded",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g093",
+      "sentence": "Ms. Chen ______ as the regional director since 2020.",
+      "choices": [
+        "has served",
+        "served",
+        "serves",
+        "is serving"
+      ],
+      "answer": 0,
+      "explanation": "since 2020 → 현재완료 has served",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g094",
+      "sentence": "The report ______ be submitted by 5 P.M. today.",
+      "choices": [
+        "must",
+        "has",
+        "had",
+        "is"
+      ],
+      "answer": 0,
+      "explanation": "must be submitted = 제출되어야 한다 (의무의 조동사)",
+      "category": "tense",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g095",
+      "sentence": "If I ______ about the meeting, I would have attended.",
+      "choices": [
+        "had known",
+        "knew",
+        "have known",
+        "know"
+      ],
+      "answer": 0,
+      "explanation": "가정법 과거완료: If + had p.p., would have p.p.",
+      "category": "tense",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "g096",
+      "sentence": "The two companies merged, combining ______ resources and expertise.",
+      "choices": [
+        "their",
+        "its",
+        "them",
+        "they"
+      ],
+      "answer": 0,
+      "explanation": "두 회사의 자원 → 소유격 their (복수)",
+      "category": "pronoun",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g097",
+      "sentence": "______ interested in the position should submit an application by Friday.",
+      "choices": [
+        "Those",
+        "That",
+        "These",
+        "Them"
+      ],
+      "answer": 0,
+      "explanation": "Those + 형용사/분사 = ~한 사람들. Those interested = 관심 있는 사람들",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g098",
+      "sentence": "The manager asked the employees to familiarize ______ with the new software.",
+      "choices": [
+        "themselves",
+        "them",
+        "their",
+        "they"
+      ],
+      "answer": 0,
+      "explanation": "재귀대명사 themselves. familiarize oneself with = ~에 익숙해지다",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g099",
+      "sentence": "______ of the proposals submitted met the client's requirements.",
+      "choices": [
+        "None",
+        "No",
+        "Not",
+        "Nothing"
+      ],
+      "answer": 0,
+      "explanation": "None of + 명사 = ~중 아무것도 아닌",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g100",
+      "sentence": "The hotel offers ______ guests complimentary breakfast every morning.",
+      "choices": [
+        "its",
+        "their",
+        "it's",
+        "they're"
+      ],
+      "answer": 0,
+      "explanation": "The hotel(단수) → 소유격 its. it's = it is",
+      "category": "pronoun",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g101",
+      "sentence": "Employees may choose ______ the health plan or the dental plan.",
+      "choices": [
+        "either",
+        "both",
+        "neither",
+        "all"
+      ],
+      "answer": 0,
+      "explanation": "either A or B = A 또는 B 중 하나",
+      "category": "pronoun",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g102",
+      "sentence": "The conference room is available for ______ who needs it.",
+      "choices": [
+        "anyone",
+        "someone",
+        "everyone",
+        "no one"
+      ],
+      "answer": 0,
+      "explanation": "anyone who = ~하는 누구든",
+      "category": "pronoun",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g103",
+      "sentence": "______ employee is expected to follow the company's code of conduct.",
+      "choices": [
+        "Every",
+        "All",
+        "Most",
+        "Many"
+      ],
+      "answer": 0,
+      "explanation": "Every + 단수명사 = 모든 ~. All + 복수명사",
+      "category": "pronoun",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g104",
+      "sentence": "The laptops are identical; there is no difference between ______.",
+      "choices": [
+        "them",
+        "they",
+        "their",
+        "themselves"
+      ],
+      "answer": 0,
+      "explanation": "전치사 between 뒤에는 목적격 them",
+      "category": "pronoun",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g105",
+      "sentence": "Ms. Lee completed the report by ______ without any assistance.",
+      "choices": [
+        "herself",
+        "her",
+        "hers",
+        "she"
+      ],
+      "answer": 0,
+      "explanation": "by oneself = 혼자서. 재귀대명사 herself",
+      "category": "pronoun",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g106",
+      "sentence": "The clients were pleased with the service and expressed ______ gratitude.",
+      "choices": [
+        "their",
+        "its",
+        "them",
+        "they"
+      ],
+      "answer": 0,
+      "explanation": "The clients(복수) → 소유격 their",
+      "category": "pronoun",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g107",
+      "sentence": "______ suggestions are welcome and will be reviewed by management.",
+      "choices": [
+        "All",
+        "Every",
+        "Each",
+        "Either"
+      ],
+      "answer": 0,
+      "explanation": "All + 복수명사 + 복수동사. Every/Each + 단수명사",
+      "category": "pronoun",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g108",
+      "sentence": "The supervisor assigned the task to Mr. Kim and ______.",
+      "choices": [
+        "me",
+        "I",
+        "myself",
+        "mine"
+      ],
+      "answer": 0,
+      "explanation": "전치사 to의 목적어 → 목적격 me. 'to Mr. Kim and me'",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g109",
+      "sentence": "______ the two options, the first one seems more cost-effective.",
+      "choices": [
+        "Of",
+        "From",
+        "Between",
+        "Among"
+      ],
+      "answer": 0,
+      "explanation": "Of the two options = 두 선택지 중에서",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g110",
+      "sentence": "The company prides ______ on its commitment to customer service.",
+      "choices": [
+        "itself",
+        "it",
+        "its",
+        "it's"
+      ],
+      "answer": 0,
+      "explanation": "pride oneself on = ~을 자랑하다. 재귀대명사 itself",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g111",
+      "sentence": "The board of directors will ______ the annual budget at the next meeting.",
+      "choices": [
+        "review",
+        "renew",
+        "revise",
+        "revoke"
+      ],
+      "answer": 0,
+      "explanation": "review = 검토하다. renew = 갱신, revise = 수정, revoke = 취소",
+      "category": "vocabulary",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g112",
+      "sentence": "All employees are ______ to attend the fire safety drill on Tuesday.",
+      "choices": [
+        "required",
+        "acquired",
+        "inquired",
+        "desired"
+      ],
+      "answer": 0,
+      "explanation": "be required to = ~해야 한다. acquired = 취득된, inquired = 문의된",
+      "category": "vocabulary",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g113",
+      "sentence": "The company plans to ______ its operations to Southeast Asia.",
+      "choices": [
+        "expand",
+        "expend",
+        "extend",
+        "expose"
+      ],
+      "answer": 0,
+      "explanation": "expand operations = 사업을 확장하다. expend = 소비하다",
+      "category": "vocabulary",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g114",
+      "sentence": "Customers may ______ a full refund within 30 days of purchase.",
+      "choices": [
+        "request",
+        "require",
+        "resign",
+        "resolve"
+      ],
+      "answer": 0,
+      "explanation": "request a refund = 환불을 요청하다",
+      "category": "vocabulary",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g115",
+      "sentence": "The new software will ______ employees to work more efficiently.",
+      "choices": [
+        "enable",
+        "endure",
+        "enforce",
+        "enrich"
+      ],
+      "answer": 0,
+      "explanation": "enable A to V = A가 V하는 것을 가능하게 하다",
+      "category": "vocabulary",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g116",
+      "sentence": "Ms. Kim was ______ promoted to the position of vice president.",
+      "choices": [
+        "recently",
+        "frequently",
+        "relatively",
+        "previously"
+      ],
+      "answer": 0,
+      "explanation": "recently promoted = 최근에 승진한",
+      "category": "vocabulary",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g117",
+      "sentence": "The marketing campaign was ______ successful in reaching younger consumers.",
+      "choices": [
+        "particularly",
+        "partially",
+        "practically",
+        "presumably"
+      ],
+      "answer": 0,
+      "explanation": "particularly = 특히. partially = 부분적으로",
+      "category": "vocabulary",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g118",
+      "sentence": "The company ______ a new policy regarding remote work arrangements.",
+      "choices": [
+        "implemented",
+        "implied",
+        "imported",
+        "imposed"
+      ],
+      "answer": 0,
+      "explanation": "implement a policy = 정책을 시행하다",
+      "category": "vocabulary",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g119",
+      "sentence": "The CEO will ______ the keynote speech at the industry conference.",
+      "choices": [
+        "deliver",
+        "distribute",
+        "delegate",
+        "designate"
+      ],
+      "answer": 0,
+      "explanation": "deliver a speech = 연설하다",
+      "category": "vocabulary",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g120",
+      "sentence": "Tickets for the event are available on a first-come, first-______ basis.",
+      "choices": [
+        "served",
+        "saved",
+        "seen",
+        "seated"
+      ],
+      "answer": 0,
+      "explanation": "first-come, first-served = 선착순",
+      "category": "vocabulary",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g121",
+      "sentence": "The construction project is ______ to be completed by the end of the year.",
+      "choices": [
+        "expected",
+        "exposed",
+        "expressed",
+        "exceeded"
+      ],
+      "answer": 0,
+      "explanation": "be expected to = ~할 것으로 예상되다",
+      "category": "vocabulary",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g122",
+      "sentence": "Please ______ the enclosed form and return it by April 15.",
+      "choices": [
+        "complete",
+        "compete",
+        "compile",
+        "comply"
+      ],
+      "answer": 0,
+      "explanation": "complete a form = 양식을 작성하다",
+      "category": "vocabulary",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g123",
+      "sentence": "The firm has ______ a reputation for excellent customer service.",
+      "choices": [
+        "established",
+        "abolished",
+        "demolished",
+        "diminished"
+      ],
+      "answer": 0,
+      "explanation": "establish a reputation = 명성을 쌓다",
+      "category": "vocabulary",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g124",
+      "sentence": "Employees are ______ encouraged to participate in the wellness program.",
+      "choices": [
+        "strongly",
+        "strictly",
+        "steadily",
+        "steeply"
+      ],
+      "answer": 0,
+      "explanation": "strongly encouraged = 강력히 권장되는",
+      "category": "vocabulary",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g125",
+      "sentence": "The proposal was ______ rejected by the committee due to budget constraints.",
+      "choices": [
+        "unanimously",
+        "uniquely",
+        "uniformly",
+        "universally"
+      ],
+      "answer": 0,
+      "explanation": "unanimously rejected = 만장일치로 거부된",
+      "category": "vocabulary",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "g126",
+      "sentence": "The factory operates ______ the clock to meet the production deadline.",
+      "choices": [
+        "around",
+        "across",
+        "along",
+        "above"
+      ],
+      "answer": 0,
+      "explanation": "around the clock = 24시간 내내",
+      "category": "vocabulary",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g127",
+      "sentence": "The lease agreement ______ that tenants must give 60 days' notice.",
+      "choices": [
+        "stipulates",
+        "stimulates",
+        "speculates",
+        "simulates"
+      ],
+      "answer": 0,
+      "explanation": "stipulate = 규정하다, 명시하다",
+      "category": "vocabulary",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "g128",
+      "sentence": "The company's profits have grown ______ over the past five years.",
+      "choices": [
+        "steadily",
+        "steeply",
+        "strictly",
+        "sternly"
+      ],
+      "answer": 0,
+      "explanation": "steadily = 꾸준히. steeply = 가파르게",
+      "category": "vocabulary",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g129",
+      "sentence": "The supervisor ______ the employees for their hard work during the busy season.",
+      "choices": [
+        "commended",
+        "commanded",
+        "commenced",
+        "committed"
+      ],
+      "answer": 0,
+      "explanation": "commend = 칭찬하다. command = 명령하다, commence = 시작하다",
+      "category": "vocabulary",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "g130",
+      "sentence": "The seminar will ______ a wide range of topics related to digital marketing.",
+      "choices": [
+        "cover",
+        "discover",
+        "recover",
+        "uncover"
+      ],
+      "answer": 0,
+      "explanation": "cover topics = 주제를 다루다",
+      "category": "vocabulary",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g131",
+      "sentence": "The company is ______ seeking qualified candidates for the open position.",
+      "choices": [
+        "actively",
+        "actually",
+        "accurately",
+        "adequately"
+      ],
+      "answer": 0,
+      "explanation": "actively seeking = 적극적으로 찾고 있는",
+      "category": "vocabulary",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g132",
+      "sentence": "Profits ______ sharply in the third quarter due to decreased demand.",
+      "choices": [
+        "declined",
+        "decided",
+        "declared",
+        "dedicated"
+      ],
+      "answer": 0,
+      "explanation": "decline = 감소하다. decide = 결정하다",
+      "category": "vocabulary",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g133",
+      "sentence": "The ______ date for the project submission is November 30.",
+      "choices": [
+        "deadline",
+        "decline",
+        "definite",
+        "decisive"
+      ],
+      "answer": 0,
+      "explanation": "deadline date = 마감일. 또는 deadline = 마감일(명사)",
+      "category": "vocabulary",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g134",
+      "sentence": "The board ______ approved the merger after months of negotiations.",
+      "choices": [
+        "finally",
+        "formally",
+        "formerly",
+        "firmly"
+      ],
+      "answer": 0,
+      "explanation": "finally approved = 마침내 승인했다",
+      "category": "vocabulary",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g135",
+      "sentence": "The new regulation is ______ to take effect at the beginning of next year.",
+      "choices": [
+        "scheduled",
+        "suspected",
+        "submitted",
+        "subscribed"
+      ],
+      "answer": 0,
+      "explanation": "be scheduled to = ~할 예정이다",
+      "category": "vocabulary",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g136",
+      "sentence": "A variety of training programs ______ available to all employees.",
+      "choices": [
+        "are",
+        "is",
+        "has been",
+        "was"
+      ],
+      "answer": 0,
+      "explanation": "a variety of + 복수명사 → 복수동사 are",
+      "category": "subject-verb agreement",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g137",
+      "sentence": "The equipment in the conference rooms ______ been updated recently.",
+      "choices": [
+        "has",
+        "have",
+        "are",
+        "is"
+      ],
+      "answer": 0,
+      "explanation": "주어는 equipment(단수 불가산명사) → has. in the conference rooms는 수식어",
+      "category": "subject-verb agreement",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g138",
+      "sentence": "Not only the manager but also the employees ______ responsible for safety.",
+      "choices": [
+        "are",
+        "is",
+        "was",
+        "has been"
+      ],
+      "answer": 0,
+      "explanation": "Not only A but also B → 동사는 B(employees, 복수)에 일치",
+      "category": "subject-verb agreement",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "g139",
+      "sentence": "The information provided in these documents ______ strictly confidential.",
+      "choices": [
+        "is",
+        "are",
+        "were",
+        "have been"
+      ],
+      "answer": 0,
+      "explanation": "information은 불가산명사 → 단수 is",
+      "category": "subject-verb agreement",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g140",
+      "sentence": "Every manager and supervisor ______ expected to attend the meeting.",
+      "choices": [
+        "is",
+        "are",
+        "were",
+        "have been"
+      ],
+      "answer": 0,
+      "explanation": "Every A and B → 단수 취급. is expected",
+      "category": "subject-verb agreement",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "g141",
+      "sentence": "The building ______ the meeting will take place is located on Main Street.",
+      "choices": [
+        "where",
+        "which",
+        "that",
+        "what"
+      ],
+      "answer": 0,
+      "explanation": "장소를 나타내는 관계부사 where. = in which",
+      "category": "relative clause",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g142",
+      "sentence": "This is the most ______ marketing strategy the company has ever implemented.",
+      "choices": [
+        "effective",
+        "effectively",
+        "effect",
+        "effectiveness"
+      ],
+      "answer": 0,
+      "explanation": "the most + 형용사 (최상급). most effective = 가장 효과적인",
+      "category": "comparison",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g143",
+      "sentence": "The new model is significantly ______ than the previous one.",
+      "choices": [
+        "lighter",
+        "lightest",
+        "light",
+        "lightly"
+      ],
+      "answer": 0,
+      "explanation": "than → 비교급. lighter than = ~보다 더 가벼운",
+      "category": "comparison",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g144",
+      "sentence": "The company, ______ was founded in 1990, now operates in 30 countries.",
+      "choices": [
+        "which",
+        "that",
+        "who",
+        "where"
+      ],
+      "answer": 0,
+      "explanation": "콤마 + which = 계속적 용법의 관계대명사 (사물)",
+      "category": "relative clause",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g145",
+      "sentence": "The region ______ the factory will be built offers tax incentives.",
+      "choices": [
+        "where",
+        "which",
+        "that",
+        "whom"
+      ],
+      "answer": 0,
+      "explanation": "장소 선행사 + where = in which",
+      "category": "relative clause",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g146",
+      "sentence": "Of all the candidates, Ms. Park is the ______ qualified for the position.",
+      "choices": [
+        "most",
+        "more",
+        "much",
+        "very"
+      ],
+      "answer": 0,
+      "explanation": "Of all(셋 이상) → 최상급 most qualified",
+      "category": "comparison",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g147",
+      "sentence": "The sooner the issue is resolved, the ______ it will be for everyone.",
+      "choices": [
+        "better",
+        "best",
+        "good",
+        "well"
+      ],
+      "answer": 0,
+      "explanation": "the 비교급, the 비교급 = ~할수록 더 ~하다",
+      "category": "comparison",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g148",
+      "sentence": "This software is just as ______ as the one we used before.",
+      "choices": [
+        "reliable",
+        "reliably",
+        "reliability",
+        "relied"
+      ],
+      "answer": 0,
+      "explanation": "as + 원급 + as = ~만큼 ~한. as reliable as = 만큼 신뢰할 수 있는",
+      "category": "comparison",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g149",
+      "sentence": "The candidate ______ résumé impressed the committee was offered the job.",
+      "choices": [
+        "whose",
+        "whom",
+        "who",
+        "which"
+      ],
+      "answer": 0,
+      "explanation": "소유격 관계대명사 whose. whose résumé = 그의 이력서가",
+      "category": "relative clause",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g150",
+      "sentence": "The more experience a candidate has, the ______ the starting salary will be.",
+      "choices": [
+        "higher",
+        "highest",
+        "high",
+        "highly"
+      ],
+      "answer": 0,
+      "explanation": "the 비교급, the 비교급. the higher = 더 높은",
+      "category": "comparison",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g151",
+      "sentence": "The report, ______ took three months to prepare, was well received by the board.",
+      "choices": [
+        "which",
+        "that",
+        "what",
+        "who"
+      ],
+      "answer": 0,
+      "explanation": "콤마 뒤 관계대명사 = which (계속적 용법, that 불가)",
+      "category": "relative clause",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g152",
+      "sentence": "The hotel is ______ expensive than we originally expected.",
+      "choices": [
+        "less",
+        "least",
+        "few",
+        "little"
+      ],
+      "answer": 0,
+      "explanation": "less + 형용사 + than = ~보다 덜 ~한",
+      "category": "comparison",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "g153",
+      "sentence": "This is the facility ______ the annual shareholders' meeting will be held.",
+      "choices": [
+        "where",
+        "which",
+        "that",
+        "whom"
+      ],
+      "answer": 0,
+      "explanation": "장소 선행사 facility + 관계부사 where",
+      "category": "relative clause",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g154",
+      "sentence": "The new system is far ______ efficient than the previous one.",
+      "choices": [
+        "more",
+        "most",
+        "much",
+        "very"
+      ],
+      "answer": 0,
+      "explanation": "far + 비교급 = 훨씬 더. far more efficient = 훨씬 더 효율적인",
+      "category": "comparison",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "g155",
+      "sentence": "The reason ______ the meeting was postponed has not been announced.",
+      "choices": [
+        "why",
+        "which",
+        "that",
+        "where"
+      ],
+      "answer": 0,
+      "explanation": "the reason why = ~한 이유. 관계부사 why",
+      "category": "relative clause",
+      "difficulty": 3,
+      "type": "grammar"
     }
   ]
 }
