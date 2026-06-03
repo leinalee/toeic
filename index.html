@@ -115,8 +115,8 @@ body {
 /* Reading passage */
 .passage-box {
   background: #f8fafc; border: 1px solid var(--border); border-radius: 8px;
-  padding: 16px; margin-bottom: 16px; max-height: 300px; overflow-y: auto;
-  -webkit-overflow-scrolling: touch; line-height: 1.7; font-size: 15px;
+  padding: 16px; margin-bottom: 16px;
+  line-height: 1.7; font-size: 15px;
   white-space: pre-wrap;
 }
 .passage-type-badge {
@@ -408,7 +408,12 @@ body {
         <div class="card-label">오답 노트</div>
         <div class="card-count" id="wrong-count">0문제</div>
       </div>
-      <div class="card card-full" onclick="showStats()">
+      <div class="card" onclick="window.location.href='guide.html'">
+        <div class="card-icon">🎓</div>
+        <div class="card-label">토익 강의</div>
+        <div class="card-count">파트별 전략 가이드</div>
+      </div>
+      <div class="card" onclick="showStats()">
         <div class="card-icon">📊</div>
         <div class="card-label">학습 통계</div>
         <div class="card-count">나의 성적 확인하기</div>
@@ -769,6 +774,7 @@ function startQuiz() {
     quizState.isPart6 = false;
     quizState.totalSubQuestions = pool.reduce((s, p) => s + p.subQuestions.length, 0);
     quizState.answeredCount = 0;
+    quizState.subAnswered = {};
 
     showScreen('quiz');
     renderReadingQuestion();
@@ -1047,39 +1053,70 @@ function selectPart6Answer(choiceIndex) {
 
 function renderReadingQuestion() {
   const passage = quizState.questions[quizState.currentIndex];
-  const subQ = passage.subQuestions[quizState.currentSubIndex];
   quizState.answered = false;
+
+  // Track answered state per sub-question for this passage
+  if (!quizState.subAnswered) quizState.subAnswered = {};
 
   const totalSub = quizState.totalSubQuestions;
   const currentNum = quizState.answeredCount + 1;
 
-  document.getElementById('quiz-progress').textContent = `${currentNum} / ${totalSub}`;
-  document.getElementById('quiz-progress-bar').style.width = `${(currentNum / totalSub) * 100}%`;
+  document.getElementById('quiz-progress').textContent = `지문 ${quizState.currentIndex + 1} / ${quizState.questions.length}`;
+  document.getElementById('quiz-progress-bar').style.width = `${(quizState.answeredCount / totalSub) * 100}%`;
 
   const passageTypes = { email: '이메일', memo: '사내 메모', advertisement: '광고', article: '기사', notice: '공지' };
+  const nums = ['①', '②', '③', '④'];
 
   let html = '';
   html += `<span class="passage-type-badge">${passageTypes[passage.passageType] || passage.passageType}</span>`;
   html += `<div class="passage-box">${passage.passage}</div>`;
-  html += `<div class="sub-question-counter">질문 ${quizState.currentSubIndex + 1} / ${passage.subQuestions.length}</div>`;
-  html += `<div class="question-card">`;
-  html += `<div class="question-text">${subQ.question}</div>`;
-  html += `</div>`;
 
-  html += '<div class="choices">';
-  const nums = ['①', '②', '③', '④'];
-  subQ.choices.forEach((choice, i) => {
-    html += `<button class="choice-btn" onclick="selectReadingAnswer(${i})">
-      <span class="choice-num">${nums[i]}</span>
-      <span>${choice}</span>
-    </button>`;
+  // Render ALL sub-questions at once
+  passage.subQuestions.forEach((subQ, si) => {
+    const qKey = `${quizState.currentIndex}_${si}`;
+    const isAnswered = quizState.subAnswered[qKey];
+
+    html += `<div class="reading-sub-block" id="reading-sub-${si}" style="margin-bottom:20px;">`;
+    html += `<div class="sub-question-counter" style="font-weight:700; color:var(--primary);">Q${si + 1}. </div>`;
+    html += `<div class="question-card">`;
+    html += `<div class="question-text">${subQ.question}</div>`;
+    html += `</div>`;
+
+    html += `<div class="choices" id="reading-choices-${si}">`;
+    subQ.choices.forEach((choice, i) => {
+      const disabled = isAnswered ? 'disabled' : '';
+      html += `<button class="choice-btn ${disabled}" onclick="selectReadingAnswer(${si}, ${i})">
+        <span class="choice-num">${nums[i]}</span>
+        <span>${choice}</span>
+      </button>`;
+    });
+    html += '</div>';
+
+    html += `<div class="feedback" id="reading-feedback-${si}" style="display:none;"></div>`;
+    html += `</div>`;
   });
-  html += '</div>';
 
   document.getElementById('quiz-content').innerHTML = html;
-  document.getElementById('quiz-feedback').className = 'feedback';
-  document.getElementById('quiz-feedback').classList.remove('show');
+  document.getElementById('quiz-feedback').style.display = 'none';
   document.getElementById('next-btn').classList.remove('show');
+
+  // Restore already-answered states
+  passage.subQuestions.forEach((subQ, si) => {
+    const qKey = `${quizState.currentIndex}_${si}`;
+    const prev = quizState.subAnswered[qKey];
+    if (prev) {
+      const btns = document.querySelectorAll(`#reading-choices-${si} .choice-btn`);
+      btns.forEach((btn, i) => {
+        btn.classList.add('disabled');
+        if (i === subQ.answer) btn.classList.add('correct');
+        if (i === prev.chosen && prev.chosen !== subQ.answer) btn.classList.add('wrong');
+      });
+      const fb = document.getElementById(`reading-feedback-${si}`);
+      fb.style.display = 'block';
+      fb.className = `feedback show ${prev.correct ? 'correct' : 'wrong'}`;
+      fb.innerHTML = `<div class="feedback-title">${prev.correct ? '정답입니다!' : '오답입니다'}</div><div>${subQ.explanation}</div>`;
+    }
+  });
 }
 
 function selectAnswer(choiceIndex) {
@@ -1177,26 +1214,29 @@ function selectAnswer(choiceIndex) {
   document.getElementById('next-btn').classList.add('show');
 }
 
-function selectReadingAnswer(choiceIndex) {
-  if (quizState.answered) return;
-  quizState.answered = true;
+function selectReadingAnswer(subIndex, choiceIndex) {
+  const qKey = `${quizState.currentIndex}_${subIndex}`;
+  if (quizState.subAnswered[qKey]) return; // already answered
 
   const passage = quizState.questions[quizState.currentIndex];
-  const subQ = passage.subQuestions[quizState.currentSubIndex];
+  const subQ = passage.subQuestions[subIndex];
   const isCorrect = choiceIndex === subQ.answer;
 
-  const btns = document.querySelectorAll('.choice-btn');
+  // Mark as answered
+  quizState.subAnswered[qKey] = { chosen: choiceIndex, correct: isCorrect };
+
+  // Update UI for this question only
+  const btns = document.querySelectorAll(`#reading-choices-${subIndex} .choice-btn`);
   btns.forEach((btn, i) => {
     btn.classList.add('disabled');
     if (i === subQ.answer) btn.classList.add('correct');
     if (i === choiceIndex && !isCorrect) btn.classList.add('wrong');
   });
 
-  const fb = document.getElementById('quiz-feedback');
-  fb.className = 'feedback show ' + (isCorrect ? 'correct' : 'wrong');
-  document.getElementById('feedback-title').textContent = isCorrect ? '정답입니다!' : '오답입니다';
-  document.getElementById('feedback-text').textContent = subQ.explanation;
-  document.getElementById('feedback-example').style.display = 'none';
+  const fb = document.getElementById(`reading-feedback-${subIndex}`);
+  fb.style.display = 'block';
+  fb.className = `feedback show ${isCorrect ? 'correct' : 'wrong'}`;
+  fb.innerHTML = `<div class="feedback-title">${isCorrect ? '정답입니다!' : '오답입니다'}</div><div>${subQ.explanation}</div>`;
 
   if (isCorrect) {
     quizState.score++;
@@ -1209,15 +1249,17 @@ function selectReadingAnswer(choiceIndex) {
   updateStats('reading', isCorrect);
   quizState.answeredCount++;
 
-  const hasMoreSub = quizState.currentSubIndex < passage.subQuestions.length - 1;
-  const hasMorePassage = quizState.currentIndex < quizState.questions.length - 1;
+  // Update progress bar
+  document.getElementById('quiz-progress-bar').style.width = `${(quizState.answeredCount / quizState.totalSubQuestions) * 100}%`;
 
-  if (hasMoreSub || hasMorePassage) {
-    document.getElementById('next-btn').textContent = hasMoreSub ? '다음 질문 →' : '다음 지문 →';
-  } else {
-    document.getElementById('next-btn').textContent = '결과 보기';
+  // Check if all sub-questions for this passage are answered
+  const allAnswered = passage.subQuestions.every((_, si) => quizState.subAnswered[`${quizState.currentIndex}_${si}`]);
+
+  if (allAnswered) {
+    const hasMorePassage = quizState.currentIndex < quizState.questions.length - 1;
+    document.getElementById('next-btn').textContent = hasMorePassage ? '다음 지문 →' : '결과 보기';
+    document.getElementById('next-btn').classList.add('show');
   }
-  document.getElementById('next-btn').classList.add('show');
 }
 
 function nextQuestion() {
@@ -1234,14 +1276,10 @@ function nextQuestion() {
       endQuiz();
     }
   } else if (quizState.isReading) {
-    const passage = quizState.questions[quizState.currentIndex];
-    if (quizState.currentSubIndex < passage.subQuestions.length - 1) {
-      quizState.currentSubIndex++;
-      renderReadingQuestion();
-    } else if (quizState.currentIndex < quizState.questions.length - 1) {
+    if (quizState.currentIndex < quizState.questions.length - 1) {
       quizState.currentIndex++;
-      quizState.currentSubIndex = 0;
       renderReadingQuestion();
+      window.scrollTo(0, 0);
     } else {
       endQuiz();
     }

@@ -2324,6 +2324,801 @@
       "category": "relative clause",
       "difficulty": 3,
       "type": "grammar"
+    },
+    {
+      "id": "ng001",
+      "sentence": "Please contact the product distributor, not the retail store, if ______ need replacement parts.",
+      "choices": [
+        "your",
+        "you",
+        "yourself",
+        "yours"
+      ],
+      "answer": 1,
+      "explanation": "if절의 주어 자리 → 주격 대명사 you가 정답. A, not B = B가 아닌 A",
+      "category": "pronoun",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "ng002",
+      "sentence": "To keep ______ park beautiful, please place your nonrecyclables in the available trash cans.",
+      "choices": [
+        "our",
+        "we",
+        "us",
+        "ours"
+      ],
+      "answer": 0,
+      "explanation": "park(명사) 앞 = 소유격 자리. our park = 우리의 공원. keep + 목적어 + 형용사 = 5형식",
+      "category": "pronoun",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "ng003",
+      "sentence": "Local merchants are hopeful that if this new business succeeds, ______ will also benefit.",
+      "choices": [
+        "theirs",
+        "them",
+        "their",
+        "themselves"
+      ],
+      "answer": 0,
+      "explanation": "will의 주어 자리. 앞의 merchants를 대신하는 소유대명사 theirs(그들의 것=사업)",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng004",
+      "sentence": "Mr. Park began the research project by ______ but later was assisted by two colleagues.",
+      "choices": [
+        "he",
+        "his",
+        "him",
+        "himself"
+      ],
+      "answer": 3,
+      "explanation": "by oneself = 혼자 힘으로. 전치사 by + 재귀대명사 himself",
+      "category": "pronoun",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "ng005",
+      "sentence": "We made a ______ estimate of how many tourists to expect in the coming month.",
+      "choices": [
+        "conservative",
+        "conservation",
+        "conservatism",
+        "conservatively"
+      ],
+      "answer": 0,
+      "explanation": "a + ______ + estimate(명사) → 형용사 자리. conservative(보수적인)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng006",
+      "sentence": "Even though Saenger Electronics' second quarter was not ______, the company plans to invest large sums on research.",
+      "choices": [
+        "profitable",
+        "profiting",
+        "profitability",
+        "profitably"
+      ],
+      "answer": 0,
+      "explanation": "was not + ______ → be동사 뒤 보어 = 형용사. profitable(수익성 있는)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng007",
+      "sentence": "The new advertisement designed by Hokkaido Creations has been ______ to reflect your company's image.",
+      "choices": [
+        "customized",
+        "customize",
+        "customizing",
+        "customizes"
+      ],
+      "answer": 0,
+      "explanation": "has been + ______ → 현재완료 수동태(has been p.p). customized(맞춤 제작된)",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng008",
+      "sentence": "Please accept the ______ coupon book as thanks for opening your personal savings account.",
+      "choices": [
+        "enclose",
+        "enclosed",
+        "enclosing",
+        "enclosure"
+      ],
+      "answer": 1,
+      "explanation": "the + ______ + coupon book(명사) → 형용사 자리. enclosed(동봉된) - 쿠폰북이 동봉'된' 것이므로 p.p",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng009",
+      "sentence": "Saenger Bistro's menu features a ______ variety of seafood items than Copley Pavilion's.",
+      "choices": [
+        "wide",
+        "widest",
+        "wider",
+        "widely"
+      ],
+      "answer": 2,
+      "explanation": "than이 있으므로 비교급. wider than = ~보다 더 넓은",
+      "category": "comparison",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng010",
+      "sentence": "A thunderstorm ______ by gusty winds is expected to arrive in the northeast region.",
+      "choices": [
+        "will accompany",
+        "accompanying",
+        "to accompany",
+        "accompanied"
+      ],
+      "answer": 3,
+      "explanation": "명사(thunderstorm) + ______ + by → 수동 의미의 과거분사 후치수식. accompanied by = ~를 동반한",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng011",
+      "sentence": "During negotiations, management appeared ______ to the idea of increasing wages.",
+      "choices": [
+        "agree",
+        "agreement",
+        "agreeable",
+        "agrees"
+      ],
+      "answer": 2,
+      "explanation": "appeared + ______ → appear 뒤 보어 = 형용사. agreeable to = ~에 동의하는",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng012",
+      "sentence": "The Putney Bridge took a ______ short amount of time to be repaired.",
+      "choices": [
+        "surprise",
+        "surprisingly",
+        "surprising",
+        "surprised"
+      ],
+      "answer": 1,
+      "explanation": "a + ______ + short(형용사) → 형용사를 수식하는 부사. surprisingly(놀랍게도)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng013",
+      "sentence": "The registration fee is ______ refundable up to two weeks prior to the conference date.",
+      "choices": [
+        "fullest",
+        "fuller",
+        "fully",
+        "full"
+      ],
+      "answer": 2,
+      "explanation": "is + ______ + refundable(형용사) → 형용사를 수식하는 부사. fully(완전히)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng014",
+      "sentence": "Garstein Furnishings is closing showrooms because customers are ______ ordering furniture online.",
+      "choices": [
+        "increasing",
+        "increase",
+        "increasingly",
+        "increased"
+      ],
+      "answer": 2,
+      "explanation": "are + ______ + ordering(진행형) → 부사가 동사를 수식. increasingly(점점 더)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng015",
+      "sentence": "Before selecting a Dagle steel door, measure the door opening ______.",
+      "choices": [
+        "careful",
+        "caring",
+        "carefully",
+        "cares"
+      ],
+      "answer": 2,
+      "explanation": "동사(measure) + 목적어 뒤 = 부사 자리. carefully(주의 깊게)",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "ng016",
+      "sentence": "Pallax Shoes ______ altered the firm's marketing strategy after a recent economic shift.",
+      "choices": [
+        "quick",
+        "quickest",
+        "quickly",
+        "quicken"
+      ],
+      "answer": 2,
+      "explanation": "주어 + ______ + 동사(altered) → 부사가 동사 수식. quickly(빠르게)",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "ng017",
+      "sentence": "Relocating for work is ______ a difficult decision, but it can be rewarding.",
+      "choices": [
+        "understandably",
+        "understanding",
+        "understood",
+        "understand"
+      ],
+      "answer": 0,
+      "explanation": "is + ______ + a difficult decision(명사구) → 부사. understandably(당연하게도)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng018",
+      "sentence": "Thanks ______ to pastry chef Dennis Beck, Goldstein's Restaurant has become a favorite.",
+      "choices": [
+        "largely",
+        "larger",
+        "large",
+        "largest"
+      ],
+      "answer": 0,
+      "explanation": "thanks ______ to → thanks to(~덕분에) 사이 부사. largely(주로, 크게)",
+      "category": "word form",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "ng019",
+      "sentence": "The pharmacy is required to collect ______ at the time prescriptions are filled.",
+      "choices": [
+        "paid",
+        "payers",
+        "payment",
+        "pays"
+      ],
+      "answer": 2,
+      "explanation": "collect(동사)의 목적어 = 명사. payment(지불금). fill prescriptions = 처방약을 조제하다",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng020",
+      "sentence": "The newspaper has seen an ______ in the number of subscribers who read the online version.",
+      "choices": [
+        "increase",
+        "increases",
+        "increasingly",
+        "increased"
+      ],
+      "answer": 0,
+      "explanation": "an + ______ + in → 관사 뒤 명사. an increase in N = N의 증가",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng021",
+      "sentence": "Despite ______ that Copley Air would perform poorly, it posted strong second-quarter earnings.",
+      "choices": [
+        "predicted",
+        "predictable",
+        "predicts",
+        "predictions"
+      ],
+      "answer": 3,
+      "explanation": "Despite(전치사) + ______ → 명사. predictions(예측들). despite + 명사 = ~에도 불구하고",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng022",
+      "sentence": "The rental fee includes the shared cost of ongoing ______ in the surrounding gardens.",
+      "choices": [
+        "maintaining",
+        "maintenance",
+        "maintained",
+        "maintains"
+      ],
+      "answer": 1,
+      "explanation": "of + ongoing(형용사) + ______ → 명사. maintenance(유지보수)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng023",
+      "sentence": "The evening's dance ______ was made possible with support from Jasper Inc.",
+      "choices": [
+        "presented",
+        "presents",
+        "presenting",
+        "presentation"
+      ],
+      "answer": 3,
+      "explanation": "dance + ______ + was → 주어 자리(복합명사). dance presentation = 댄스 공연",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng024",
+      "sentence": "All ______ to the auto production plant must register at the security checkpoint.",
+      "choices": [
+        "visit",
+        "visitation",
+        "visitors",
+        "visiting"
+      ],
+      "answer": 2,
+      "explanation": "All + ______ + must register → 복수명사 주어. visitors(방문객들)",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "ng025",
+      "sentence": "Mr. Clifford ______ that volunteers sign up to assist with the river cleanup by Friday.",
+      "choices": [
+        "requesting",
+        "to be requested",
+        "requests",
+        "to request"
+      ],
+      "answer": 2,
+      "explanation": "주어 + ______ + that → 동사 자리. request that S (should) V원형 = 요청/주장/명령 동사",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng026",
+      "sentence": "Now that Ms. Tanaka ______ to the London headquarters, a new manager is running our office.",
+      "choices": [
+        "has transferred",
+        "transferring",
+        "transfer",
+        "to transfer"
+      ],
+      "answer": 0,
+      "explanation": "Ms. Tanaka(단수주어) + ______ → 단수동사. Now that = ~이기 때문에. has transferred = 전근했다",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng027",
+      "sentence": "Because experts ______ a strong allergy season, the pharmacy has increased its stock.",
+      "choices": [
+        "predict",
+        "prediction",
+        "are predicted",
+        "predictably"
+      ],
+      "answer": 0,
+      "explanation": "experts(주어) + ______ + 목적어 → 능동태 동사. predict = 예측하다",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng028",
+      "sentence": "The equipment-use guidelines ______ on our internal corporate Web site.",
+      "choices": [
+        "may find",
+        "can be found",
+        "have found",
+        "have to find"
+      ],
+      "answer": 1,
+      "explanation": "guidelines가 '발견되는' 것 → 수동태. can be found = 찾을 수 있다(수동)",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng029",
+      "sentence": "Unless the shipment of tiles arrives early, work on the lobby floor ______ after the holiday.",
+      "choices": [
+        "has commenced",
+        "commencing",
+        "will commence",
+        "commenced"
+      ],
+      "answer": 2,
+      "explanation": "시간/조건 부사절(Unless) + 현재시제, 주절 + will V. will commence = 시작될 것이다",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng030",
+      "sentence": "Companies without IT specialists can ______ on Copley Software Advisers for assistance.",
+      "choices": [
+        "reliable",
+        "reliably",
+        "rely",
+        "relying"
+      ],
+      "answer": 2,
+      "explanation": "can + ______ → 조동사 뒤 동사원형. rely on = ~에 의존하다",
+      "category": "tense",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "ng031",
+      "sentence": "______ the kitchen cabinets arrived late, the contractor installed them without delay.",
+      "choices": [
+        "Even though",
+        "Instead of",
+        "In addition to",
+        "On top of"
+      ],
+      "answer": 0,
+      "explanation": "______ + S'+V', S+V → 부사절 접속사 자리. Even though = 비록 ~이지만",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng032",
+      "sentence": "______ the results of the customer survey, we may consider extending store hours.",
+      "choices": [
+        "Because",
+        "Depending on",
+        "Whereas",
+        "In order for"
+      ],
+      "answer": 1,
+      "explanation": "______ + 명사, S+V → 전치사 자리. Depending on = ~에 따라",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng033",
+      "sentence": "______ a designer has completed a prototype, the rest of the team will critique it.",
+      "choices": [
+        "So that",
+        "Whether",
+        "From",
+        "After"
+      ],
+      "answer": 3,
+      "explanation": "______ + S'+V', S+V → 부사절 접속사. After = ~이후에. 시간 부사절 현재→주절 will",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng034",
+      "sentence": "Beginning on August 1, patients will be asked to complete a short survey ______ each visit.",
+      "choices": [
+        "inside",
+        "after",
+        "where",
+        "whenever"
+      ],
+      "answer": 3,
+      "explanation": "______ + each visit → whenever = ~할 때마다. 방문할 때마다 설문 작성",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng035",
+      "sentence": "We will pay your insurance claim ______ we receive the official damage report.",
+      "choices": [
+        "once",
+        "since",
+        "like",
+        "except"
+      ],
+      "answer": 0,
+      "explanation": "S+V + ______ + S'+V' → 접속사. once = 일단 ~하면. 조건 부사절",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng036",
+      "sentence": "______ the most challenging aspect of accepting a new position is negotiating a salary.",
+      "choices": [
+        "Perhaps",
+        "Outside",
+        "Every",
+        "While"
+      ],
+      "answer": 0,
+      "explanation": "______ + S + V → 부사. Perhaps(아마도)가 문장 전체를 수식",
+      "category": "vocabulary",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng037",
+      "sentence": "Most senior managers approved the proposal, although ______ expressed concerns about cost.",
+      "choices": [
+        "one",
+        "one another",
+        "each other",
+        "other"
+      ],
+      "answer": 0,
+      "explanation": "although + ______ + V → 주어 자리. one = 한 명. one another/each other는 목적어에만 사용",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng038",
+      "sentence": "Because Mount Hallasan is so challenging for climbers, ______ have reached its peak.",
+      "choices": [
+        "any",
+        "either",
+        "other",
+        "few"
+      ],
+      "answer": 3,
+      "explanation": "______ + have(복수V) → 복수 주어. few = 거의 없다(부정). 소수만 정상에 도달",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng039",
+      "sentence": "Pallax Sneakers has several ______ in the greater metropolitan area.",
+      "choices": [
+        "locations",
+        "locate",
+        "located",
+        "location"
+      ],
+      "answer": 0,
+      "explanation": "several + ______ → 복수명사. several locations = 여러 지점",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "ng040",
+      "sentence": "Please submit your hours ______ any work-related expense reports by Friday.",
+      "choices": [
+        "as well as",
+        "above all",
+        "in addition",
+        "in case that"
+      ],
+      "answer": 0,
+      "explanation": "A as well as B = B뿐만 아니라 A도. hours as well as expense reports",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng041",
+      "sentence": "Mr. Park e-mailed the clients to ask ______ there is a train station near their office.",
+      "choices": [
+        "so",
+        "about",
+        "whether",
+        "of"
+      ],
+      "answer": 2,
+      "explanation": "ask + ______ + S+V → 명사절 접속사. whether = ~인지 아닌지",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng042",
+      "sentence": "The program honors residents ______ volunteer their time to help the city.",
+      "choices": [
+        "for",
+        "who",
+        "those",
+        "as"
+      ],
+      "answer": 1,
+      "explanation": "residents(명사) + ______ + V → 주격 관계대명사. who volunteer = 자원봉사하는",
+      "category": "relative clause",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "ng043",
+      "sentence": "Zypo Properties signed a lease with the law firm ______ offices are on the third floor.",
+      "choices": [
+        "how",
+        "what",
+        "whose",
+        "wherever"
+      ],
+      "answer": 2,
+      "explanation": "firm(명사) + ______ + offices(명사) → 소유격 관계대명사 whose = ~의",
+      "category": "relative clause",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng044",
+      "sentence": "Employees can attend one of the many workshops offered, ______ seems most interesting.",
+      "choices": [
+        "whichever",
+        "however",
+        "everyone",
+        "much"
+      ],
+      "answer": 0,
+      "explanation": "______ + seems → 주어 역할의 복합관계대명사. whichever = 어느 것이든",
+      "category": "relative clause",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "ng045",
+      "sentence": "Croyell Limited and Jasper LLC have entered a strategic partnership to ______ their market share.",
+      "choices": [
+        "increased",
+        "increasing",
+        "increases",
+        "increase"
+      ],
+      "answer": 3,
+      "explanation": "to + ______ → to부정사이므로 동사원형. to increase = 증가시키기 위해",
+      "category": "tense",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "ng046",
+      "sentence": "Online shoppers who experience long waits tend ______ the business low ratings.",
+      "choices": [
+        "have given",
+        "gave",
+        "to give",
+        "giving"
+      ],
+      "answer": 2,
+      "explanation": "tend + ______ → tend to V = ~하는 경향이 있다. to give",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng047",
+      "sentence": "The president believes that ______ employees is vital to the company's success.",
+      "choices": [
+        "empowered",
+        "empower",
+        "empowering",
+        "empowers"
+      ],
+      "answer": 2,
+      "explanation": "that + ______ + employees + is(단수V) → 동명사 주어. empowering(권한을 부여하는 것)은 단수 취급",
+      "category": "tense",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "ng048",
+      "sentence": "Saenger, Inc., is planning to ______ redesign Model 543Q with its partners.",
+      "choices": [
+        "collaboration",
+        "collaborative",
+        "collaboratively",
+        "collaborate"
+      ],
+      "answer": 2,
+      "explanation": "to + ______ + redesign(동사) → 분리부정사 사이 부사. collaboratively(협력하여)",
+      "category": "word form",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "ng049",
+      "sentence": "______ by the product demonstration last week, the manager has decided to order several appliances.",
+      "choices": [
+        "Impressed",
+        "Impressive",
+        "Impressing",
+        "Impression"
+      ],
+      "answer": 0,
+      "explanation": "______ + by → 수동 분사구문. Impressed by = ~에 감명받아. 사람이 감명'받은' 것이므로 p.p",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng050",
+      "sentence": "Sendart Care limits its budget for office decor, ______ to spend money on quality medical equipment.",
+      "choices": [
+        "prefer",
+        "preferred",
+        "preferring",
+        "preference"
+      ],
+      "answer": 2,
+      "explanation": "S + V, ______ → 능동 분사구문. preferring = ~을 선호하면서. prefer to V = V하는 것을 선호하다",
+      "category": "tense",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "ng051",
+      "sentence": "Finely Plant Nursery implements the ______ latest agricultural techniques.",
+      "choices": [
+        "so",
+        "more",
+        "very",
+        "much"
+      ],
+      "answer": 2,
+      "explanation": "the + ______ + 최상급(latest) → 최상급 강조 부사. the very latest = 단연코 가장 최신의",
+      "category": "comparison",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "ng052",
+      "sentence": "The wireless speaker not only works with smartphones ______ is waterproof as well.",
+      "choices": [
+        "but",
+        "and",
+        "however",
+        "besides"
+      ],
+      "answer": 0,
+      "explanation": "not only A but (also) B = A뿐만 아니라 B도",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "ng053",
+      "sentence": "All employees must have a valid ID card ______ enter the building.",
+      "choices": [
+        "in order to",
+        "as long as",
+        "regarding",
+        "always"
+      ],
+      "answer": 0,
+      "explanation": "must have ID + ______ + enter → in order to V = V하기 위해서",
+      "category": "conjunction",
+      "difficulty": 2,
+      "type": "grammar"
     }
   ]
 }

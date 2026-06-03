@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>TOEIC 900 - 토익 강의</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--primary:#2563eb;--primary-light:#dbeafe;--bg:#f1f5f9;--card:#fff;--text:#1e293b;--text-light:#64748b;--border:#e2e8f0;--radius:12px;--correct:#16a34a;--wrong:#dc2626}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100dvh;-webkit-tap-highlight-color:transparent}
+.app{max-width:768px;margin:0 auto;padding:16px 16px 40px}
+.header{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.back-btn{background:none;border:none;font-size:24px;cursor:pointer;color:var(--primary);padding:8px;border-radius:8px}
+.back-btn:active{background:var(--primary-light)}
+.header h1{font-size:22px;font-weight:700}
+.tab-bar{display:flex;gap:6px;overflow-x:auto;margin-bottom:20px;padding-bottom:4px;-webkit-overflow-scrolling:touch}
+.tab-btn{padding:8px 16px;border-radius:20px;border:2px solid var(--border);background:var(--card);font-size:14px;cursor:pointer;white-space:nowrap;font-weight:600}
+.tab-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.tab-content{display:none}
+.tab-content.active{display:block}
+.lesson-card{background:var(--card);border-radius:var(--radius);padding:20px;border:2px solid var(--border);margin-bottom:16px}
+.lesson-title{font-size:18px;font-weight:700;color:var(--primary);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.lesson-body{font-size:15px;line-height:1.8;color:var(--text)}
+.lesson-body h3{font-size:16px;font-weight:700;margin:16px 0 8px;color:var(--text);padding-left:4px;border-left:3px solid var(--primary)}
+.lesson-body ul{padding-left:20px;margin:8px 0}
+.lesson-body li{margin-bottom:6px}
+.lesson-body .highlight{background:#fef9c3;padding:2px 6px;border-radius:4px;font-weight:600}
+.lesson-body .formula{background:var(--primary-light);padding:10px 16px;border-radius:8px;margin:10px 0;font-weight:600;font-size:15px;line-height:1.8}
+.lesson-body .example{background:#f0fdf4;border-left:3px solid var(--correct);padding:10px 16px;border-radius:0 8px 8px 0;margin:10px 0;font-size:14px;line-height:1.7}
+.lesson-body .example .en{font-weight:600;color:var(--text)}
+.lesson-body .example .ko{color:var(--text-light);margin-top:2px}
+.lesson-body .warning{background:#fee2e2;border-left:3px solid var(--wrong);padding:10px 16px;border-radius:0 8px 8px 0;margin:10px 0;font-size:14px;line-height:1.7}
+.lesson-body .tip-box{background:#eff6ff;border-left:3px solid var(--primary);padding:10px 16px;border-radius:0 8px 8px 0;margin:10px 0;font-size:14px;line-height:1.7}
+.lesson-body table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px}
+.lesson-body th,.lesson-body td{border:1px solid var(--border);padding:8px 10px;text-align:left}
+.lesson-body th{background:var(--primary-light);font-weight:700;color:var(--primary)}
+.collapse-btn{background:none;border:none;color:var(--primary);font-size:14px;font-weight:600;cursor:pointer;padding:4px 0}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="header">
+    <button class="back-btn" onclick="window.location.href='index.html'">&larr;</button>
+    <h1>토익 강의</h1>
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="showTab(this,'overview')">RC/LC 총론</button>
+    <button class="tab-btn" onclick="showTab(this,'part5')">Part 5 문법</button>
+    <button class="tab-btn" onclick="showTab(this,'part6')">Part 6 전략</button>
+    <button class="tab-btn" onclick="showTab(this,'part7')">Part 7 독해</button>
+    <button class="tab-btn" onclick="showTab(this,'grammar')">핵심 문법</button>
+    <button class="tab-btn" onclick="showTab(this,'sentence')">문장 해석법</button>
+  </div>
+
+  <!-- ========== RC/LC 총론 ========== -->
+  <div class="tab-content active" id="tab-overview">
+    <div class="lesson-card">
+      <div class="lesson-title">RC 고득점 3가지 조건</div>
+      <div class="lesson-body">
+        <h3>1. 문장을 잘 해석할 수 있는가?</h3>
+        <ul>
+          <li><span class="highlight">단어 암기</span> + <span class="highlight">직독직해</span> 능력</li>
+          <li>영어 어순 그대로 앞에서부터 끊어 읽기</li>
+        </ul>
+        <h3>2. 정답의 근거를 지문에서 찾을 수 있는가?</h3>
+        <ul>
+          <li>정답은 반드시 <span class="highlight">지문</span>에서 찾기 (감/추측 절대 X)</li>
+          <li>정답이 <span class="highlight">패러프레이징</span>(같은 뜻, 다른 표현)되어 있는 경우가 많음</li>
+        </ul>
+        <div class="example">
+          <div class="en">지문: "order a replacement" → 선택지: "place an order"</div>
+          <div class="ko">지문: "boost our sales" → 선택지: "Store sales will increase"</div>
+        </div>
+        <h3>3. 문법 빈출 유형을 알고 있는가?</h3>
+        <div class="tip-box">
+          문법문제의 <strong>60% 이상</strong>을 차지하는 4가지 핵심 파트:<br>
+          1) 인칭/소유/재귀 대명사<br>
+          2) 품사 (명사, 형용사, 부사)<br>
+          3) 동사 (시제, 능동/수동, 수일치)<br>
+          4) 전치사 vs 부사절접속사 vs 접속부사
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson-card">
+      <div class="lesson-title">LC 고득점 3가지 조건</div>
+      <div class="lesson-body">
+        <h3>1. 성우의 말을 이해할 수 있는가?</h3>
+        <ul>
+          <li>리딩 실력: 단어/표현 + 직독직해</li>
+          <li>리스닝 실력: 발음 + 연음 + 말 속도 + <span class="highlight">직청직해</span></li>
+        </ul>
+        <h3>2. 질문/선택지를 잘 읽고 정답을 고를 수 있는가?</h3>
+        <ul>
+          <li>Part 3/4: 질문/선택지에서 모르는 단어가 없도록 평소 암기+해석 연습</li>
+        </ul>
+        <h3>3. 집중력 유지 & 미련 버리기</h3>
+        <div class="warning">
+          한 문제를 놓쳤으면 <strong>미련 버리고 찍고 다음 문제에 집중!</strong><br>
+          한번 흐름을 놓치면 연쇄적으로 틀리게 됩니다.
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson-card">
+      <div class="lesson-title">파트별 시간 배분 (RC 75분)</div>
+      <div class="lesson-body">
+        <table>
+          <tr><th>파트</th><th>문제 수</th><th>권장 시간</th></tr>
+          <tr><td>Part 5</td><td>30문제</td><td>10분 (문제당 20초)</td></tr>
+          <tr><td>Part 6</td><td>16문제</td><td>10분 (세트당 2.5분)</td></tr>
+          <tr><td>Part 7 단일</td><td>29문제</td><td>30분</td></tr>
+          <tr><td>Part 7 이중/삼중</td><td>25문제</td><td>25분</td></tr>
+        </table>
+        <div class="tip-box">
+          LC Direction 시간에 Part 5 문법문제(특히 품사)를 미리 풀어놓기!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Part 5 문법 ========== -->
+  <div class="tab-content" id="tab-part5">
+    <div class="lesson-card">
+      <div class="lesson-title">Part 5 문제풀이 전략</div>
+      <div class="lesson-body">
+        <h3>Step 1: 선택지 먼저 확인</h3>
+        <div class="formula">
+          선택지 확인 → 문법문제 vs 어휘문제 구분 → 각각 다른 접근법
+        </div>
+        <h3>문법문제 판별법</h3>
+        <ul>
+          <li>선택지가 같은 어근의 <strong>다른 품사</strong>로 구성 → 품사 문제</li>
+          <li>선택지가 <strong>대명사</strong> 종류 → 대명사 문제</li>
+          <li>선택지가 <strong>시제/태</strong>가 다른 동사 → 동사 문제</li>
+          <li>선택지가 <strong>접속사/전치사/부사</strong> → 연결어 문제</li>
+        </ul>
+        <h3>어휘문제 판별법</h3>
+        <ul>
+          <li>선택지가 <strong>같은 품사, 다른 뜻</strong>의 단어 → 해석으로 풀기</li>
+          <li>반드시 문장 전체를 정확히 직독직해한 후 답 고르기</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lesson-card">
+      <div class="lesson-title">품사 문제 (출제 빈도 최다!)</div>
+      <div class="lesson-body">
+        <h3>명사 자리</h3>
+        <div class="formula">
+          관사(a/an/the) + ______ → 명사<br>
+          소유격(my/his/the company's) + ______ → 명사<br>
+          전치사(in/of/for/to) + ______ → 명사<br>
+          동사의 목적어 자리 → 명사
+        </div>
+        <h3>형용사 자리</h3>
+        <div class="formula">
+          관사 + ______ + 명사 → 형용사<br>
+          be동사 + ______ → 형용사 (보어)<br>
+          appear/seem/look/remain + ______ → 형용사
+        </div>
+        <h3>부사 자리</h3>
+        <div class="formula">
+          ______ + 형용사 + 명사 → 부사 (형용사 수식)<br>
+          be + ______ + 형용사/p.p → 부사<br>
+          주어 + ______ + 동사 → 부사 (동사 수식)<br>
+          완전한 문장 + ______ → 부사
+        </div>
+        <div class="warning">
+          <strong>함정!</strong> 부사는 없어도 문장이 완전함. 빈칸을 빼고 문장이 완전하면 부사!
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson-card">
+      <div class="lesson-title">동사 문제</div>
+      <div class="lesson-body">
+        <h3>시제 판별 단서</h3>
+        <table>
+          <tr><th>단서</th><th>시제</th></tr>
+          <tr><td>yesterday, last ~, ago</td><td>과거 (V-ed)</td></tr>
+          <tr><td>since + 과거시점, for + 기간</td><td>현재완료 (have p.p)</td></tr>
+          <tr><td>next ~, tomorrow</td><td>미래 (will V)</td></tr>
+          <tr><td>by + 미래시점</td><td>미래완료 (will have p.p)</td></tr>
+          <tr><td>currently, now, at present</td><td>현재진행 (be Ving)</td></tr>
+        </table>
+        <h3>능동 vs 수동</h3>
+        <div class="formula">
+          주어가 행위를 '하면' → 능동 (V/V-s)<br>
+          주어가 행위를 '당하면' → 수동 (be + p.p)<br><br>
+          핵심: 동사 뒤에 <strong>목적어가 있으면 능동</strong>, <strong>없으면 수동</strong>
+        </div>
+        <h3>시제일치 예외 (시간/조건 부사절)</h3>
+        <div class="formula">
+          When/If/Once/Unless + S' + <strong>현재V</strong>, S + <strong>will V</strong>
+        </div>
+        <div class="example">
+          <div class="en">If the budget <strong>is</strong> approved, the project <strong>will</strong> begin next month.</div>
+          <div class="ko">예산이 승인되면, 프로젝트가 다음 달 시작될 것이다. (if절은 현재!)</div>
+        </div>
+        <h3>주장/제안/명령/요구 동사 + that절</h3>
+        <div class="formula">
+          request/suggest/recommend/insist + that + S + <strong>(should) V원형</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson-card">
+      <div class="lesson-title">전치사 vs 접속사 vs 접속부사</div>
+      <div class="lesson-body">
+        <div class="formula">
+          <strong>전치사</strong> + 명사(구) , S + V<br>
+          <strong>부사절 접속사</strong> + S' + V' , S + V<br>
+          S + V ; <strong>접속부사</strong>, S' + V'
+        </div>
+        <h3>의미별 구분</h3>
+        <table>
+          <tr><th>의미</th><th>전치사</th><th>접속사</th><th>접속부사</th></tr>
+          <tr><td>~에도 불구하고</td><td>despite, in spite of</td><td>although, even though</td><td>however, nevertheless</td></tr>
+          <tr><td>~ 때문에</td><td>due to, because of, owing to</td><td>because, since, as</td><td>therefore, consequently</td></tr>
+          <tr><td>~ 동안</td><td>during</td><td>while</td><td>meanwhile</td></tr>
+          <tr><td>게다가</td><td>in addition to</td><td>-</td><td>furthermore, moreover, in addition</td></tr>
+        </table>
+        <div class="warning">
+          <strong>빈출 함정!</strong> 빈칸 뒤가 <strong>명사(구)</strong>이면 전치사, <strong>S+V(절)</strong>이면 접속사!<br>
+          despite + 명사 (O) / despite + S+V (X)<br>
+          although + S+V (O) / although + 명사 (X)
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson-card">
+      <div class="lesson-title">대명사 문제</div>
+      <div class="lesson-body">
+        <table>
+          <tr><th>자리</th><th>형태</th><th>예시</th></tr>
+          <tr><td>주어 자리</td><td>주격 (I, you, he, she, they)</td><td>______ will attend</td></tr>
+          <tr><td>목적어 자리</td><td>목적격 (me, you, him, her, them)</td><td>contact ______</td></tr>
+          <tr><td>명사 앞</td><td>소유격 (my, your, his, her, their)</td><td>______ office</td></tr>
+          <tr><td>명사 없이 홀로</td><td>소유대명사 (mine, yours, his, theirs)</td><td>______ is better</td></tr>
+          <tr><td>주어=목적어</td><td>재귀대명사 (myself, himself, themselves)</td><td>by ______ (혼자서)</td></tr>
+        </table>
+        <div class="tip-box">
+          <strong>those who V</strong> = V하는 사람들 (빈출!)<br>
+          <strong>one another</strong> (3이상), <strong>each other</strong> (둘) = 서로 (목적어 자리만!)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Part 6 전략 ========== -->
+  <div class="tab-content" id="tab-part6">
+    <div class="lesson-card">
+      <div class="lesson-title">Part 6 문제풀이 전략</div>
+      <div class="lesson-body">
+        <h3>3가지 문제 유형</h3>
+        <ul>
+          <li><strong>문법문제</strong> - Part 5와 동일한 접근</li>
+          <li><strong>어휘문제</strong> - 문맥 파악 후 해석으로 풀기</li>
+          <li><strong>문장삽입문제</strong> - 가장 까다로움! (세트당 1문제)</li>
+        </ul>
+        <h3>문장삽입문제 풀이법</h3>
+        <div class="formula">
+          1. 빈칸 <strong>앞뒤 문맥</strong> 파악 (앞 문장 + 뒤 문장)<br>
+          2. 선택지에 <strong>대명사</strong>가 있으면, 그 대상이 앞 문장에 있는지 확인<br>
+          3. <strong>전체 흐름</strong>과 자연스럽게 연결되는 문장 선택
+        </div>
+        <div class="tip-box">
+          Part 6는 처음부터 직독직해하며 읽다가 빈칸이 나올 때마다 그때그때 풀기!<br>
+          날려 읽지 말고 <strong>정확하게</strong> 읽기.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Part 7 독해 ========== -->
+  <div class="tab-content" id="tab-part7">
+    <div class="lesson-card">
+      <div class="lesson-title">Part 7 단일지문 전략</div>
+      <div class="lesson-body">
+        <h3>Step 1: 지문 종류 파악</h3>
+        <ul><li>굵은 글씨, 눈에 띄는 부분만 빠르게 스캔 → 어떤 종류의 글인지 추측</li></ul>
+        <h3>Step 2: 질문에서 키워드 뽑기</h3>
+        <ul>
+          <li>2~3문제씩 키워드를 뽑은 후 지문에서 근거 찾기</li>
+          <li>정답의 근거 문장은 보통 <strong>질문 순서대로</strong> 등장</li>
+        </ul>
+        <div class="warning">
+          답을 고를 때 가장 중요한 것: 나의 감이 아닌 <strong>지문에서 정답의 근거가 되는 문장을 직접 손으로 가리킬 수 있어야</strong> 합니다.
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson-card">
+      <div class="lesson-title">Part 7 이중/삼중지문 전략</div>
+      <div class="lesson-body">
+        <div class="formula">
+          하나의 스토리에 푹 빠져든다는 마음으로<br>
+          처음부터 쭉~ 내용을 <strong>연결</strong>하며 읽어나가기
+        </div>
+        <h3>4단계 접근법</h3>
+        <h3>1단계: 각 지문의 종류/유형 확인</h3>
+        <ul><li>이메일, 기사, 광고, 웹페이지, 차트 등 → 질문에서 언급될 수 있음</li></ul>
+        <h3>2단계: 지문끼리 연관성 파악</h3>
+        <ul>
+          <li>각 지문의 굵은 글씨 + 첫 1~2문장만 읽고 스토리 추측</li>
+          <li>지문 간 <span class="highlight">연결 포인트</span>가 반드시 존재!</li>
+        </ul>
+        <div class="example">
+          <div class="en">지문1: Web page (Tour 1~5 목록) + 지문2: Review (별 다섯개)</div>
+          <div class="ko">추측: "투어 회사의 여러 투어 중 하나를 이용하고 후기를 남겼구나!"</div>
+        </div>
+        <h3>3단계: 단일문제 vs 연계문제 구분</h3>
+        <ul>
+          <li>이중지문: 5문제 중 <strong>1~2문제</strong>가 연계문제</li>
+          <li>삼중지문: 5문제 중 <strong>2문제</strong>가 연계문제</li>
+          <li>각 질문 옆에 근거 지문 번호 적기</li>
+        </ul>
+        <h3>4단계: 스토리를 연결하며 읽기</h3>
+        <div class="tip-box">
+          이중/삼중 지문은 <strong>버리는 부분 없이</strong> 모든 내용을 머릿속에 넣기!<br>
+          내가 기억할 수 있을 만큼만 읽고 → 문제풀이 시도 → 이어서 읽기<br>
+          경험이 쌓이면 "어! 이거 연계문제 냄새!" 하는 감이 생깁니다.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== 핵심 문법 ========== -->
+  <div class="tab-content" id="tab-grammar">
+    <div class="lesson-card">
+      <div class="lesson-title">동사 뒤 구조 필수 암기</div>
+      <div class="lesson-body">
+        <h3>toV를 목적어로 취하는 동사</h3>
+        <div class="formula">
+          want toV / plan toV / decide toV / agree toV / offer toV<br>
+          tend toV / manage toV / fail toV / expect toV / hope toV<br>
+          intend toV / refuse toV / promise toV
+        </div>
+        <h3>Ving를 목적어로 취하는 동사</h3>
+        <div class="formula">
+          enjoy Ving / consider Ving / avoid Ving / suggest Ving<br>
+          recommend Ving / finish Ving / include Ving / begin Ving
+        </div>
+        <h3>5형식 동사 (목적어 + 목적보어)</h3>
+        <div class="formula">
+          keep/leave + O + 형용사 : O를 ~한 상태로 유지/두다<br>
+          make + O + 형용사 : O를 ~하게 만들다<br>
+          find + O + 형용사 : O가 ~하다는 걸 알다<br>
+          consider + O + 형용사 : O가 ~하다고 여기다
+        </div>
+        <h3>동사 + A + to V (사역)</h3>
+        <div class="formula">
+          ask/require/enable/allow/encourage/invite + A + toV<br>
+          → A에게 toV 하라고 요청/가능하게/허락/권유/초대하다
+        </div>
+      </div>
+    </div>
+
+    <div class="lesson-card">
+      <div class="lesson-title">be + 형용사 + 전치사/toV 세트</div>
+      <div class="lesson-body">
+        <table>
+          <tr><th>표현</th><th>뜻</th></tr>
+          <tr><td>be responsible for</td><td>~에 대해 책임이 있다</td></tr>
+          <tr><td>be eligible for/toV</td><td>~에 대한 자격이 있다</td></tr>
+          <tr><td>be subject to</td><td>~의 대상이다</td></tr>
+          <tr><td>be committed to</td><td>~에 전념하다</td></tr>
+          <tr><td>be accustomed to</td><td>~에 익숙하다</td></tr>
+          <tr><td>be dedicated to</td><td>~에 헌신하다</td></tr>
+          <tr><td>be familiar with</td><td>~에 익숙하다</td></tr>
+          <tr><td>be satisfied with</td><td>~에 만족하다</td></tr>
+          <tr><td>be concerned about</td><td>~에 대해 걱정하다</td></tr>
+          <tr><td>be equipped with</td><td>~을 갖추다</td></tr>
+          <tr><td>be comparable to</td><td>~에 필적하다</td></tr>
+          <tr><td>be capable of</td><td>~할 수 있다</td></tr>
+          <tr><td>be aware of</td><td>~을 인지하다</td></tr>
+          <tr><td>be likely toV</td><td>~할 가능성이 있다</td></tr>
+          <tr><td>be expected toV</td><td>~할 것으로 예상되다</td></tr>
+          <tr><td>be required toV</td><td>~해야 한다</td></tr>
+          <tr><td>be designed toV</td><td>~하도록 설계되다</td></tr>
+          <tr><td>be scheduled toV</td><td>~할 예정이다</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="lesson-card">
+      <div class="lesson-title">빈출 전치사 정리</div>
+      <div class="lesson-body">
+        <table>
+          <tr><th>전치사</th><th>핵심 의미</th><th>예시</th></tr>
+          <tr><td>by</td><td>~에 의해; ~까지; ~만큼</td><td>by the manager / by Friday / by 20%</td></tr>
+          <tr><td>for</td><td>~동안; ~을 위해</td><td>for 5 years / for further information</td></tr>
+          <tr><td>in</td><td>~안에; ~후에</td><td>in Seattle / in April / in a few minutes</td></tr>
+          <tr><td>on</td><td>~위에; ~에(날짜)</td><td>on Monday / on the second floor</td></tr>
+          <tr><td>within</td><td>~이내에</td><td>within 24 hours / within walking distance</td></tr>
+          <tr><td>throughout</td><td>~내내; ~곳곳에</td><td>throughout the year / throughout the factory</td></tr>
+          <tr><td>despite</td><td>~에도 불구하고</td><td>despite the rain</td></tr>
+          <tr><td>regarding</td><td>~에 관하여</td><td>regarding the procedures</td></tr>
+          <tr><td>following</td><td>~이후에</td><td>following the negotiation</td></tr>
+          <tr><td>prior to</td><td>~전에</td><td>prior to entering the building</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== 문장 해석법 ========== -->
+  <div class="tab-content" id="tab-sentence">
+    <div class="lesson-card">
+      <div class="lesson-title">영어 문장 해석 3원칙</div>
+      <div class="lesson-body">
+        <div class="formula">
+          1. <strong>주어(S) + 동사(V)</strong> 찾기<br>
+          2. <strong>동사 뒤 구조</strong> 예측하기<br>
+          3. <strong>후치수식</strong> 파악하기 (12가지)
+        </div>
+        <h3>후치수식 12가지 패턴</h3>
+        <table>
+          <tr><th>패턴</th><th>예시</th></tr>
+          <tr><td>명사 + 전치사구</td><td>people <strong>with master's degrees</strong></td></tr>
+          <tr><td>명사 + Ving~</td><td>employees <strong>violating rules</strong></td></tr>
+          <tr><td>명사 + p.p~</td><td>a delegate <strong>sent to the meeting</strong></td></tr>
+          <tr><td>명사 + who/which/that + V</td><td>those <strong>who share data</strong></td></tr>
+          <tr><td>명사 + whose + N + V</td><td>the firm <strong>whose offices are</strong>...</td></tr>
+          <tr><td>명사 + toV</td><td>the ability <strong>to communicate</strong></td></tr>
+        </table>
+        <h3>직독직해 연습</h3>
+        <div class="example">
+          <div class="en">People / <strong>with master's degrees</strong> / are qualified / <strong>for the research position.</strong></div>
+          <div class="ko">사람들은 / (석사 학위를 가진) / 자격이 있다 / (연구직에 대한)</div>
+        </div>
+        <div class="example">
+          <div class="en">A delegate / <strong>sent to the meeting</strong> / gave / an impressive speech.</div>
+          <div class="ko">한 대표자는 / (회의로 보내진) / 했다 / 인상적인 연설을</div>
+        </div>
+        <div class="example">
+          <div class="en">Mr. Kim's experience / <strong>makes</strong> / him / <strong>qualified</strong> / for the job.</div>
+          <div class="ko">김씨의 경험은 / 만든다 / 그를 / 자격 있도록 / 그 직업에 대한</div>
+        </div>
+        <div class="tip-box">
+          토익 고득점의 핵심: <strong>직독직해</strong>(RC) + <strong>직청직해</strong>(LC)<br>
+          영어 어순 그대로 앞에서부터 끊어서 이해하는 연습을 매일 하세요!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function showTab(btn, tabId) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('tab-' + tabId).classList.add('active');
+  window.scrollTo(0, 0);
+}
+</script>
+</body>
+</html>
