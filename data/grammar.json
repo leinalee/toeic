@@ -3119,6 +3119,996 @@
       "category": "conjunction",
       "difficulty": 2,
       "type": "grammar"
+    },
+    {
+      "id": "n160_001",
+      "sentence": "~ should protect ______ equipment ~",
+      "choices": [
+        "his",
+        "him",
+        "himself",
+        "he"
+      ],
+      "answer": 0,
+      "explanation": "타동사(protect) + 소유격 + 명사. 소유격 his가 정답",
+      "category": "pronoun",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_002",
+      "sentence": "~ for ______ contribution to ~",
+      "choices": [
+        "their",
+        "them",
+        "themselves",
+        "they"
+      ],
+      "answer": 0,
+      "explanation": "전치사(for) + 소유격 + 명사. 소유격 their가 정답",
+      "category": "pronoun",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_003",
+      "sentence": "~ when ______ suitcase is ~",
+      "choices": [
+        "your",
+        "you",
+        "yours",
+        "yourself"
+      ],
+      "answer": 0,
+      "explanation": "접속사(when) + 소유격 + 명사 + 동사. 소유격 your가 정답",
+      "category": "pronoun",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_004",
+      "sentence": "~ about ______ recent order + (전+명)",
+      "choices": [
+        "she",
+        "her",
+        "hers",
+        "herself"
+      ],
+      "answer": 1,
+      "explanation": "전치사/동사 + 소유격 + 형용사 + 명사. 소유격 her가 정답",
+      "category": "pronoun",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_005",
+      "sentence": "Mr. Kim assured ______ that S+V.",
+      "choices": [
+        "mine",
+        "me",
+        "myself",
+        "my"
+      ],
+      "answer": 1,
+      "explanation": "assure + 목적어 + that절. 목적격 me가 정답 (목적격 vs 소유 vs 재귀)",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_006",
+      "sentence": "The artists discussed the issue among ______ before S+V.",
+      "choices": [
+        "their",
+        "theirs",
+        "themselves",
+        "they"
+      ],
+      "answer": 2,
+      "explanation": "among + 재귀대명사. 주어(artists)와 같으므로 themselves",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_007",
+      "sentence": "S+V + that ______ are responsible for the project.",
+      "choices": [
+        "we",
+        "ours",
+        "us",
+        "ourselves"
+      ],
+      "answer": 0,
+      "explanation": "that절의 주어 자리. 주격 we vs 소유대명사 ours → 동사(are)의 주어이므로 we",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_008",
+      "sentence": "Mr. Kim and Ms. Lee were pleased when ______ was successful.",
+      "choices": [
+        "their",
+        "theirs",
+        "themselves",
+        "they"
+      ],
+      "answer": 1,
+      "explanation": "when절의 주어 자리. 주격 vs 소유대명사 → theirs(그들의 것=프로젝트)",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_009",
+      "sentence": "Mr. Kim used to drive a taxi ______.",
+      "choices": [
+        "his",
+        "himself",
+        "him",
+        "he"
+      ],
+      "answer": 1,
+      "explanation": "완전한 문장 뒤 부사 자리. 재귀대명사 himself = 혼자서, 직접",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_010",
+      "sentence": "~ to strengthen the ______ of ~",
+      "choices": [
+        "security",
+        "secure",
+        "securely",
+        "secured"
+      ],
+      "answer": 0,
+      "explanation": "관사(the) + ______ + 전치사(of) → 명사 자리. security",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_011",
+      "sentence": "~ a brief ______ with ~",
+      "choices": [
+        "conversationally",
+        "conversation",
+        "conversational",
+        "converses"
+      ],
+      "answer": 1,
+      "explanation": "관사(a) + 형용사(brief) + ______ → 명사 자리. conversation",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_012",
+      "sentence": "~ was in ______ with ~",
+      "choices": [
+        "contacted",
+        "contact",
+        "contacting",
+        "contacts"
+      ],
+      "answer": 1,
+      "explanation": "전치사(in) + ______ → 명사 자리. in contact with = ~와 연락하는",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_013",
+      "sentence": "~ despite initial ______ over ~",
+      "choices": [
+        "criticize",
+        "criticism",
+        "critical",
+        "critically"
+      ],
+      "answer": 1,
+      "explanation": "전치사(despite) + 형용사(initial) + ______ → 명사. criticism(비판)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_014",
+      "sentence": "~ from the ______ of ~",
+      "choices": [
+        "comfort",
+        "comfortable",
+        "comforted",
+        "comforting"
+      ],
+      "answer": 0,
+      "explanation": "전치사(from) + 관사(the) + ______ → 명사. comfort(안락함)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_015",
+      "sentence": "~ for its ______.",
+      "choices": [
+        "creative",
+        "creates",
+        "creativity",
+        "creatively"
+      ],
+      "answer": 2,
+      "explanation": "전치사(for) + 소유격(its) + ______ → 명사. creativity(창의성)",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_016",
+      "sentence": "To receive ______, S+V.",
+      "choices": [
+        "renew",
+        "renewal",
+        "renews",
+        "renewed"
+      ],
+      "answer": 1,
+      "explanation": "동사(receive) + ______ → 목적어(명사). renewal(갱신)",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_017",
+      "sentence": "The company has experienced record-high ______.",
+      "choices": [
+        "earned",
+        "earns",
+        "earner",
+        "earnings"
+      ],
+      "answer": 3,
+      "explanation": "동사 + 형용사(record-high) + ______ → 명사. earnings(수익)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_019",
+      "sentence": "~ believes that ongoing ______ (전+명)",
+      "choices": [
+        "collaborated",
+        "collaborates",
+        "collaboration",
+        "collaborate"
+      ],
+      "answer": 2,
+      "explanation": "접속사(that) + 형용사(ongoing) + ______ → 명사. collaboration(협력)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_020",
+      "sentence": "Gardeners in desert ______ appreciate ~",
+      "choices": [
+        "regional",
+        "regions",
+        "regionally",
+        "region"
+      ],
+      "answer": 1,
+      "explanation": "전치사(in) + 명사(desert) + ______ → 복합명사. regions",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_021",
+      "sentence": "Our data ______ policy requires ~",
+      "choices": [
+        "secure",
+        "security",
+        "securely",
+        "secured"
+      ],
+      "answer": 1,
+      "explanation": "소유격(Our) + 명사(data) + ______ + 명사(policy) → 복합명사. security",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_025",
+      "sentence": "______ will be in charge of the project.",
+      "choices": [
+        "Supervisors",
+        "Supervising",
+        "Supervisory",
+        "Supervised"
+      ],
+      "answer": 0,
+      "explanation": "주어 자리 → 사람 명사. Supervisors(감독관들). 동명사(Supervising)는 부적합",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_026",
+      "sentence": "______ anticipate that S+V.",
+      "choices": [
+        "Developed",
+        "Developers",
+        "Developing",
+        "Developments"
+      ],
+      "answer": 1,
+      "explanation": "anticipate(예상하다)의 주어 → 사람 명사. Developers(개발자들)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_028",
+      "sentence": "______ clothing must be worn ~.",
+      "choices": [
+        "Protect",
+        "Protective",
+        "Protects",
+        "Protecting"
+      ],
+      "answer": 1,
+      "explanation": "______ + 명사(clothing) → 형용사. Protective(보호용의)",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_029",
+      "sentence": "~ at ______ prices, S+V.",
+      "choices": [
+        "afford",
+        "affording",
+        "afforded",
+        "affordable"
+      ],
+      "answer": 3,
+      "explanation": "전치사(at) + ______ + 명사(prices) → 형용사. affordable(합리적인)",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_030",
+      "sentence": "~ meeting the ______ students + (전+명)",
+      "choices": [
+        "ambitions",
+        "ambitious",
+        "ambitiously",
+        "ambition"
+      ],
+      "answer": 1,
+      "explanation": "관사(the) + ______ + 명사(students) → 형용사. ambitious(야심찬)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_031",
+      "sentence": "~ thanks to its ______ location ~",
+      "choices": [
+        "central",
+        "centers",
+        "centering",
+        "centrally"
+      ],
+      "answer": 0,
+      "explanation": "소유격(its) + ______ + 명사(location) → 형용사. central(중심의)",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_032",
+      "sentence": "Ms. Lee has ______ experience in ~",
+      "choices": [
+        "extent",
+        "extensive",
+        "extensively",
+        "extensiveness"
+      ],
+      "answer": 1,
+      "explanation": "타동사(has) + ______ + 명사(experience) → 형용사. extensive(광범위한)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_073",
+      "sentence": "Food production ______ 30 percent ~.",
+      "choices": [
+        "dropped",
+        "drop",
+        "to drop",
+        "dropping"
+      ],
+      "answer": 0,
+      "explanation": "주어 + ______ → 동사 자리. 과거시제 능동 dropped",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_075",
+      "sentence": "We ______ the safety of passengers.",
+      "choices": [
+        "priority",
+        "prioritize",
+        "are prioritized",
+        "prioritizes"
+      ],
+      "answer": 1,
+      "explanation": "복수주어(We) + ______ + 목적어 → 능동 동사. prioritize(우선시하다)",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_076",
+      "sentence": "Resident's input on the community center ______ by ~.",
+      "choices": [
+        "seek",
+        "was sought",
+        "seeking",
+        "sought"
+      ],
+      "answer": 1,
+      "explanation": "주어(input) + ______ + by → 수동태. was sought(구해졌다)",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_077",
+      "sentence": "Next month, the store ______ 50 percent off all products.",
+      "choices": [
+        "offered",
+        "will offer",
+        "was offered",
+        "will be offered"
+      ],
+      "answer": 1,
+      "explanation": "Next month(미래) → 미래시제 능동. will offer",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_078",
+      "sentence": "Last Thursday, Tellner, Inc., ______ a new partnership with Darini Corporation.",
+      "choices": [
+        "announcing",
+        "announced",
+        "will announce",
+        "announce"
+      ],
+      "answer": 1,
+      "explanation": "Last Thursday(과거) → 과거시제. announced",
+      "category": "tense",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_080",
+      "sentence": "The position ______ available and can be applied for ~.",
+      "choices": [
+        "become",
+        "has become",
+        "becoming",
+        "had to become"
+      ],
+      "answer": 1,
+      "explanation": "현재완료. has become(~이 되었다)",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_082",
+      "sentence": "Rose Instruments ______ high-quality guitars for the last ten years.",
+      "choices": [
+        "has been designing",
+        "is designing",
+        "to design",
+        "has been designed"
+      ],
+      "answer": 0,
+      "explanation": "for the last ten years(기간) → 현재완료진행. has been designing",
+      "category": "tense",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_083",
+      "sentence": "By this time next year, our company ______ five new branches ~.",
+      "choices": [
+        "was opening",
+        "will have opened",
+        "had opened",
+        "open"
+      ],
+      "answer": 1,
+      "explanation": "By + 미래시점 → 미래완료. will have opened",
+      "category": "tense",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_084",
+      "sentence": "As soon as the product ______ the warehouse, we will send you an e-mail.",
+      "choices": [
+        "had left",
+        "has left",
+        "left",
+        "was left"
+      ],
+      "answer": 1,
+      "explanation": "시간 부사절(As soon as) + 현재완료, 주절 + will. has left",
+      "category": "tense",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_086",
+      "sentence": "Judy ______ food from out of town until local prices went down last month.",
+      "choices": [
+        "will be buying",
+        "is buying",
+        "had been buying",
+        "has been buying"
+      ],
+      "answer": 2,
+      "explanation": "과거완료진행 + until + 과거동사. had been buying",
+      "category": "tense",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_087",
+      "sentence": "Mr. Kim is working at home tomorrow so he ______ the report without any distractions.",
+      "choices": [
+        "finished",
+        "is finished",
+        "can finish",
+        "has been finishing"
+      ],
+      "answer": 2,
+      "explanation": "so (that) + 주어 + can + 동사원형. can finish",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_089",
+      "sentence": "~ for anyone who ______ coffee ~.",
+      "choices": [
+        "want",
+        "wants",
+        "wanting",
+        "to want"
+      ],
+      "answer": 1,
+      "explanation": "anyone(단수) + who + ______ → 단수동사. wants",
+      "category": "relative clause",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_091",
+      "sentence": "The manager requested that Mr. Kim ______ the budget meeting.",
+      "choices": [
+        "participate",
+        "participates",
+        "participated",
+        "is participating"
+      ],
+      "answer": 0,
+      "explanation": "request that S + (should) + 동사원형. participate",
+      "category": "tense",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_093",
+      "sentence": "Ms. Kim cannot attend the meeting ______ she is on vacation.",
+      "choices": [
+        "because",
+        "despite",
+        "in fact",
+        "regarding"
+      ],
+      "answer": 0,
+      "explanation": "완전한 문장 + ______ + 완전한 문장 → 접속사. because(~때문에)",
+      "category": "conjunction",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_094",
+      "sentence": "Employees can be more creative ______ a challenging work environment is offered.",
+      "choices": [
+        "when",
+        "due to",
+        "however",
+        "likewise"
+      ],
+      "answer": 0,
+      "explanation": "완전한 문장 + ______ + 완전한 문장 → 접속사. when(~할 때)",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_095",
+      "sentence": "The employees will use conference rooms ______ their office is being renovated.",
+      "choices": [
+        "that",
+        "while",
+        "instead",
+        "As soon as"
+      ],
+      "answer": 1,
+      "explanation": "완전한 문장 + ______ + 완전한 문장 → 접속사. while(~하는 동안)",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_096",
+      "sentence": "Ms. Kim gave me her full attention ______ her shop was busy.",
+      "choices": [
+        "even though",
+        "only if",
+        "concerning",
+        "following"
+      ],
+      "answer": 0,
+      "explanation": "완전한 문장 + ______ + 완전한 문장 → 접속사. even though(비록 ~이지만)",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_097",
+      "sentence": "______ your order is placed before 1:00 P.M., it will be delivered within one day.",
+      "choices": [
+        "As long as",
+        "including",
+        "above all",
+        "because of"
+      ],
+      "answer": 0,
+      "explanation": "______ + S+V, S+V → 접속사. As long as(~하는 한)",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_098",
+      "sentence": "______ sales revenue grew 30 percent last month, there is more money ~.",
+      "choices": [
+        "thanks to",
+        "Since",
+        "nevertheless",
+        "depending on"
+      ],
+      "answer": 1,
+      "explanation": "______ + S+V, S+V → 접속사. Since(~이기 때문에)",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_099",
+      "sentence": "______ registering for the class is not required, we strongly recommend it.",
+      "choices": [
+        "Although",
+        "Because",
+        "regardless",
+        "prior to"
+      ],
+      "answer": 0,
+      "explanation": "______ + S+V, S+V → 접속사. Although(비록 ~이지만)",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_101",
+      "sentence": "We expect the system to be running ______ the next five hours.",
+      "choices": [
+        "as soon as",
+        "within",
+        "unless",
+        "while"
+      ],
+      "answer": 1,
+      "explanation": "완전한 문장 + ______ + 명사 → 전치사. within(~이내에)",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_102",
+      "sentence": "The city council decided to build a shopping center ______ opposition from residents.",
+      "choices": [
+        "even so",
+        "in order to",
+        "in spite of",
+        "after all"
+      ],
+      "answer": 2,
+      "explanation": "완전한 문장 + ______ + 명사 → 전치사. in spite of(~에도 불구하고)",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_133",
+      "sentence": "Workers ______ attended the workshop have submitted their feedback.",
+      "choices": [
+        "who",
+        "which",
+        "whose",
+        "what"
+      ],
+      "answer": 0,
+      "explanation": "사람 명사(Workers) + ______ + V → 주격 관계대명사. who",
+      "category": "relative clause",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_134",
+      "sentence": "Next month, our team will have a new task, ______ is to review design portfolios.",
+      "choices": [
+        "that",
+        "which",
+        "who",
+        "why"
+      ],
+      "answer": 1,
+      "explanation": "콤마 + ______ + V → 계속적 용법. 사물 → which (콤마 뒤 that 불가)",
+      "category": "relative clause",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_135",
+      "sentence": "New tax incentives reward businesses ______ decrease their electricity consumption.",
+      "choices": [
+        "whose",
+        "that",
+        "when",
+        "how"
+      ],
+      "answer": 1,
+      "explanation": "명사(businesses) + ______ + V → 주격 관계대명사. that",
+      "category": "relative clause",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_136",
+      "sentence": "______ who wants to attend the dinner tomorrow must tell Ms. Kim by noon.",
+      "choices": [
+        "Those",
+        "Anyone",
+        "Other",
+        "Some"
+      ],
+      "answer": 1,
+      "explanation": "______ + who + 단수V → Anyone who = ~하는 누구나",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_137",
+      "sentence": "A recent study has found that those ______ regularly exercise tend to be healthier.",
+      "choices": [
+        "what",
+        "whose",
+        "who",
+        "where"
+      ],
+      "answer": 2,
+      "explanation": "those + ______ + 복수V → those who = ~하는 사람들",
+      "category": "relative clause",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_138",
+      "sentence": "The training session is for employees ______ responsibilities include updating systems.",
+      "choices": [
+        "who",
+        "whose",
+        "that",
+        "what"
+      ],
+      "answer": 1,
+      "explanation": "명사 + ______ + 명사(responsibilities) → 소유격 관계대명사. whose",
+      "category": "relative clause",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_139",
+      "sentence": "Natural disasters damage the place ______ people live.",
+      "choices": [
+        "how",
+        "where",
+        "when",
+        "what"
+      ],
+      "answer": 1,
+      "explanation": "장소명사(place) + ______ + 완전한 문장 → 관계부사. where",
+      "category": "relative clause",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_140",
+      "sentence": "______ replace Dr. Kim must be available two evenings a week.",
+      "choices": [
+        "Who",
+        "Whose",
+        "Whoever",
+        "where"
+      ],
+      "answer": 2,
+      "explanation": "______ + V(replace) → 주어 자리 절. Whoever = anyone who",
+      "category": "relative clause",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_141",
+      "sentence": "The Web site is not as ______ as it should be.",
+      "choices": [
+        "effectively",
+        "effective",
+        "effectiveness",
+        "effecting"
+      ],
+      "answer": 1,
+      "explanation": "as + ______ + as → 원급 비교. be동사 뒤 → 형용사. effective",
+      "category": "comparison",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_142",
+      "sentence": "The blue packaging received ______ ratings than the red packaging.",
+      "choices": [
+        "highest",
+        "higher",
+        "highly",
+        "highness"
+      ],
+      "answer": 1,
+      "explanation": "______ + 명사 + than → 비교급 형용사. higher",
+      "category": "comparison",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_143",
+      "sentence": "The road closures affected an even ______ number of commuters.",
+      "choices": [
+        "great",
+        "greater",
+        "greatest",
+        "greatly"
+      ],
+      "answer": 1,
+      "explanation": "even(비교급 강조) + ______ + 명사 → 비교급. greater",
+      "category": "comparison",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_144",
+      "sentence": "The new software makes it much ______ for business owners to create Web sites.",
+      "choices": [
+        "easily",
+        "easier",
+        "ease",
+        "easy"
+      ],
+      "answer": 1,
+      "explanation": "much(비교급 강조) + ______ → 비교급. make it easier = 더 쉽게 만들다",
+      "category": "comparison",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_145",
+      "sentence": "We need the products delivered no ______ than July 2.",
+      "choices": [
+        "late",
+        "later",
+        "lately",
+        "latest"
+      ],
+      "answer": 1,
+      "explanation": "no later than = 늦어도 ~까지 (고정 표현)",
+      "category": "comparison",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_147",
+      "sentence": "The textbook covers ______ topics.",
+      "choices": [
+        "several",
+        "a great deal of",
+        "little",
+        "much"
+      ],
+      "answer": 0,
+      "explanation": "______ + 복수명사(topics) → several. a great deal of/little/much는 불가산명사용",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_149",
+      "sentence": "The head of ______ department must attend the seminar ~.",
+      "choices": [
+        "each",
+        "most",
+        "few",
+        "both"
+      ],
+      "answer": 0,
+      "explanation": "______ + 단수명사(department) → each. most/few/both는 복수명사용",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_150",
+      "sentence": "______ employees are required to wear their badge without any exception.",
+      "choices": [
+        "All",
+        "Every",
+        "Each",
+        "The entire"
+      ],
+      "answer": 0,
+      "explanation": "______ + 복수명사(employees) → All. Every/Each/The entire는 단수명사용",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_152",
+      "sentence": "______ of my lawn supplies needs to be restocked.",
+      "choices": [
+        "several",
+        "one",
+        "many",
+        "all"
+      ],
+      "answer": 1,
+      "explanation": "______ of + 복수명사 + 단수V(needs) → one of. several/many/all은 복수동사",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
     }
   ]
 }
