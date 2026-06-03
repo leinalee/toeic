@@ -861,6 +861,45 @@ function startWrongQuiz(filterType) {
 }
 
 function buildVocabQuestion(item, direction) {
+  // Priority 1: contextQuiz (문장 속 문법/전치사 문제)
+  if (item.contextQuiz) {
+    const cq = item.contextQuiz;
+    return {
+      id: item.id,
+      type: 'vocabulary',
+      isContext: true,
+      questionText: cq.sentence,
+      questionLabel: `[${item.english}] 빈칸에 알맞은 것을 고르세요`,
+      choices: cq.choices,
+      answer: cq.answer,
+      explanation: `${cq.explanation}\n${item.english} = ${item.korean}`,
+      example: item.example,
+      exampleKorean: item.exampleKorean,
+      difficulty: item.difficulty,
+      tip: item.tip
+    };
+  }
+
+  // Priority 2: toeicQuestion (Part 5 스타일)
+  if (item.toeicQuestion) {
+    const tq = item.toeicQuestion;
+    return {
+      id: item.id,
+      type: 'vocabulary',
+      isContext: true,
+      questionText: tq.sentence,
+      questionLabel: `[${item.english} = ${item.korean}] 빈칸에 알맞은 것을 고르세요`,
+      choices: tq.choices,
+      answer: tq.answer,
+      explanation: `${tq.explanation}\n${item.english} = ${item.korean}`,
+      example: item.example,
+      exampleKorean: item.exampleKorean,
+      difficulty: item.difficulty,
+      tip: item.tip
+    };
+  }
+
+  // Fallback: 기존 뜻 맞추기 (contextQuiz/toeicQuestion 없는 단어)
   let dir = direction;
   if (dir === 'mixed') dir = Math.random() < 0.5 ? 'en2ko' : 'ko2en';
 
@@ -919,7 +958,12 @@ function renderQuestion() {
   }
 
   let html = '<div class="question-card">';
-  if (q.type === 'vocabulary') {
+  if (q.type === 'vocabulary' && q.isContext) {
+    // Context quiz: 문장 속 빈칸 문제 (단어가 레이블에 표시됨)
+    html += `<div class="question-label">${q.questionLabel}</div>`;
+    const ctxSentence = q.questionText.replace('______', '<span class="blank">______</span>');
+    html += `<div class="question-text">${ctxSentence}</div>`;
+  } else if (q.type === 'vocabulary') {
     html += `<div class="question-label">${q.questionLabel}</div>`;
     html += `<div class="question-word-row">
       <div class="question-text">${q.questionText}</div>

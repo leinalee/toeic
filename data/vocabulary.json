@@ -30,6 +30,17 @@
         ],
         "answer": 0,
         "explanation": "회의장이 참석자를 '수용할 수 있다'는 의미이므로 accommodate가 정답."
+      },
+      "contextQuiz": {
+        "sentence": "The conference center ______ accommodate up to 300 attendees.",
+        "choices": [
+          "has",
+          "is",
+          "does",
+          "can"
+        ],
+        "answer": 3,
+        "explanation": "조동사 can + 동사원형. can accommodate = 수용할 수 있다"
       }
     },
     {
@@ -62,6 +73,17 @@
         ],
         "answer": 1,
         "explanation": "규정을 '준수하다'는 comply with. '~에 따르다'라는 뜻."
+      },
+      "contextQuiz": {
+        "sentence": "All departments must comply ______ the new safety regulations.",
+        "choices": [
+          "on",
+          "for",
+          "with",
+          "to"
+        ],
+        "answer": 2,
+        "explanation": "comply with = ~을 준수하다. with가 정답"
       }
     },
     {
@@ -126,6 +148,17 @@
         ],
         "answer": 2,
         "explanation": "마감일을 맞추기 위해 검토 과정을 '신속히 처리하다'이므로 expedite."
+      },
+      "contextQuiz": {
+        "sentence": "To meet the deadline, the review process needs to be ______.",
+        "choices": [
+          "expedite",
+          "expedites",
+          "expediting",
+          "expedited"
+        ],
+        "answer": 3,
+        "explanation": "need to be p.p (수동). expedited = 신속히 처리된"
       }
     },
     {
@@ -382,6 +415,17 @@
         ],
         "answer": 1,
         "explanation": "합병으로 시장 지위를 '강화하다/통합하다'이므로 consolidate."
+      },
+      "contextQuiz": {
+        "sentence": "The merger will allow both companies ______ their market position.",
+        "choices": [
+          "consolidating",
+          "consolidated",
+          "to consolidate",
+          "consolidate"
+        ],
+        "answer": 2,
+        "explanation": "allow A to V. to consolidate"
       }
     },
     {
@@ -446,6 +490,17 @@
         ],
         "answer": 1,
         "explanation": "경제 불확실성 기간에 원자재 가격이 크게 '변동하다'이므로 fluctuate."
+      },
+      "contextQuiz": {
+        "sentence": "Oil prices ______ significantly over the past year.",
+        "choices": [
+          "fluctuating",
+          "is fluctuated",
+          "fluctuates",
+          "have fluctuated"
+        ],
+        "answer": 3,
+        "explanation": "over the past year → 현재완료. have fluctuated"
       }
     },
     {
@@ -478,6 +533,17 @@
         ],
         "answer": 0,
         "explanation": "기존 기술을 '활용하여' 새 시장에 진출하므로 leverage."
+      },
+      "contextQuiz": {
+        "sentence": "The company plans ______ leverage its existing technology.",
+        "choices": [
+          "for",
+          "with",
+          "on",
+          "to"
+        ],
+        "answer": 3,
+        "explanation": "plan to V. to leverage"
       }
     },
     {
@@ -1150,6 +1216,17 @@
         ],
         "answer": 1,
         "explanation": "제품 정보를 모든 지역 사무소에 '보급/유포하다'이므로 disseminate."
+      },
+      "contextQuiz": {
+        "sentence": "The information will be ______ to all regional offices.",
+        "choices": [
+          "disseminating",
+          "disseminate",
+          "disseminated",
+          "disseminates"
+        ],
+        "answer": 2,
+        "explanation": "will be p.p (미래수동). disseminated"
       }
     },
     {
@@ -1182,6 +1259,17 @@
         ],
         "answer": 1,
         "explanation": "업계 협회가 새 환경 지침을 공식적으로 '지지/승인했으므로' endorsed."
+      },
+      "contextQuiz": {
+        "sentence": "The committee officially ______ the new environmental guidelines.",
+        "choices": [
+          "endorsing",
+          "was endorsed",
+          "endorsed",
+          "endorse"
+        ],
+        "answer": 2,
+        "explanation": "과거시제 능동. officially endorsed"
       }
     },
     {
@@ -1214,6 +1302,17 @@
         ],
         "answer": 1,
         "explanation": "임대 계약이 퇴거 전 30일 통지를 '규정/명시하다'이므로 stipulates."
+      },
+      "contextQuiz": {
+        "sentence": "The contract clearly ______ the terms of employment.",
+        "choices": [
+          "stipulates",
+          "stipulated",
+          "stipulate",
+          "stipulating"
+        ],
+        "answer": 0,
+        "explanation": "주어(contract 단수) + 현재시제 3인칭 단수. stipulates"
       }
     },
     {
@@ -1438,6 +1537,17 @@
         ],
         "answer": 1,
         "explanation": "해외 시장에서 '전례 없는' 성장을 경험했으므로 unprecedented."
+      },
+      "contextQuiz": {
+        "sentence": "The company achieved ______ growth this quarter.",
+        "choices": [
+          "precedent",
+          "preceding",
+          "unprecedented",
+          "unprecedentedly"
+        ],
+        "answer": 2,
+        "explanation": "형용사 + 명사. unprecedented = 전례없는"
       }
     },
     {
@@ -1470,6 +1580,17 @@
         ],
         "answer": 1,
         "explanation": "영수증 제출 시 업무 관련 출장비를 '환급받다'이므로 reimbursed."
+      },
+      "contextQuiz": {
+        "sentence": "Employees will be ______ for travel expenses upon submitting receipts.",
+        "choices": [
+          "reimbursing",
+          "reimburse",
+          "reimburses",
+          "reimbursed"
+        ],
+        "answer": 3,
+        "explanation": "will be p.p (미래수동). reimbursed"
       }
     },
     {
@@ -1502,6 +1623,17 @@
         ],
         "answer": 1,
         "explanation": "문서 승인 과정을 '간소화/능률화하다'이므로 streamline."
+      },
+      "contextQuiz": {
+        "sentence": "The new software ______ expected to streamline the approval process.",
+        "choices": [
+          "does",
+          "will",
+          "has",
+          "is"
+        ],
+        "answer": 3,
+        "explanation": "be expected to V. is expected"
       }
     },
     {
@@ -1534,6 +1666,17 @@
         ],
         "answer": 1,
         "explanation": "신규 공장의 모든 운영을 '감독/관리하다'이므로 oversee."
+      },
+      "contextQuiz": {
+        "sentence": "Ms. Park has been appointed ______ oversee all operations.",
+        "choices": [
+          "with",
+          "for",
+          "to",
+          "on"
+        ],
+        "answer": 2,
+        "explanation": "be appointed to V. to oversee"
       }
     },
     {
@@ -1726,6 +1869,17 @@
         ],
         "answer": 1,
         "explanation": "매출 감소에 대응하여 비필수 지출을 '삭감하다'이므로 curtail."
+      },
+      "contextQuiz": {
+        "sentence": "The company had to curtail spending ______ to budget cuts.",
+        "choices": [
+          "since",
+          "despite",
+          "because",
+          "due"
+        ],
+        "answer": 3,
+        "explanation": "due to = ~때문에. due to budget cuts"
       }
     },
     {
@@ -2238,6 +2392,17 @@
         ],
         "answer": 1,
         "explanation": "디지털 광고가 전체 마케팅 예산의 60% 이상을 '차지하므로' accounts for."
+      },
+      "contextQuiz": {
+        "sentence": "Online sales account ______ 60% of total revenue.",
+        "choices": [
+          "for",
+          "to",
+          "on",
+          "with"
+        ],
+        "answer": 0,
+        "explanation": "account for = ~을 차지하다"
       }
     },
     {
@@ -2302,6 +2467,17 @@
         ],
         "answer": 1,
         "explanation": "운영 매뉴얼에 명시된 절차에 '따라' 처리되므로 in accordance with."
+      },
+      "contextQuiz": {
+        "sentence": "Procedures must be done in accordance ______ company policy.",
+        "choices": [
+          "by",
+          "with",
+          "for",
+          "to"
+        ],
+        "answer": 1,
+        "explanation": "in accordance with = ~에 따라"
       }
     },
     {
@@ -2398,6 +2574,17 @@
         ],
         "answer": 1,
         "explanation": "합병 '전에' 두 회사가 독립적으로 운영되었으므로 Prior to."
+      },
+      "contextQuiz": {
+        "sentence": "Prior ______ the meeting, please review the documents.",
+        "choices": [
+          "of",
+          "at",
+          "for",
+          "to"
+        ],
+        "answer": 3,
+        "explanation": "prior to = ~전에"
       }
     },
     {
@@ -2430,6 +2617,17 @@
         ],
         "answer": 1,
         "explanation": "회원 등급에 '관계없이' 모든 고객에게 제공되므로 regardless of."
+      },
+      "contextQuiz": {
+        "sentence": "The discount applies regardless ______ membership status.",
+        "choices": [
+          "to",
+          "with",
+          "of",
+          "for"
+        ],
+        "answer": 2,
+        "explanation": "regardless of = ~에 관계없이"
       }
     },
     {
@@ -2462,6 +2660,17 @@
         ],
         "answer": 1,
         "explanation": "경영진을 '대표하여' 감사를 표하는 서신이므로 on behalf of."
+      },
+      "contextQuiz": {
+        "sentence": "I am writing on behalf ______ the entire department.",
+        "choices": [
+          "with",
+          "to",
+          "for",
+          "of"
+        ],
+        "answer": 3,
+        "explanation": "on behalf of = ~을 대신하여"
       }
     },
     {
@@ -2494,6 +2703,17 @@
         ],
         "answer": 1,
         "explanation": "초과근무 보상 '대신에' 추가 유급 휴가를 선택할 수 있으므로 in lieu of."
+      },
+      "contextQuiz": {
+        "sentence": "Employees may receive leave in lieu ______ overtime pay.",
+        "choices": [
+          "of",
+          "for",
+          "to",
+          "with"
+        ],
+        "answer": 0,
+        "explanation": "in lieu of = ~대신에"
       }
     },
     {
@@ -2526,6 +2746,17 @@
         ],
         "answer": 1,
         "explanation": "사무실 리디자인에 대한 피드백을 '기대합니다'이므로 look forward to."
+      },
+      "contextQuiz": {
+        "sentence": "We look forward ______ hearing from you soon.",
+        "choices": [
+          "to",
+          "of",
+          "at",
+          "for"
+        ],
+        "answer": 0,
+        "explanation": "look forward to = ~을 기대하다"
       }
     },
     {
@@ -2558,6 +2789,17 @@
         ],
         "answer": 1,
         "explanation": "다양한 기술 문제를 '처리/다루다'이므로 deal with."
+      },
+      "contextQuiz": {
+        "sentence": "The team deals ______ customer complaints efficiently.",
+        "choices": [
+          "with",
+          "on",
+          "for",
+          "to"
+        ],
+        "answer": 0,
+        "explanation": "deal with = ~을 처리하다"
       }
     },
     {
@@ -2590,6 +2832,17 @@
         ],
         "answer": 1,
         "explanation": "회사의 안전 규약을 엄격히 '준수하다'이므로 adhere to."
+      },
+      "contextQuiz": {
+        "sentence": "Employees must adhere ______ the company's dress code.",
+        "choices": [
+          "with",
+          "on",
+          "for",
+          "to"
+        ],
+        "answer": 3,
+        "explanation": "adhere to = ~을 준수하다"
       }
     },
     {
@@ -3074,6 +3327,17 @@
         ],
         "answer": 0,
         "explanation": "직원들이 프로그램을 완료'해야 한다'이므로 are required."
+      },
+      "contextQuiz": {
+        "sentence": "All staff members are required ______ attend the orientation.",
+        "choices": [
+          "with",
+          "of",
+          "to",
+          "for"
+        ],
+        "answer": 2,
+        "explanation": "be required to V = V해야 한다"
       }
     },
     {
@@ -3106,6 +3370,17 @@
         ],
         "answer": 0,
         "explanation": "직무에 '자격이 있는' 지원자만 고려되므로 qualified."
+      },
+      "contextQuiz": {
+        "sentence": "She is highly ______ for the management position.",
+        "choices": [
+          "questioned",
+          "qualified",
+          "quantified",
+          "quoted"
+        ],
+        "answer": 1,
+        "explanation": "be qualified for = 자격이 있는"
       }
     },
     {
@@ -3148,7 +3423,18 @@
       ],
       "difficulty": 3,
       "tip": "associate(연관시키다) + with. in association with = ~와 제휴하여.",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "The brand has long been associated ______ premium quality.",
+        "choices": [
+          "to",
+          "by",
+          "with",
+          "for"
+        ],
+        "answer": 2,
+        "explanation": "be associated with = ~와 관련되다"
+      }
     },
     {
       "id": "d005",
@@ -3180,6 +3466,17 @@
         ],
         "answer": 0,
         "explanation": "교육을 완료한 직원은 시험에 대한 '자격이 있으므로' eligible."
+      },
+      "contextQuiz": {
+        "sentence": "Employees who completed training are ______ for the certification.",
+        "choices": [
+          "suitable",
+          "responsible",
+          "available",
+          "eligible"
+        ],
+        "answer": 3,
+        "explanation": "be eligible for = 자격이 있다"
       }
     },
     {
@@ -3244,6 +3541,17 @@
         ],
         "answer": 0,
         "explanation": "고객 불만을 '시기적절하게' 처리해야 하므로 timely."
+      },
+      "contextQuiz": {
+        "sentence": "Please respond to inquiries in a ______ manner.",
+        "choices": [
+          "time",
+          "timed",
+          "timely",
+          "timing"
+        ],
+        "answer": 2,
+        "explanation": "in a timely manner = 적시에"
       }
     },
     {
@@ -3276,6 +3584,17 @@
         ],
         "answer": 0,
         "explanation": "실내에서 흡연을 '삼가다'이므로 refrain. refrain from = ~을 삼가다."
+      },
+      "contextQuiz": {
+        "sentence": "Guests are asked to refrain ______ smoking indoors.",
+        "choices": [
+          "for",
+          "to",
+          "from",
+          "of"
+        ],
+        "answer": 2,
+        "explanation": "refrain from = ~을 삼가다"
       }
     },
     {
@@ -3339,7 +3658,18 @@
       ],
       "difficulty": 3,
       "tip": "= be responsible for. accountable은 '설명할 의무가 있는'이라는 뉘앙스.",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "Managers are accountable ______ their team's performance.",
+        "choices": [
+          "for",
+          "to",
+          "with",
+          "of"
+        ],
+        "answer": 0,
+        "explanation": "be accountable for = ~에 대해 책임이 있다"
+      }
     },
     {
       "id": "d013",
@@ -3403,6 +3733,17 @@
         ],
         "answer": 0,
         "explanation": "장애인이 '접근/이용할 수 있는' 시설이므로 accessible."
+      },
+      "contextQuiz": {
+        "sentence": "The building is easily ______ by public transportation.",
+        "choices": [
+          "accessing",
+          "accessible",
+          "accessed",
+          "access"
+        ],
+        "answer": 1,
+        "explanation": "be + 부사 + 형용사. accessible"
       }
     },
     {
@@ -3467,6 +3808,17 @@
         ],
         "answer": 0,
         "explanation": "주차 허가증이 발급일로부터 1년간 '유효하므로' valid."
+      },
+      "contextQuiz": {
+        "sentence": "This parking permit is ______ for one year from the date of issue.",
+        "choices": [
+          "valid",
+          "validly",
+          "validity",
+          "validate"
+        ],
+        "answer": 0,
+        "explanation": "be + 형용사. valid = 유효한"
       }
     },
     {
@@ -3541,7 +3893,18 @@
       ],
       "difficulty": 3,
       "tip": "commitment(헌신) to N. be dedicated to와 같은 의미. 회사 소개에 자주 등장!",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "Our company is committed ______ providing excellent service.",
+        "choices": [
+          "to",
+          "for",
+          "with",
+          "in"
+        ],
+        "answer": 0,
+        "explanation": "be committed to = ~에 전념하다"
+      }
     },
     {
       "id": "d020",
@@ -3668,7 +4031,18 @@
       ],
       "difficulty": 3,
       "tip": "= take effect, go into effect. in effect = 시행 중인, 사실상.",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "The new policy will come ______ effect on January 1.",
+        "choices": [
+          "in",
+          "for",
+          "into",
+          "to"
+        ],
+        "answer": 2,
+        "explanation": "come into effect = 시행되다"
+      }
     },
     {
       "id": "d025",
@@ -3689,7 +4063,18 @@
       ],
       "difficulty": 4,
       "tip": "vulnerable(취약한) + to. susceptible to와 비슷한 의미.",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "Small businesses are vulnerable ______ economic downturns.",
+        "choices": [
+          "for",
+          "with",
+          "to",
+          "of"
+        ],
+        "answer": 2,
+        "explanation": "be vulnerable to = ~에 취약하다"
+      }
     },
     {
       "id": "d026",
@@ -3795,6 +4180,17 @@
         ],
         "answer": 0,
         "explanation": "'결함이 있는' 제품은 추가 비용 없이 교체되므로 defective."
+      },
+      "contextQuiz": {
+        "sentence": "All ______ products will be replaced at no cost.",
+        "choices": [
+          "defect",
+          "defecting",
+          "defected",
+          "defective"
+        ],
+        "answer": 3,
+        "explanation": "형용사 + 명사. defective = 결함있는"
       }
     },
     {
@@ -3816,7 +4212,18 @@
       ],
       "difficulty": 2,
       "tip": "further(추가) + notice(통지) = 추가 통지가 있을 때까지. 공지문에 자주 등장!",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "The office will remain closed until ______ notice.",
+        "choices": [
+          "future",
+          "further",
+          "following",
+          "final"
+        ],
+        "answer": 1,
+        "explanation": "until further notice = 추후 통지까지"
+      }
     },
     {
       "id": "d031",
@@ -3869,6 +4276,17 @@
         ],
         "answer": 0,
         "explanation": "금요일 전 주문은 배송이 '무료'이므로 free of charge."
+      },
+      "contextQuiz": {
+        "sentence": "Delivery is free of ______ for orders over $50.",
+        "choices": [
+          "charge",
+          "fee",
+          "cost",
+          "price"
+        ],
+        "answer": 0,
+        "explanation": "free of charge = 무료로"
       }
     },
     {
@@ -3890,7 +4308,18 @@
       ],
       "difficulty": 2,
       "tip": "= be responsible for. take charge of = ~을 맡다. 토익 빈출!",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "Ms. Kim is in charge ______ the marketing department.",
+        "choices": [
+          "for",
+          "of",
+          "with",
+          "to"
+        ],
+        "answer": 1,
+        "explanation": "be in charge of = ~을 담당하다"
+      }
     },
     {
       "id": "d034",
@@ -3932,7 +4361,18 @@
       ],
       "difficulty": 2,
       "tip": "place(놓다) + order(주문) = 주문을 넣다. fill an order = 주문에 응하다.",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "Customers can place an ______ online or by phone.",
+        "choices": [
+          "output",
+          "offer",
+          "option",
+          "order"
+        ],
+        "answer": 3,
+        "explanation": "place an order = 주문하다"
+      }
     },
     {
       "id": "d036",
@@ -3985,7 +4425,18 @@
       ],
       "difficulty": 3,
       "tip": "long(오랜) + standing(서있는) = 오랫동안 서있는 = 오래된. = long-established.",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "The two companies have a ______ partnership.",
+        "choices": [
+          "longstander",
+          "longstand",
+          "longstanding",
+          "longstandingly"
+        ],
+        "answer": 2,
+        "explanation": "형용사 + 명사. longstanding = 오래된"
+      }
     },
     {
       "id": "d038",
@@ -4027,7 +4478,18 @@
       ],
       "difficulty": 3,
       "tip": "co(함께) + labor(일하다) = 함께 일하다. collaborate on N = N에 대해 협력하다.",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "Our team will collaborate ______ external consultants.",
+        "choices": [
+          "for",
+          "to",
+          "with",
+          "on"
+        ],
+        "answer": 2,
+        "explanation": "collaborate with = ~와 협력하다"
+      }
     },
     {
       "id": "d040",
@@ -4080,6 +4542,17 @@
         ],
         "answer": 0,
         "explanation": "현재 '품절'이지만 다음 주 입고 예정이므로 out of stock."
+      },
+      "contextQuiz": {
+        "sentence": "The item is currently out of ______.",
+        "choices": [
+          "sale",
+          "store",
+          "supply",
+          "stock"
+        ],
+        "answer": 3,
+        "explanation": "out of stock = 품절"
       }
     },
     {
@@ -4175,6 +4648,17 @@
         ],
         "answer": 0,
         "explanation": "모든 참석자에게 '무료' 점심이 제공되므로 complimentary."
+      },
+      "contextQuiz": {
+        "sentence": "Hotel guests receive ______ breakfast each morning.",
+        "choices": [
+          "complimenting",
+          "complimentary",
+          "complimented",
+          "complementary"
+        ],
+        "answer": 1,
+        "explanation": "형용사 + 명사. complimentary = 무료의"
       }
     },
     {
@@ -4249,6 +4733,17 @@
         ],
         "answer": 0,
         "explanation": "'위험한' 화학물질을 다룰 때 보호 장비 착용이 필수이므로 hazardous."
+      },
+      "contextQuiz": {
+        "sentence": "Workers handling ______ materials must wear protective gear.",
+        "choices": [
+          "hazard",
+          "hazardous",
+          "hazarding",
+          "hazardously"
+        ],
+        "answer": 1,
+        "explanation": "형용사 + 명사. hazardous = 위험한"
       }
     },
     {
@@ -4281,6 +4776,17 @@
         ],
         "answer": 0,
         "explanation": "미래 성장을 위해 아시아의 '신흥' 시장에 집중하므로 emerging."
+      },
+      "contextQuiz": {
+        "sentence": "The company is expanding into ______ markets in Asia.",
+        "choices": [
+          "emergence",
+          "emerging",
+          "emerge",
+          "emerged"
+        ],
+        "answer": 1,
+        "explanation": "형용사(Ving) + 명사. emerging = 신흥의"
       }
     },
     {
@@ -4313,6 +4819,17 @@
         ],
         "answer": 0,
         "explanation": "원래 계약 수정은 추가 법률 비용을 '발생시킬 수 있으므로' incur."
+      },
+      "contextQuiz": {
+        "sentence": "Late payments will ______ additional fees.",
+        "choices": [
+          "incurs",
+          "incurred",
+          "incurring",
+          "incur"
+        ],
+        "answer": 3,
+        "explanation": "will + 동사원형. incur"
       }
     },
     {
@@ -4334,7 +4851,18 @@
       ],
       "difficulty": 3,
       "tip": "= be dependent on = rely on = depend on. 모두 '의존하다' 뜻!",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "Rural communities are reliant ______ agriculture.",
+        "choices": [
+          "to",
+          "for",
+          "on",
+          "with"
+        ],
+        "answer": 2,
+        "explanation": "be reliant on = ~에 의존하다"
+      }
     },
     {
       "id": "d052",
@@ -4397,7 +4925,18 @@
       ],
       "difficulty": 4,
       "tip": "exempt(면제된) + from. tax exemption = 세금 면제. exempt = 동사로도 사용!",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "Non-profits are exempt ______ certain taxes.",
+        "choices": [
+          "for",
+          "from",
+          "to",
+          "of"
+        ],
+        "answer": 1,
+        "explanation": "be exempt from = ~을 면제받다"
+      }
     },
     {
       "id": "d055",
@@ -4450,6 +4989,17 @@
         ],
         "answer": 0,
         "explanation": "합병이 재정적으로 '실행 가능하지' 않다고 결론내렸으므로 viable."
+      },
+      "contextQuiz": {
+        "sentence": "The committee determined the proposal was not financially ______.",
+        "choices": [
+          "viably",
+          "viability",
+          "viabilities",
+          "viable"
+        ],
+        "answer": 3,
+        "explanation": "부사(financially) + 형용사. viable = 실행가능한"
       }
     },
     {
@@ -4545,7 +5095,18 @@
       ],
       "difficulty": 3,
       "tip": "opt(선택하다) + for. option(선택권)의 동사형. opt against = 하지 않기로 선택하다.",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "Many customers opt ______ the express delivery option.",
+        "choices": [
+          "on",
+          "to",
+          "with",
+          "for"
+        ],
+        "answer": 3,
+        "explanation": "opt for = ~을 선택하다"
+      }
     },
     {
       "id": "d061",
@@ -4566,7 +5127,18 @@
       ],
       "difficulty": 4,
       "tip": "stem(줄기) + from = 줄기가 ~에서 나오다 = ~에서 비롯되다. = originate from.",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "The company's success stems ______ its commitment to innovation.",
+        "choices": [
+          "to",
+          "with",
+          "of",
+          "from"
+        ],
+        "answer": 3,
+        "explanation": "stem from = ~에서 비롯되다"
+      }
     },
     {
       "id": "d062",
@@ -4672,6 +5244,17 @@
         ],
         "answer": 0,
         "explanation": "전자 장비가 습기 피해에 특히 '취약하므로' susceptible."
+      },
+      "contextQuiz": {
+        "sentence": "Electronic equipment is susceptible ______ moisture damage.",
+        "choices": [
+          "to",
+          "of",
+          "with",
+          "for"
+        ],
+        "answer": 0,
+        "explanation": "susceptible to = ~에 취약한"
       }
     },
     {
@@ -4704,6 +5287,17 @@
         ],
         "answer": 0,
         "explanation": "시장 점유율을 확보하기 위해 공격적 확장 전략에 '착수했으므로' embarked."
+      },
+      "contextQuiz": {
+        "sentence": "The startup embarked ______ an ambitious expansion plan.",
+        "choices": [
+          "on",
+          "for",
+          "with",
+          "to"
+        ],
+        "answer": 0,
+        "explanation": "embark on = ~에 착수하다"
       }
     },
     {
@@ -4725,7 +5319,18 @@
       ],
       "difficulty": 3,
       "tip": "inter(사이에) + fere(치다) = 사이에 끼어들어 치다 = 방해하다. interfere in = ~에 간섭하다.",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "Personal calls should not interfere ______ work productivity.",
+        "choices": [
+          "on",
+          "with",
+          "for",
+          "to"
+        ],
+        "answer": 1,
+        "explanation": "interfere with = ~을 방해하다"
+      }
     },
     {
       "id": "d068",
@@ -4746,7 +5351,18 @@
       ],
       "difficulty": 3,
       "tip": "adjacent(인접한) + to. = next to, near, close to. 위치 묘사에 자주 출제!",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "The parking lot is adjacent ______ the main building.",
+        "choices": [
+          "to",
+          "of",
+          "with",
+          "for"
+        ],
+        "answer": 0,
+        "explanation": "be adjacent to = ~에 인접하다"
+      }
     },
     {
       "id": "d069",
@@ -4778,6 +5394,17 @@
         ],
         "answer": 0,
         "explanation": "노후 사무 장비를 회사 정책에 따라 '처분해야' 하므로 disposed (of)."
+      },
+      "contextQuiz": {
+        "sentence": "Hazardous waste must be disposed ______ properly.",
+        "choices": [
+          "of",
+          "to",
+          "for",
+          "with"
+        ],
+        "answer": 0,
+        "explanation": "dispose of = ~을 처분하다"
       }
     },
     {
@@ -4799,7 +5426,18 @@
       ],
       "difficulty": 4,
       "tip": "excess(초과) → ~을 초과하여. = more than, over. excessive = 과도한.",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "Expenses in excess ______ $500 require approval.",
+        "choices": [
+          "to",
+          "for",
+          "with",
+          "of"
+        ],
+        "answer": 3,
+        "explanation": "in excess of = ~을 초과하여"
+      }
     },
     {
       "id": "d071",
@@ -4820,7 +5458,18 @@
       ],
       "difficulty": 3,
       "tip": "designate(지정하다). designation = 지정, 명칭. designated area = 지정 구역.",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "The area has been designated ______ a protected zone.",
+        "choices": [
+          "for",
+          "with",
+          "to",
+          "as"
+        ],
+        "answer": 3,
+        "explanation": "designate A as B = A를 B로 지정하다"
+      }
     },
     {
       "id": "d072",
@@ -4852,6 +5501,17 @@
         ],
         "answer": 0,
         "explanation": "배송 시간이 목적지에 따라 2~5일 사이로 '다양하므로' vary."
+      },
+      "contextQuiz": {
+        "sentence": "Delivery times vary ______ two to five business days.",
+        "choices": [
+          "for",
+          "from",
+          "of",
+          "between"
+        ],
+        "answer": 1,
+        "explanation": "vary from A to B = A에서 B까지 다양하다"
       }
     },
     {
@@ -4884,6 +5544,17 @@
         ],
         "answer": 0,
         "explanation": "직사광선에 장시간 '노출'되면 색이 바래므로 exposure."
+      },
+      "contextQuiz": {
+        "sentence": "Prolonged exposure ______ direct sunlight may cause damage.",
+        "choices": [
+          "of",
+          "for",
+          "with",
+          "to"
+        ],
+        "answer": 3,
+        "explanation": "exposure to = ~에 대한 노출"
       }
     },
     {
@@ -4905,7 +5576,18 @@
       ],
       "difficulty": 4,
       "tip": "= in conjunction with. combination(결합) + with. combine A with B = A를 B와 결합하다.",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "The medication should be taken in combination ______ a healthy diet.",
+        "choices": [
+          "of",
+          "for",
+          "with",
+          "to"
+        ],
+        "answer": 2,
+        "explanation": "in combination with = ~와 함께"
+      }
     },
     {
       "id": "d075",
@@ -4926,7 +5608,18 @@
       ],
       "difficulty": 3,
       "tip": "= be aware of. consciousness = 의식. cost-conscious = 비용을 의식하는.",
-      "type": "vocabulary"
+      "type": "vocabulary",
+      "contextQuiz": {
+        "sentence": "Employees should be conscious ______ cybersecurity threats.",
+        "choices": [
+          "to",
+          "with",
+          "of",
+          "for"
+        ],
+        "answer": 2,
+        "explanation": "be conscious of = ~을 인지하다"
+      }
     },
     {
       "id": "cn1001",
@@ -8144,7 +8837,18 @@
         "상대방, 대응물"
       ],
       "difficulty": 4,
-      "tip": "star(별)에서 온 말 → 별처럼 빛나는 = 뛰어난. stellar performance = 뛰어난 실적"
+      "tip": "star(별)에서 온 말 → 별처럼 빛나는 = 뛰어난. stellar performance = 뛰어난 실적",
+      "contextQuiz": {
+        "sentence": "The employee delivered a ______ performance this quarter.",
+        "choices": [
+          "stellar",
+          "stella",
+          "stellared",
+          "stellarly"
+        ],
+        "answer": 0,
+        "explanation": "형용사 + 명사. stellar = 뛰어난"
+      }
     },
     {
       "id": "hk2008",
@@ -8165,7 +8869,18 @@
         "수습직원, 견습생"
       ],
       "difficulty": 3,
-      "tip": "vers(돌다, 바꾸다) → 이것저것 바꿔가며 할 수 있는 = 다재다능한"
+      "tip": "vers(돌다, 바꾸다) → 이것저것 바꿔가며 할 수 있는 = 다재다능한",
+      "contextQuiz": {
+        "sentence": "We need a ______ employee who can handle multiple tasks.",
+        "choices": [
+          "versation",
+          "versatile",
+          "versatilely",
+          "versatility"
+        ],
+        "answer": 1,
+        "explanation": "형용사 + 명사. versatile = 다재다능한"
+      }
     },
     {
       "id": "hk2009",
@@ -9572,7 +10287,18 @@
         "이용, 활용"
       ],
       "difficulty": 3,
-      "tip": "dis(떨어뜨리다) + rupt(깨다) → 깨뜨려 흩뜨리다 = 방해하다. disruption = 중단, 혼란"
+      "tip": "dis(떨어뜨리다) + rupt(깨다) → 깨뜨려 흩뜨리다 = 방해하다. disruption = 중단, 혼란",
+      "contextQuiz": {
+        "sentence": "The power outage ______ operations for several hours.",
+        "choices": [
+          "disrupting",
+          "disrupt",
+          "disrupted",
+          "disrupts"
+        ],
+        "answer": 2,
+        "explanation": "과거시제. disrupted"
+      }
     },
     {
       "id": "hk2076",
@@ -9677,7 +10403,18 @@
         "위생의"
       ],
       "difficulty": 4,
-      "tip": "ag(~쪽으로) + grave(무거운) → 더 무겁게 하다 = 악화시키다. ↔ alleviate(완화하다)"
+      "tip": "ag(~쪽으로) + grave(무거운) → 더 무겁게 하다 = 악화시키다. ↔ alleviate(완화하다)",
+      "contextQuiz": {
+        "sentence": "The delay only served to ______ the situation.",
+        "choices": [
+          "aggravated",
+          "aggravating",
+          "aggravate",
+          "aggravates"
+        ],
+        "answer": 2,
+        "explanation": "to + 동사원형. aggravate"
+      }
     },
     {
       "id": "hk2081",
@@ -9698,7 +10435,18 @@
         "간섭"
       ],
       "difficulty": 3,
-      "tip": "e(밖으로) + vacuate(비우다) → 밖으로 비우다 = 대피하다. evacuation = 대피"
+      "tip": "e(밖으로) + vacuate(비우다) → 밖으로 비우다 = 대피하다. evacuation = 대피",
+      "contextQuiz": {
+        "sentence": "All staff were ______ to evacuate the building immediately.",
+        "choices": [
+          "instructs",
+          "instruction",
+          "instructing",
+          "instructed"
+        ],
+        "answer": 3,
+        "explanation": "be instructed to V(수동). instructed"
+      }
     },
     {
       "id": "hk2082",
@@ -9761,7 +10509,18 @@
         "호의"
       ],
       "difficulty": 3,
-      "tip": "총의 방아쇠(trigger)를 당기면 사건이 시작 = 야기하다, 유발하다"
+      "tip": "총의 방아쇠(trigger)를 당기면 사건이 시작 = 야기하다, 유발하다",
+      "contextQuiz": {
+        "sentence": "The announcement ______ a sharp increase in stock prices.",
+        "choices": [
+          "triggered",
+          "triggers",
+          "trigger",
+          "triggering"
+        ],
+        "answer": 0,
+        "explanation": "과거시제. triggered"
+      }
     },
     {
       "id": "hk2085",
@@ -10790,7 +11549,18 @@
         "협의하다, 의논하다"
       ],
       "difficulty": 3,
-      "tip": "over(넘치게) + whelm(뒤덮다) → 넘치게 뒤덮는 = 압도적인"
+      "tip": "over(넘치게) + whelm(뒤덮다) → 넘치게 뒤덮는 = 압도적인",
+      "contextQuiz": {
+        "sentence": "The response to the product launch was ______.",
+        "choices": [
+          "overwhelm",
+          "overwhelming",
+          "overwhelmingly",
+          "overwhelmed"
+        ],
+        "answer": 1,
+        "explanation": "be + 형용사(감정유발). overwhelming = 압도적인"
+      }
     },
     {
       "id": "hk2134",
@@ -10895,7 +11665,18 @@
         "호의"
       ],
       "difficulty": 4,
-      "tip": "deter(나쁘게) + iorate → 나빠지다 = 악화되다. deterioration = 악화"
+      "tip": "deter(나쁘게) + iorate → 나빠지다 = 악화되다. deterioration = 악화",
+      "contextQuiz": {
+        "sentence": "Working conditions have ______ significantly.",
+        "choices": [
+          "deteriorating",
+          "deteriorate",
+          "deteriorates",
+          "deteriorated"
+        ],
+        "answer": 3,
+        "explanation": "have + p.p(현재완료). deteriorated"
+      }
     },
     {
       "id": "hk2139",
@@ -11462,7 +12243,18 @@
         "식을 진행하다"
       ],
       "difficulty": 3,
-      "tip": "ob(떨어져) + solete(쓰이다) → 더 이상 쓸 수 없는 = 쓸모없게 된. = outdated"
+      "tip": "ob(떨어져) + solete(쓰이다) → 더 이상 쓸 수 없는 = 쓸모없게 된. = outdated",
+      "contextQuiz": {
+        "sentence": "The old equipment has become ______ and needs replacement.",
+        "choices": [
+          "obsoletely",
+          "obsoleting",
+          "obsolete",
+          "obsoleteness"
+        ],
+        "answer": 2,
+        "explanation": "become + 형용사. obsolete = 구식의"
+      }
     },
     {
       "id": "hk2166",
@@ -11504,7 +12296,18 @@
         "증가하여"
       ],
       "difficulty": 3,
-      "tip": "trans(통과) + parent(보이다) → 통과해서 보이는 = 투명한. transparency = 투명성"
+      "tip": "trans(통과) + parent(보이다) → 통과해서 보이는 = 투명한. transparency = 투명성",
+      "contextQuiz": {
+        "sentence": "The company is committed to ______ business practices.",
+        "choices": [
+          "transparency",
+          "transparencies",
+          "transparent",
+          "transparently"
+        ],
+        "answer": 2,
+        "explanation": "형용사 + 명사. transparent = 투명한"
+      }
     },
     {
       "id": "hk2168",
@@ -11588,7 +12391,18 @@
         "오래 끄는"
       ],
       "difficulty": 3,
-      "tip": "= extremely busy. hectic schedule = 몹시 바쁜 일정"
+      "tip": "= extremely busy. hectic schedule = 몹시 바쁜 일정",
+      "contextQuiz": {
+        "sentence": "December is always a ______ month for retail businesses.",
+        "choices": [
+          "hector",
+          "hectic",
+          "hecticness",
+          "hectically"
+        ],
+        "answer": 1,
+        "explanation": "관사 + 형용사 + 명사. hectic = 매우 바쁜"
+      }
     },
     {
       "id": "hk2172",
@@ -11987,7 +12801,18 @@
         "정식으로 개시하다"
       ],
       "difficulty": 4,
-      "tip": "pro(앞으로) + voke(부르다) → 앞으로 불러내다 = 자극하다, 도발하다"
+      "tip": "pro(앞으로) + voke(부르다) → 앞으로 불러내다 = 자극하다, 도발하다",
+      "contextQuiz": {
+        "sentence": "The announcement ______ expected to provoke a strong reaction.",
+        "choices": [
+          "had",
+          "is",
+          "has",
+          "was"
+        ],
+        "answer": 1,
+        "explanation": "be expected to V. is expected"
+      }
     },
     {
       "id": "hk2191",
@@ -12155,7 +12980,18 @@
         "막다"
       ],
       "difficulty": 3,
-      "tip": "com(함께) + pel(밀다) → 함께 끌어당기는 = 매력적인, 설득력 있는"
+      "tip": "com(함께) + pel(밀다) → 함께 끌어당기는 = 매력적인, 설득력 있는",
+      "contextQuiz": {
+        "sentence": "The team presented a ______ case for the new product.",
+        "choices": [
+          "compellingly",
+          "compulsion",
+          "compelled",
+          "compelling"
+        ],
+        "answer": 3,
+        "explanation": "형용사 + 명사. compelling = 설득력있는"
+      }
     },
     {
       "id": "hk2199",
@@ -12176,7 +13012,18 @@
         "무심코, 우연히"
       ],
       "difficulty": 3,
-      "tip": "facil(쉬운, facility와 같은 어원) → 쉽게 만들다 = 촉진하다. facilitator = 진행자"
+      "tip": "facil(쉬운, facility와 같은 어원) → 쉽게 만들다 = 촉진하다. facilitator = 진행자",
+      "contextQuiz": {
+        "sentence": "The new system was designed to ______ communication.",
+        "choices": [
+          "facilitating",
+          "facilitates",
+          "facilitated",
+          "facilitate"
+        ],
+        "answer": 3,
+        "explanation": "to + 동사원형. facilitate"
+      }
     },
     {
       "id": "hk2200",
@@ -12239,7 +13086,18 @@
         "축적하다, 모으다"
       ],
       "difficulty": 3,
-      "tip": "= authentic, real. genuine leather = 진짜 가죽. genuine concern = 진심 어린 우려"
+      "tip": "= authentic, real. genuine leather = 진짜 가죽. genuine concern = 진심 어린 우려",
+      "contextQuiz": {
+        "sentence": "We appreciate your ______ interest in our products.",
+        "choices": [
+          "genuinely",
+          "genuineness",
+          "genuining",
+          "genuine"
+        ],
+        "answer": 3,
+        "explanation": "형용사 + 명사. genuine = 진심의"
+      }
     },
     {
       "id": "hk2203",
@@ -12344,7 +13202,18 @@
         "기밀의"
       ],
       "difficulty": 3,
-      "tip": "decide(결정하다) + ive → 결정적인, 확고한. decisive action = 단호한 조치"
+      "tip": "decide(결정하다) + ive → 결정적인, 확고한. decisive action = 단호한 조치",
+      "contextQuiz": {
+        "sentence": "The CEO took ______ action to address the financial crisis.",
+        "choices": [
+          "decisive",
+          "decision",
+          "decisively",
+          "decide"
+        ],
+        "answer": 0,
+        "explanation": "형용사 + 명사. decisive = 단호한"
+      }
     },
     {
       "id": "hk2208",
@@ -15032,7 +15901,18 @@
         "임박한, 절박한"
       ],
       "difficulty": 3,
-      "tip": "straight(곧은) + forward(앞으로) → 곧장 앞으로 = 간단한, 솔직한"
+      "tip": "straight(곧은) + forward(앞으로) → 곧장 앞으로 = 간단한, 솔직한",
+      "contextQuiz": {
+        "sentence": "The instructions are quite ______ and easy to follow.",
+        "choices": [
+          "straighten",
+          "straightforward",
+          "straight",
+          "straightforwardly"
+        ],
+        "answer": 1,
+        "explanation": "be + 형용사. straightforward = 간단한"
+      }
     },
     {
       "id": "hk2336",
@@ -16607,7 +17487,18 @@
         "행상인"
       ],
       "difficulty": 3,
-      "tip": "sustain(유지하다) + able → 유지할 수 있는 = 지속 가능한. sustainable development = 지속 가능한 개발"
+      "tip": "sustain(유지하다) + able → 유지할 수 있는 = 지속 가능한. sustainable development = 지속 가능한 개발",
+      "contextQuiz": {
+        "sentence": "The company is investing in ______ energy solutions.",
+        "choices": [
+          "sustainability",
+          "sustainable",
+          "sustained",
+          "sustain"
+        ],
+        "answer": 1,
+        "explanation": "형용사 + 명사. sustainable = 지속가능한"
+      }
     },
     {
       "id": "hk2411",
