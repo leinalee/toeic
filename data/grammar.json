@@ -4109,6 +4109,966 @@
       "category": "pronoun",
       "difficulty": 3,
       "type": "grammar"
+    },
+    {
+      "id": "n160_033",
+      "sentence": "The store offers ______ hours toV ~",
+      "choices": [
+        "extend",
+        "extended",
+        "extending",
+        "extends"
+      ],
+      "answer": 1,
+      "explanation": "타동사(offers) + p.p형용사 + 명사(hours). extended hours = 연장된 영업시간",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_034",
+      "sentence": "~ will cause ______ damage to ~",
+      "choices": [
+        "last",
+        "lasting",
+        "lasts",
+        "lastly"
+      ],
+      "answer": 1,
+      "explanation": "타동사(cause) + Ving형용사 + 명사(damage). lasting = 지속되는",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_035",
+      "sentence": "~ to be an unusually ______ leader.",
+      "choices": [
+        "thoughts",
+        "thoughtfully",
+        "thoughtful",
+        "thoughtfulness"
+      ],
+      "answer": 2,
+      "explanation": "관사(an) + 부사(unusually) + 형용사 + 명사(leader). thoughtful = 사려깊은",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_036",
+      "sentence": "~ the recently ______ leader ~",
+      "choices": [
+        "election",
+        "elected",
+        "electing",
+        "elects"
+      ],
+      "answer": 1,
+      "explanation": "관사(the) + 부사(recently) + p.p형용사 + 명사(leader). elected = 선출된",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_037",
+      "sentence": "It is ______ toV ~.",
+      "choices": [
+        "advise",
+        "advisably",
+        "advisable",
+        "advising"
+      ],
+      "answer": 2,
+      "explanation": "be동사(is) + 형용사. advisable = 바람직한. It is advisable to V",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_038",
+      "sentence": "The Web site was ______ toV ~.",
+      "choices": [
+        "simplification",
+        "simplify",
+        "simplified",
+        "simplifies"
+      ],
+      "answer": 2,
+      "explanation": "be동사(was) + p.p형용사/수동태. simplified = 간소화된",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_039",
+      "sentence": "The company has been ______ footwear for 30 years.",
+      "choices": [
+        "design",
+        "designed",
+        "designing",
+        "designs"
+      ],
+      "answer": 2,
+      "explanation": "has been + Ving = 현재완료진행. designing(디자인하고 있는)",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_040",
+      "sentence": "Employees have been very ______ of ~.",
+      "choices": [
+        "appreciate",
+        "appreciating",
+        "appreciative",
+        "appreciation"
+      ],
+      "answer": 2,
+      "explanation": "be동사 + 부사(very) + 형용사. appreciative = 감사하는",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_041",
+      "sentence": "~ was somewhat ______.",
+      "choices": [
+        "confuse",
+        "confusing",
+        "confusion",
+        "confusedly"
+      ],
+      "answer": 1,
+      "explanation": "be동사 + 부사(somewhat) + Ving형용사. confusing = 혼란스러운(것이)",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_042",
+      "sentence": "~ was formerly ______ by Judy's Market.",
+      "choices": [
+        "occupying",
+        "occupied",
+        "occupies",
+        "occupation"
+      ],
+      "answer": 1,
+      "explanation": "be동사 + 부사(formerly) + p.p형용사. occupied = 점유된",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_043",
+      "sentence": "Ms. Kim was initially ______ with the product.",
+      "choices": [
+        "satisfy",
+        "satisfied",
+        "satisfying",
+        "satisfaction"
+      ],
+      "answer": 1,
+      "explanation": "be동사 + p.p형용사(감정). satisfied with = ~에 만족한. 사람이 만족'받은' 것",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_044",
+      "sentence": "Any letter ______ sensitive information should be ~.",
+      "choices": [
+        "contains",
+        "contained",
+        "containing",
+        "will contain"
+      ],
+      "answer": 2,
+      "explanation": "명사(letter) + Ving + 목적어 = 후치수식. containing = 포함하는",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_045",
+      "sentence": "According to the most recent survey ______ by Samsung, S+V.",
+      "choices": [
+        "conduct",
+        "conducted",
+        "conducting",
+        "conducts"
+      ],
+      "answer": 1,
+      "explanation": "명사(survey) + p.p + by = 수동 후치수식. conducted by = ~에 의해 실시된",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_046",
+      "sentence": "______ of bricks, S+V.",
+      "choices": [
+        "Making",
+        "Made",
+        "To make",
+        "Make"
+      ],
+      "answer": 1,
+      "explanation": "p.p 분사구문(수동). Made of bricks = 벽돌로 만들어진",
+      "category": "tense",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_047",
+      "sentence": "완전한 문장, ______ it perfect ~.",
+      "choices": [
+        "made",
+        "makes",
+        "making",
+        "make"
+      ],
+      "answer": 2,
+      "explanation": "분사구문 Ving(능동). 완전한 문장, Ving + 목적어 = ~하면서",
+      "category": "tense",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_048",
+      "sentence": "~ is ______ worthwhile.",
+      "choices": [
+        "evidently",
+        "evident",
+        "evidence",
+        "evidential"
+      ],
+      "answer": 0,
+      "explanation": "be동사 + 부사 + 형용사(worthwhile). evidently = 분명히",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_049",
+      "sentence": "~ was ______ selected for ~.",
+      "choices": [
+        "careful",
+        "carefully",
+        "cares",
+        "caring"
+      ],
+      "answer": 1,
+      "explanation": "be동사 + 부사 + p.p(selected). carefully = 신중하게",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_050",
+      "sentence": "~ is ______ looking for ~.",
+      "choices": [
+        "continue",
+        "continually",
+        "continual",
+        "continued"
+      ],
+      "answer": 1,
+      "explanation": "be동사 + 부사 + Ving(looking). continually = 계속해서",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_051",
+      "sentence": "~ will be available ______ + (전+명)",
+      "choices": [
+        "shortly",
+        "short",
+        "shorten",
+        "shortest"
+      ],
+      "answer": 0,
+      "explanation": "be + 형용사(available) + 부사. shortly = 곧",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_052",
+      "sentence": "to receive ______ positive feedback ~",
+      "choices": [
+        "increase",
+        "increasingly",
+        "increases",
+        "to increase"
+      ],
+      "answer": 1,
+      "explanation": "부사 + 형용사(positive) + 명사(feedback). increasingly = 점점 더",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_053",
+      "sentence": "~ as ______ talented artists ~",
+      "choices": [
+        "exception",
+        "exceptional",
+        "exceptionally",
+        "excepted"
+      ],
+      "answer": 2,
+      "explanation": "부사 + p.p형용사(talented) + 명사(artists). exceptionally = 예외적으로",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_054",
+      "sentence": "Mr. Kim ______ signed the contract ~.",
+      "choices": [
+        "final",
+        "finalized",
+        "finally",
+        "finalizing"
+      ],
+      "answer": 2,
+      "explanation": "주어 + 부사 + 동사(signed). finally = 마침내",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_055",
+      "sentence": "~ who ______ seek foreign workers ~",
+      "choices": [
+        "active",
+        "actively",
+        "activate",
+        "activated"
+      ],
+      "answer": 1,
+      "explanation": "who + 부사 + 동사(seek). actively = 적극적으로",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_056",
+      "sentence": "~ will improve the management system ______.",
+      "choices": [
+        "substantially",
+        "substance",
+        "substantial",
+        "more substantial"
+      ],
+      "answer": 0,
+      "explanation": "완전한 문장(S+V+O) + 부사. substantially = 상당히",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_057",
+      "sentence": "The product sales rose ______ + (전+명)",
+      "choices": [
+        "dramatic",
+        "dramatically",
+        "dramatize",
+        "drama"
+      ],
+      "answer": 1,
+      "explanation": "완전한 문장(S+자동사) + 부사. dramatically = 극적으로",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_058",
+      "sentence": "are fastened ______ + (전+명) ~.",
+      "choices": [
+        "security",
+        "secure",
+        "securely",
+        "secured"
+      ],
+      "answer": 2,
+      "explanation": "완전한 문장(be+p.p) + 부사. securely = 안전하게",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_059",
+      "sentence": "The system is functioning ______.",
+      "choices": [
+        "reliable",
+        "reliability",
+        "reliably",
+        "rely"
+      ],
+      "answer": 2,
+      "explanation": "완전한 문장 + 부사. reliably = 안정적으로",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_060",
+      "sentence": "~ check in with the office ______ while S+V.",
+      "choices": [
+        "occasionally",
+        "occasion",
+        "occasional",
+        "occasions"
+      ],
+      "answer": 0,
+      "explanation": "완전한 문장 + 부사. occasionally = 때때로",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_061",
+      "sentence": "~ should ______ explain ~.",
+      "choices": [
+        "fuller",
+        "fully",
+        "fullest",
+        "fill"
+      ],
+      "answer": 1,
+      "explanation": "조동사(should) + 부사 + 동사원형(explain). fully = 충분히",
+      "category": "word form",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_062",
+      "sentence": "The number of homeless people has ______ increased.",
+      "choices": [
+        "significantly",
+        "significant",
+        "signify",
+        "significance"
+      ],
+      "answer": 0,
+      "explanation": "has + 부사 + p.p(increased). significantly = 상당히",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_063",
+      "sentence": "Belden Co. is competing ______ with Copley Ltd ~.",
+      "choices": [
+        "direct",
+        "directly",
+        "direction",
+        "directed"
+      ],
+      "answer": 1,
+      "explanation": "동사구(is competing) 사이 + 부사. directly = 직접적으로",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_064",
+      "sentence": "______ updating your computer system is ~.",
+      "choices": [
+        "regular",
+        "regularly",
+        "regularity",
+        "regularize"
+      ],
+      "answer": 1,
+      "explanation": "부사 + 동명사(updating). regularly = 정기적으로",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_065",
+      "sentence": "When ______ applied, S+V~.",
+      "choices": [
+        "consistent",
+        "consistently",
+        "consist",
+        "consisted"
+      ],
+      "answer": 1,
+      "explanation": "When + 부사 + p.p(applied). consistently = 일관되게",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_066",
+      "sentence": "~ than ______ expected.",
+      "choices": [
+        "originally",
+        "originality",
+        "origin",
+        "original"
+      ],
+      "answer": 0,
+      "explanation": "than + 부사 + p.p(expected). originally = 원래",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_067",
+      "sentence": "How ______ the government can manage the funds is ~.",
+      "choices": [
+        "efficient",
+        "efficiently",
+        "efficiency",
+        "efficiencies"
+      ],
+      "answer": 1,
+      "explanation": "how + 부사 + 완전한 문장. efficiently = 효율적으로",
+      "category": "word form",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_068",
+      "sentence": "The workers must ______ the monthly goals ~.",
+      "choices": [
+        "achieving",
+        "achieved",
+        "is achieved",
+        "achieve"
+      ],
+      "answer": 3,
+      "explanation": "조동사(must) + 동사원형. achieve = 달성하다",
+      "category": "tense",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_069",
+      "sentence": "The Arraneo Group now ______ text messages toV ~.",
+      "choices": [
+        "using",
+        "user",
+        "uses",
+        "useful"
+      ],
+      "answer": 2,
+      "explanation": "주어 + 동사 + 목적어. 3인칭 단수 → uses",
+      "category": "tense",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_070",
+      "sentence": "The new contract for Copley workers ______ a guarantee ~.",
+      "choices": [
+        "include",
+        "to include",
+        "including",
+        "inclusive"
+      ],
+      "answer": 0,
+      "explanation": "주어(contract) + 후치수식(for Copley workers) + 동사. include",
+      "category": "tense",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_071",
+      "sentence": "______ our center if you have any questions ~.",
+      "choices": [
+        "Contacts",
+        "Contacting",
+        "Contacted",
+        "Contact"
+      ],
+      "answer": 3,
+      "explanation": "명령문: 동사원형으로 문장 시작. Contact = 연락하세요",
+      "category": "tense",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_103",
+      "sentence": "Judy will be out of the office until next Friday ______ her attendance at the conference.",
+      "choices": [
+        "since",
+        "because of",
+        "moreover",
+        "but"
+      ],
+      "answer": 1,
+      "explanation": "완전한 문장 + ______ + 명사(attendance) → 전치사. because of = ~때문에",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_104",
+      "sentence": "Author Judy's books always become best sellers ______ the subject matter.",
+      "choices": [
+        "after all",
+        "in addition to",
+        "as if",
+        "regardless of"
+      ],
+      "answer": 3,
+      "explanation": "완전한 문장 + ______ + 명사 → 전치사. regardless of = ~에 관계없이",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_105",
+      "sentence": "______ his interview, the committee decided to hire Mr. Kim ~.",
+      "choices": [
+        "After",
+        "so that",
+        "as though",
+        "now that"
+      ],
+      "answer": 0,
+      "explanation": "______ + 명사(interview), 완전한 문장 → 전치사. After = ~이후에",
+      "category": "preposition",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_106",
+      "sentence": "______ Dr. Nakata, the entire member will attend the conference.",
+      "choices": [
+        "during",
+        "except for",
+        "whenever",
+        "whether"
+      ],
+      "answer": 1,
+      "explanation": "______ + 명사, 완전한 문장 → 전치사. except for = ~을 제외하고",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_107",
+      "sentence": "______ being honest about their financial goals, owners should V ~.",
+      "choices": [
+        "In order to",
+        "In addition to",
+        "Only if",
+        "Provided that"
+      ],
+      "answer": 1,
+      "explanation": "______ + 동명사(being), 완전한 문장 → 전치사. In addition to = ~에 더하여",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_108",
+      "sentence": "______ joining the company five years ago, Ms. Lee has designed many products.",
+      "choices": [
+        "Since",
+        "Wherever",
+        "During",
+        "Similarly"
+      ],
+      "answer": 0,
+      "explanation": "______ + 동명사(joining), 완전한 문장 → 전치사. Since = ~이래로",
+      "category": "preposition",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_109",
+      "sentence": "Greenville Park will ______ be hosting a lot of events ~.",
+      "choices": [
+        "also",
+        "in case",
+        "along with",
+        "like"
+      ],
+      "answer": 0,
+      "explanation": "will + ______ + be Ving → 부사(연결 역할 X). also = 또한",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_110",
+      "sentence": "______ industry professionals are allowed to attend the meeting.",
+      "choices": [
+        "Until",
+        "Only",
+        "Given that",
+        "As a result of"
+      ],
+      "answer": 1,
+      "explanation": "______ + 명사 + 완전한 문장 → 부사. Only = 오직 ~만",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_111",
+      "sentence": "Remember to check the e-mail address ______ submitting the document.",
+      "choices": [
+        "when",
+        "although",
+        "consequently",
+        "in the meantime"
+      ],
+      "answer": 0,
+      "explanation": "부사절 접속사 + Ving. when submitting = 제출할 때",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_112",
+      "sentence": "______ accepted, participants have the right to delete their profile.",
+      "choices": [
+        "without",
+        "Once",
+        "according to",
+        "in addition"
+      ],
+      "answer": 1,
+      "explanation": "부사절 접속사 + p.p. Once accepted = 일단 수락되면",
+      "category": "conjunction",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_113",
+      "sentence": "The company specializes in products that are durable ______ inexpensive.",
+      "choices": [
+        "accordingly",
+        "as well as",
+        "so",
+        "also"
+      ],
+      "answer": 1,
+      "explanation": "A as well as B = A뿐만 아니라 B도. 등위 접속사",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_114",
+      "sentence": "Successful applicants must have extensive knowledge of ______ Korean and English.",
+      "choices": [
+        "either",
+        "both",
+        "neither",
+        "not only"
+      ],
+      "answer": 1,
+      "explanation": "both A and B = A와 B 모두. both Korean and English",
+      "category": "conjunction",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_115",
+      "sentence": "You will find not only fantastic games ______ exciting shows.",
+      "choices": [
+        "so that",
+        "too",
+        "but also",
+        "so"
+      ],
+      "answer": 2,
+      "explanation": "not only A but also B = A뿐만 아니라 B도",
+      "category": "conjunction",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_116",
+      "sentence": "Pallner Corporation increased its sales through effective advertising ______ unique promotions.",
+      "choices": [
+        "yet",
+        "and",
+        "both",
+        "nor"
+      ],
+      "answer": 1,
+      "explanation": "A and B. 등위 접속사 and로 병렬",
+      "category": "conjunction",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_117",
+      "sentence": "We expect to launch the product by next April ______ May.",
+      "choices": [
+        "since",
+        "or",
+        "only if",
+        "because of"
+      ],
+      "answer": 1,
+      "explanation": "A or B = A 또는 B. April or May",
+      "category": "conjunction",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_118",
+      "sentence": "Ms. Lee will order supplies soon, ______ you should tell her what you need.",
+      "choices": [
+        "but",
+        "so",
+        "about",
+        "in spite of"
+      ],
+      "answer": 1,
+      "explanation": "완전한 문장, so 완전한 문장. so = 그래서",
+      "category": "conjunction",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_119",
+      "sentence": "It's been a tough week, ______ the good news is that our system has been repaired.",
+      "choices": [
+        "but",
+        "so",
+        "nor",
+        "in that"
+      ],
+      "answer": 0,
+      "explanation": "완전한 문장, but 완전한 문장. but = 그러나",
+      "category": "conjunction",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_153",
+      "sentence": "______ of my lawn supplies need to be restocked.",
+      "choices": [
+        "several",
+        "every",
+        "much",
+        "each other"
+      ],
+      "answer": 0,
+      "explanation": "______ of + 복수명사 + 복수V(need) → several/both/many. several = 여러 개",
+      "category": "pronoun",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_154",
+      "sentence": "______ our manager was surprised by the result of the survey.",
+      "choices": [
+        "Even",
+        "While",
+        "Because of",
+        "Whether"
+      ],
+      "answer": 0,
+      "explanation": "______ + 명사(our manager) → 부사. Even = ~조차도",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_155",
+      "sentence": "The average temperatures reached ______ 30 degrees.",
+      "choices": [
+        "at least",
+        "regardless of",
+        "because",
+        "during"
+      ],
+      "answer": 0,
+      "explanation": "reached + ______ + 숫자 → 부사. at least = 최소, 적어도",
+      "category": "vocabulary",
+      "difficulty": 2,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_156",
+      "sentence": "______ March 1, the new payroll system will be implemented.",
+      "choices": [
+        "Effective",
+        "provided",
+        "regarding",
+        "whereas"
+      ],
+      "answer": 0,
+      "explanation": "______ + 시점 → Effective/As of/Starting/Beginning. Effective = ~부터",
+      "category": "vocabulary",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_157",
+      "sentence": "Mr. Lee wants to know ______ his manager called him this morning.",
+      "choices": [
+        "why",
+        "while",
+        "who",
+        "whose"
+      ],
+      "answer": 0,
+      "explanation": "동사(know) + ______ + 완전한 문장 → 간접의문문. why = 왜",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_158",
+      "sentence": "The top teams compete against one another to decide ______ is the best football club.",
+      "choices": [
+        "which",
+        "when",
+        "whether",
+        "how"
+      ],
+      "answer": 0,
+      "explanation": "동사(decide) + ______ + 불완전한 문장(주어 없음) → which = 어느 것이",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_159",
+      "sentence": "The team members do not know ______ proposal will be selected.",
+      "choices": [
+        "who",
+        "whose",
+        "about",
+        "whoever"
+      ],
+      "answer": 1,
+      "explanation": "동사(know) + ______ + 명사(proposal) → whose = 누구의",
+      "category": "conjunction",
+      "difficulty": 4,
+      "type": "grammar"
+    },
+    {
+      "id": "n160_160",
+      "sentence": "We strongly recommend ______ you get a routine cleaning every six months.",
+      "choices": [
+        "so that",
+        "that",
+        "whether",
+        "what"
+      ],
+      "answer": 1,
+      "explanation": "recommend + that + S + V원형. that절 명사절 접속사",
+      "category": "conjunction",
+      "difficulty": 3,
+      "type": "grammar"
     }
   ]
 }
