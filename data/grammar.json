@@ -4975,7 +4975,7 @@
         "Whether"
       ],
       "answer": 0,
-      "explanation": "______ + 명사(our manager) → 부사. Even = ~조차도",
+      "explanation": "이 문장은 S(our manager)+V(was surprised)로 완전한 문장이 하나뿐임. While(접속사)은 뒤에 S+V, 주절 S+V 두 절이 필요하지만 여기는 한 절뿐이라 탈락. Because of(전치사)는 뒤에 명사(구)만 오는데 our manager was surprised는 절(S+V)이라 탈락. Whether(접속사)도 명사절을 이끄는데 문맥상 부적합. Even(부사)은 빼도 문장이 완전하고 \"조차도\"라는 의미를 더함. Even our manager = 우리 매니저조차도 놀랐다.",
       "category": "conjunction",
       "difficulty": 3,
       "type": "grammar"
